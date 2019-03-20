@@ -71,7 +71,7 @@ python3 macrocomplex_builder -i 6ezm -nc 24
  
  -24: indicates that the final complex must have 24 chains
  
- The computation time is around 3 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â.
+ The computation time is around 3 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
  
 ### Example 2, 1G65
   
