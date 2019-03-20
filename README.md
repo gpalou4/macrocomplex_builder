@@ -48,12 +48,12 @@ The package can be downloaded using Git:
 
 ### **Command-line arguments**
 
-  - -h, --help
-  - -i, --input
-  - -o, --output
-  - -v, --verbose
-  - -pi, --pdb_iterations
-  - -nc, --number_chains
-  - -rm, --rmsd
-  - -cl, --clashes
-  - -it, --iterations
+  - -h, --help: this flag will show the usage of the program as well as a description of what it does as well as an explanation of all the parameters it has and can modify or offer some information when executing the program.
+  - -i, --input: this argument is **required** can either be an absolute or relative path of the input folder containing all the binary-interaction PDB files that are going to be used to build the complex.
+  - -o, --output: this argument is **optional** and if set, all the output files will be saved in this folder. If not set, by default, the output files will be saved in a folder named: _input_foldername_output_.
+  - -v, --verbose: this argument is **optional** and will print the progression log in the standard error if set.
+  - -pi, --pdb_iterations: this argument is **optional** and will save a new PDB file every time a chain is added to the complex if set.
+  - -nc, --number_chains: this argument is **required** and indicates the number of chains that the final complex must have.
+  - -rm, --rmsd: this argument is **optional** and if set, the RMSD threshold will take its value. If not, it will take a value of 0.3 by default.
+  - -cl, --clashes: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
+  - -it, --iterations: this argument is **optional** and if set, the maximum number of iterations will run for, if the number of chains is not reached will take its value. If not set, it will take a value of 100 by default.
