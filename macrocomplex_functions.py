@@ -146,13 +146,14 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 	"""
 
 	### Saving arguments passed on to the function ###
-	i = it 													#number of iterations
-	nc = command_arguments.number_chains					#number of chains		
-	clashes_threshold = command_arguments.clashes 			#clashes threshold
-	RMSD_threshold = command_arguments.rmsd_threshold 		#RMSD threshold
-	indir = command_arguments.indir 						#input directory relative path
-	outdir = command_arguments.outdir 						#output directory relative path
+	i = it 															#number of iterations
+	nc = command_arguments.number_chains							#number of chains		
+	clashes_threshold = command_arguments.clashes 					#clashes threshold
+	RMSD_threshold = command_arguments.rmsd_threshold 				#RMSD threshold
+	indir = command_arguments.indir 								#input directory relative path
+	outdir = command_arguments.outdir 								#output directory relative path
 	pdb_iterations = command_arguments.pdb_iterations 				#if True, each iteration is stored in a pdb file
+	iterations = command_arguments.it 								#maximum number of iterations
 
 	alphabet = list(string.ascii_uppercase)	+ list(string.ascii_lowercase) + list(string.digits)		#creates an alphabet containing all the possible characters that can be used as chain IDs 
 
@@ -165,7 +166,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 		logging.info("The whole macrocomplex has been successfully build with the desired number of chains")
 		logging.info("The final complex has %d chains" % (ref_structure[0].__len__()))
 		return 	ref_structure			#END OF THE RECURSIVE FUNCTION
-	elif i == 150:
+	elif i == iterations:
 		logging.info("The whole macrocomplex has been build")
 		logging.info("The final complex has %d chains, not %d, as requested" % (ref_structure[0].__len__(), nc))
 		logging.info("We have arrived to iteration %d" %(i))
@@ -187,7 +188,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 		file = files_list.pop(0)		#substracts the current file
 		files_list.append(file)			#and adds it at the end of the list of files
 		i += 1							#calling again the recursive function to analyze the next file
-		return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = 0, command_arguments = command_arguments)	#call again the iterative function, j does not change
+		return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = i, command_arguments = command_arguments)	#call again the iterative function, j does not change
 	### There are superimposed chains ###
 	else:
 		## Loops through the superimposition dictionary, obtaining the superimposition instances and the reference and sample IDs ##
@@ -246,4 +247,4 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 	files_list.append(file)			#adds the file at the end of the files list
 	i += 1							#adds one to the iteration variable
 	#this is what makes the function recursive, it calls itself on the return, executing the whole function again and again until certain condition is met
-	return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = 0, command_arguments = command_arguments)		
+	return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = i, command_arguments = command_arguments)		
