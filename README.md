@@ -60,10 +60,15 @@ The package can be downloaded using Git:
   - -it, --iterations: this argument is **optional** and if set, the maximum number of iterations will run for, if the number of chains is not reached will take its value. If not set, it will take a value of 100 by default.
 
 ### Example 1, 6EZM
-  
+
+The first example is the Imidazoleglycerol-phosphate dehydratase from Saccharomyces cerevisiae. It is a Homo 24-mer (stoichiometry: A24). Based on the input provided files, the following command will recover the complete complex:
 ```bash
 python3 macrocomplex_builder -i 6ezm -nc 24
 ```
+ Where:
+ -6ezm: is the input folder containing all the binary-interaction PDB files
+ -24: indicates that the final complex must have 24 chains
+ The computation time is around 3 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â.
  
 ### Example 2, 1G65
   
