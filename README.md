@@ -55,15 +55,16 @@ The package can be downloaded using Git:
   - -v, --verbose: this argument is **optional** and will print the progression log in the standard error if set.
   - -pi, --pdb_iterations: this argument is **optional** and will save a new PDB file every time a chain is added to the complex if set.
   - -nc, --number_chains: this argument is **required** and indicates the number of chains that the final complex must have.
-  - -rm, --rmsd: this argument is **optional** and if set, the RMSD threshold will take its value. If not, it will take a value of 0.3 by default.
-  - -cl, --clashes: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
+  - -rmsd, --rmsd_threshold: this argument is **optional** and if set, the RMSD threshold will take its value. If not, it will take a value of 0.3 by default.
+  - -cl, --clashes_theshold: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
   - -it, --iterations: this argument is **optional** and if set, the maximum number of iterations will run for, if the number of chains is not reached will take its value. If not set, it will take a value of 100 by default.
 
 ### Example 1, 6EZM
 
 The first example is the Imidazoleglycerol-phosphate dehydratase from Saccharomyces cerevisiae. It is a Homo 24-mer (stoichiometry: A24). Based on the input provided files, the following command will recover the complete complex:
+
 ```bash
-python3 macrocomplex_builder -i 6ezm -nc 24
+python3 macrocomplex_builder.py -i 6ezm -nc 24
 ```
  Where:
  
@@ -71,28 +72,41 @@ python3 macrocomplex_builder -i 6ezm -nc 24
  
  -24: indicates that the final complex must have 24 chains
  
- The computation time is around 3 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
+ The computation time is around 2-5 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
  
 ### Example 2, 1G65
   
+The second example corresponds to the 20S proteosome from Saccharomyces cerevisiae. It is a Homo 28-mer (stoichiometry: A28). Based on the input provided files, the following command will recover the complete complex:
+
 ```bash
-python3 macrocomplex_builder -i 1g65 -nc 28 -rmsd 0.5 -cl 45 
+python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45 
 ```
+ Where:
+ 
+ -0.5: is the new RMSD threshold (default is 0.3)
+ 
+ -45: is the new clashes threshold (default is 30)
+ 
+ The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â
+ In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values.
+ The input folder contains 8 different chains, and only some of them have a common chain. All superimpositions below the  thresholds are used to add the rotated chains to the complex, and 28 iterations are enough.
+
+
  
 ### Example 3, 5VOX
   
 ```bash
-python3 macrocomplex_builder -i 5vox -nc 33 
+python3 macrocomplex_builder.py -i 5vox -nc 33 
 ```
  
 ### Example 4, 5OOM
   
 ```bash
-python3 macrocomplex_builder -i 5oom -nc 53 
+python3 macrocomplex_builder.py -i 5oom -nc 53 
 ```
  
 ### Example 5, 3KUY
   
 ```bash
-python3 macrocomplex_builder -i 6kuy -nc 10
+python3 macrocomplex_builder.py -i 6kuy -nc 10
 ```
