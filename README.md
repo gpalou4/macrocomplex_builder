@@ -58,11 +58,11 @@ The package can be downloaded using Git:
   - -cl, --clashes: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
   - -it, --iterations: this argument is **optional** and if set, the maximum number of iterations will run for, if the number of chains is not reached will take its value. If not set, it will take a value of 100 by default.
 
-  ### Example 1, 6EZM
+### Example 1, 6EZM
   
-   ```python
-   macrocomplex_builder -i 6ezm -nc 24
- ```
+```python
+python3 macrocomplex_builder -i 6ezm -nc 24
+```
  
    ### Example 2, 1G65
   
