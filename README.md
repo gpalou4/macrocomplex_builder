@@ -57,3 +57,33 @@ The package can be downloaded using Git:
   - -rm, --rmsd: this argument is **optional** and if set, the RMSD threshold will take its value. If not, it will take a value of 0.3 by default.
   - -cl, --clashes: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
   - -it, --iterations: this argument is **optional** and if set, the maximum number of iterations will run for, if the number of chains is not reached will take its value. If not set, it will take a value of 100 by default.
+
+  ###Example 1, 6EZM
+  
+   ```python
+   macrocomplex_builder -i 6ezm -nc 24
+ ```
+ 
+   ###Example 2, 1G65
+  
+   ```python
+   macrocomplex_builder -i 6g65 -nc 28 -rmsd 0.5 -cl 45 
+ ```
+ 
+   ###Example 3, 5VOX
+  
+   ```python
+   macrocomplex_builder -i 5vox -nc 33 
+ ```
+ 
+   ###Example 4, 5OOM
+  
+   ```python
+   macrocomplex_builder -i 5oom -nc 53 
+ ```
+ 
+   ###Example 5, 3KUY
+  
+   ```python
+   macrocomplex_builder -i 6kuy -nc 10
+ ```
