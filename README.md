@@ -43,3 +43,17 @@ The package can be downloaded using Git:
 ### **2) via Setup**
 
 ### **3) via Pip**
+
+## Tutorial
+
+### **Command-line arguments**
+
+  - -h, --help
+  - -i, --input
+  - -o, --output
+  - -v, --verbose
+  - -pi, --pdb_iterations
+  - -nc, --number_chains
+  - -rm, --rmsd
+  - -cl, --clashes
+  - -it, --iterations
