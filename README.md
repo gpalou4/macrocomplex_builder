@@ -60,30 +60,30 @@ The package can be downloaded using Git:
 
 ### Example 1, 6EZM
   
-```python
-python3 macrocomplex_builder -i `6ezm` -nc 24
+```bash
+python3 macrocomplex_builder -i 6ezm -nc 24
 ```
  
 ### Example 2, 1G65
   
-```python
+```bash
 python3 macrocomplex_builder -i 1g65 -nc 28 -rmsd 0.5 -cl 45 
 ```
  
 ### Example 3, 5VOX
   
-```python
+```bash
 python3 macrocomplex_builder -i 5vox -nc 33 
 ```
  
 ### Example 4, 5OOM
   
-```python
+```bash
 python3 macrocomplex_builder -i 5oom -nc 53 
 ```
  
 ### Example 5, 3KUY
   
-```python
-macrocomplex_builder -i 6kuy -nc 10
+```bash
+python3 macrocomplex_builder -i 6kuy -nc 10
 ```
