@@ -18,11 +18,11 @@
 - [Algorithm](#algorithm)
 - [Tutorial](#tutorial)
   - [Command-line arguments](#command-line-arguments)
-  - [Example 1](#Example-1,-6EZM)
-  - [Example 2](#Example-2,-1G65)
-  - [Example 3](#Example-3,-5VOX)
-  - [Example 4](#Example-4,-5OOM)
-  - [Example 5](#Example-5,-3KUY)
+  - [Example 1](#example-1-6ezm)
+  - [Example 2](#example-2-1g65)
+  - [Example 3](#example-3-5vox)
+  - [Example 4](#example-4-5oom)
+  - [Example 5](#example-5-3kuy)
 <!-- /TOC -->
 
 ## Description
