@@ -66,8 +66,11 @@ The first example is the Imidazoleglycerol-phosphate dehydratase from Saccharomy
 python3 macrocomplex_builder -i 6ezm -nc 24
 ```
  Where:
+ 
  -6ezm: is the input folder containing all the binary-interaction PDB files
+ 
  -24: indicates that the final complex must have 24 chains
+ 
  The computation time is around 3 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â.
  
 ### Example 2, 1G65
