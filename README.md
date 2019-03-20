@@ -23,3 +23,20 @@
 
 ## Description
 This program is able to reconstruct biological macrocomplexes of protein-protein interactions as well as protein-DNA/RNA interactions given a set of binary interactions and the desired number of chains of the target complex.
+
+## SBI-Python project
+
+## Installation
+
+**1) via Git **
+
+The package can be downloaded using Git:
+
+ ```bash
+  git clone https://github.com/gpalou4/macrocomplex_builder
+  cd macrocomplex_builder
+ ```
+
+**2) via setup.py **
+
+**3) via pip **
