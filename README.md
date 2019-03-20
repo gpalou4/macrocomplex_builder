@@ -18,10 +18,10 @@
 - [Algorithm](#algorithm)
 - [Tutorial](#tutorial)
   - [Command-line arguments](#command-line-arguments)
-  - [Example 1](#Example-1)
-  - [Example 2](#Example-2)
-  - [Example 3](#Example-2-with-optimization)
-  - [Example 4](#Example-3)
+  - [Example 1](#example-1)
+  - [Example 2](#example-2)
+  - [Example 3](#example-3)
+  - [Example 4](#example-4)
 <!-- /TOC -->
 
 ## Description
