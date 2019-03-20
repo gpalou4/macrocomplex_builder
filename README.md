@@ -76,7 +76,7 @@ python3 macrocomplex_builder.py -i 6ezm -nc 24
  
 ### Example 2, 1G65
   
-The second example corresponds to the 20S proteosome from Saccharomyces cerevisiae. It is a Homo 28-mer (stoichiometry: A28). Based on the input provided files, the following command will recover the complete complex:
+The second example corresponds to the 20S proteosome from Saccharomyces cerevisiae. It is a Hetero 28-mer (stoichiometry: A2B2C2D2E2F2G2H2I2J2K2L2M2N2). Based on the input provided files, the following command will recover the complete complex:
 
 ```bash
 python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45 
@@ -87,17 +87,18 @@ python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45
  
  -45: is the new clashes threshold (default is 30)
  
- The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â
- In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values.
- The input folder contains 8 different chains, and only some of them have a common chain. All superimpositions below the  thresholds are used to add the rotated chains to the complex, and 28 iterations are enough.
+The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 8 different chains, and only some of them have a common chain. All superimpositions below the thresholds are used to add the rotated chains to the complex, and 28 iterations are enough.
 
-
- 
 ### Example 3, 5VOX
-  
+
+The third example corresponds to the Yeast V-ATPase in complex with Legionella pneumophila effector SidK. It is a Hetero 33-mer  (stoichiometry: A8B3C3D3E3F3GHIJKLMNOP). Based on the input provided files, the following command will recover the complete complex:
+
 ```bash
 python3 macrocomplex_builder.py -i 5vox -nc 33 
 ```
+
+The computation time is around 5-10 seconds and the RMDS between the reconstructed complex and the original PDB file is 0 Â. In this example, we must chan
+ 
  
 ### Example 4, 5OOM
   
