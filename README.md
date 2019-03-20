@@ -8,7 +8,7 @@
 - [SBI-Python project](#sbi-python-project)
 - [Installation](#installation)
   - [via Git](#1-via-git)
-  - [via Setup](#2-via-setuppy)
+  - [via Setup](#2-via-setup)
   - [via Pip](#3-via-pip)
 - [Requirements](#Requirements)
 - [Information](#information)
@@ -40,6 +40,6 @@ The package can be downloaded using Git:
   cd macrocomplex_builder
  ```
 
-### **2) via setup.py**
+### **2) via Setup**
 
-### **3) via pip**
+### **3) via Pip**
