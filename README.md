@@ -7,6 +7,9 @@
 - [Description](#description)
 - [SBI-Python project](#sbi-python-project)
 - [Installation](#installation)
+  -[via Git](#via-git)
+  -[via Setup](#via-setup)
+  -[via Pip](#via-pip)
 - [Requirements](#Requirements)
 - [Information](#information)
   - [Input files](#input-files)
@@ -28,7 +31,7 @@ This program is able to reconstruct biological macrocomplexes of protein-protein
 
 ## Installation
 
-**1) via Git **
+**1) via Git**
 
 The package can be downloaded using Git:
 
@@ -37,6 +40,6 @@ The package can be downloaded using Git:
   cd macrocomplex_builder
  ```
 
-**2) via setup.py **
+**2) via setup.py**
 
-**3) via pip **
+**3) via pip**
