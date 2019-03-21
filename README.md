@@ -72,7 +72,7 @@ python3 macrocomplex_builder.py -i 6ezm -nc 24
  
  -24: indicates that the final complex must have 24 chains
  
- The computation time is around 2-5 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
+ The computation time is around 2-5 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. The input folder contains 23 files and 24 chains. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both equal chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
  
 ### Example 2, 1G65
   
@@ -87,7 +87,7 @@ python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45
  
  -45: is the new clashes threshold (default is 30)
  
-The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 8 different chains, and only some of them have a common chain. All superimpositions below the thresholds are used to add the rotated chains to the complex, and 28 iterations are enough.
+The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 6 files and 8 different chains, and only some of them have a common chain. All superimpositions below the set thresholds are used to add the rotated chains to the complex. Notice that even though there are less number of files/chains than the total number of chains of the original complex, it is able to reconstruct the complete macrocomplex in 27 iterations.
 
 ### Example 3, 5VOX
 
@@ -97,7 +97,7 @@ The third example corresponds to the Yeast V-ATPase in complex with Legionella p
 python3 macrocomplex_builder.py -i 5vox -nc 33 
 ```
 
-The computation time is around 5-10 seconds and the RMDS between the reconstructed complex and the original PDB file is 0 Â. In this example, we must chan
+The computation time is around 5-10 seconds and the RMDS between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 51 files and 33 different chains
  
  
 ### Example 4, 5OOM
