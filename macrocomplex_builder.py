@@ -14,11 +14,20 @@ start = timeit.default_timer()
 parser = argparse.ArgumentParser(description = 
 	"This program is able to reconstruct biological macrocomplexes of protein-protein interactions as well as protein-DNA/RNA interactions given a set of binary interactions and the desired number of chains of the target complex.")
 
-parser.add_argument('-i', '--indir',			#INPUT FOLDER argument
-					dest = "indir",
-					action = "store",
-					required=True,
-					help = "Input folder (or path) containing all PDB files with the protein binary interactions. It is a compulsory argument.")	
+requiredNamed = parser.add_argument_group('required arguments')
+
+requiredNamed.add_argument('-i', '--indir',			#INPUT FOLDER argument
+							dest = "indir",
+							action = "store",
+							required=True,
+							help = "Input folder (or path) containing all PDB files with the protein binary interactions. It is a compulsory argument.")
+
+requiredNamed.add_argument('-nc', '--number_chains',		#NUMBER OF CHAINS argument
+							dest = "number_chains",
+							action = "store",
+							required=True,
+							type = int,
+							help = "Number of chains desired for the target complex. This is a compulsory argument.")
 
 parser.add_argument('-o', '--outdir',			#OUTPUT FOLDER argument
 					dest = "outdir",
@@ -32,18 +41,11 @@ parser.add_argument('-v', '--verbose',			#VERBOSE argument
 					default = False,
 					help = "If set, the progression log printed in standard output file.")
 
-parser.add_argument('-pi', '--pdb_iterations',		#ITERATIONS argument
+parser.add_argument('-pi', '--pdb_iterations',		#PDB FILES ITERATIONS argument
 					dest = "pdb_iterations",
 					action = "store_true",
 					default = False,
 					help = "If set, each time a chain is added to the complex, a new PDB file will be saved.")
-
-parser.add_argument('-nc', '--number_chains',		#NUMBER OF CHAINS argument
-					dest = "number_chains",
-					action = "store",
-					required=True,
-					type = int,
-					help = "Number of chains desired for the target complex. This is a compulsory argument.")
 
 parser.add_argument('-rmsd', '--rmsd_threshold',		#RMSD THRESHOLD argument
 					dest = "rmsd_threshold",
@@ -59,7 +61,7 @@ parser.add_argument('-cl', '--clashes_threshold',		#CLASHES argument
 					type = int,
 					help = "If set, the threshold of the number of clashes will take this value. If not, it will be 30 by default. The output of the program is very sensitive to this value, we advise to be careful when modifying it.")
 
-parser.add_argument('-it', '--iterations',		#CLASHES argument
+parser.add_argument('-it', '--iterations',		#ITERATIONS argument
 					dest = "it",
 					action = "store",
 					default = 100,
@@ -83,15 +85,21 @@ else:		#INPUT has been provided
 if not arguments.number_chains:		#checking if the NUMBER OF CHAINS has been provided
 	raise NameError("ERROR! The number of chains of the target complex has not been provided! Please, use the help flag, --help, h to see the program instructions!")
 
+os.chdir(arguments.indir + "/../")
 
 ## OPTIONAL arguments ##
 
 if arguments.outdir == None:		# Checking if an OUTPUT directory has been provided
 	arguments.outdir = arguments.indir + "_output"		# If not, by default it is the INPUT name + _output
 else:
-	arguments.outdir = arguments.indir + "/" + arguments.outdir
-	if not os.path.exists(arguments.outdir):		# Checking if the OUTPUT directory (created by us or provided by the user) already exists
-		os.mkdir(arguments.outdir)		# If not, create it
+	pass
+if not os.path.exists(arguments.outdir):		# Checking if the OUTPUT directory (created by us or provided by the user) already exists
+	os.mkdir(arguments.outdir)		# If not, create it
+	arguments.outdir = os.path.abspath(arguments.outdir)
+else:
+	arguments.outdir = os.path.abspath(arguments.outdir)
+
+os.chdir(arguments.outdir)		##changes the current directory to OUTPUT directory
 
 ### Initializing the LOG system ###
 
@@ -111,7 +119,7 @@ else:
 #	files.insert(0,popped_last)
 #print(files)
 #sys.exit()
-os.chdir(arguments.outdir)		##changes the current directory to OUTPUT directory
+
 logging.info("Parameters used are:\n  - Number of chains: %d\n  - RMSD threshold: %.4f\n  - Clashes threshold %d" % (arguments.number_chains, arguments.rmsd_threshold, arguments.clashes))
 
 ### Using the first file as the reference for the macrocomplex ###	
