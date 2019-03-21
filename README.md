@@ -70,6 +70,10 @@ The package can be downloaded using Git:
    macrocomplex_builder -i 1g65 -nc 28 -rmsd 0.5 -cl 45 
  ```
  
+| <img src="images/1G65_ORIGINAL.png" width="200" height="200"> | <img src="images/1G65_BUILT.png" width="200" height="200"> | <img src="images/1G65_SUPERIMPOSED.png" width="200" height="200"> |
+| :---: | :---: | :---: |
+| *Original* | *Built* | *Superimposition*|
+ 
    ### Example 3, 5VOX
   
    ```python
