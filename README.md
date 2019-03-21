@@ -96,7 +96,7 @@ python3 macrocomplex_builder.py -i 6ezm -nc 24
  
  The computation time is around 2-5 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. The input folder contains 23 files and 24 chains. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both equal chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
  
- | <img src="Images/6EZM_ORIGINAL.png" width="300" height="300"> | <img src="Images/6EZM_BUILT.png" width="300" height="300"> | <img src="Images/6EZM_SUPERIMPOSED.png" width="300" height="300"> |
+| <img src="Images/6EZM_ORIGINAL.png" width="300" height="300"> | <img src="Images/6EZM_BUILT.png" width="300" height="300"> | <img src="Images/6EZM_SUPERIMPOSED.png" width="300" height="300"> |
 | :---: | :---: | :---: |
 | *Original* | *Built* | *Superimposition*|
 
@@ -129,7 +129,10 @@ python3 macrocomplex_builder.py -i 5vox -nc 33
 
 The computation time is around 5-10 seconds and the RMDS between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 51 files and 33 different chains
  
- 
+| <img src="Images/5VOX_ORIGINAL.png" width="300" height="350"> | <img src="Images/5VOX_BUILT.png" width="300" height="350"> | <img src="Images/5VOX_SUPERIMPOSED.png" width="300" height="350"> |
+| :---: | :---: | :---: |
+| *Original* | *Built* | *Superimposition*|
+
 ### Example 4, 5OOM
   
 The fourth example corresponds to the native assembly intermediate of the human mitochondrial ribosome with unfolded interfacial rRNA. It is a Hetero 53-mer  (stoichiometry: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzA). Based on the input provided files, the following command will recover the complete complex:
@@ -143,9 +146,17 @@ Where:
  
 
 The computation time is around 30-35 seconds and the RMDS between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 124 files and 53 different chains. This case is interesting as it contains also RNA molecules, exhibiting the flexibility of reconstructing not only prot-prot interactions but also prot-dna or prot-rna interactions. Moreover, with the default number of iterations only 49 chains can be build. By increasing it up to 118, the whole complex can be reconstructed correctly.
- 
+
+| <img src="Images/5OOM_ORIGINAL.png" width="300" height="280"> | <img src="Images/5OOM_BUILT.png" width="300" height="280"> | <img src="Images/5OOM_SUPERIMPOSED.png" width="300" height="280"> |
+| :---: | :---: | :---: |
+| *Original* | *Built* | *Superimposition*|
+
 ### Example 5, 3KUY
   
 ```bash
 python3 macrocomplex_builder.py -i 6kuy -nc 10
 ```
+
+| <img src="Images/3KUY_ORIGINAL.png" width="300" height="300"> | <img src="Images/3KUY_BUILT.png" width="300" height="300"> | <img src="Images/3KUY_SUPERIMPOSED.png" width="300" height="300"> |
+| :---: | :---: | :---: |
+| *Original* | *Built* | *Superimposition*|
