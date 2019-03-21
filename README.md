@@ -89,10 +89,6 @@ python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45
  
 The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 6 files and 8 different chains, and only some of them have a common chain. All superimpositions below the set thresholds are used to add the rotated chains to the complex. Notice that even though there are less number of files/chains than the total number of chains of the original complex, it is able to reconstruct the complete macrocomplex in 27 iterations.
 
-| <img src="images/1G65_ORIGINAL.png" width="200" height="200"> | <img src="images/1G65_BUILT.png" width="200" height="200"> | <img src="images/1G65_SUPERIMPOSED.png" width="200" height="200"> |
-| :---: | :---: | :---: |
-| *Original* | *Built* | *Superimposition*|
-
 ### Example 3, 5VOX
 
 The third example corresponds to the Yeast V-ATPase in complex with Legionella pneumophila effector SidK. It is a Hetero 33-mer  (stoichiometry: A8B3C3D3E3F3GHIJKLMNOP). Based on the input provided files, the following command will recover the complete complex:
@@ -106,9 +102,17 @@ The computation time is around 5-10 seconds and the RMDS between the reconstruct
  
 ### Example 4, 5OOM
   
+The fourth example corresponds to the native assembly intermediate of the human mitochondrial ribosome with unfolded interfacial rRNA. It is a Hetero 53-mer  (stoichiometry: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzA). Based on the input provided files, the following command will recover the complete complex:
+ 
 ```bash
-python3 macrocomplex_builder.py -i 5oom -nc 53 
+python3 macrocomplex_builder.py -i 5oom -nc 53 -it 120
 ```
+Where:
+ 
+ -120: is the the number of maximum iterations (default is 100)
+ 
+
+The computation time is around 30-35 seconds and the RMDS between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 124 files and 53 different chains. This case is interesting as it contains also RNA molecules, exhibiting the flexibility of reconstructing not only prot-prot interactions but also prot-dna or prot-rna interactions.
  
 ### Example 5, 3KUY
   
