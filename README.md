@@ -74,15 +74,7 @@ python3 macrocomplex_builder.py -i 6ezm -nc 24
  
  The computation time is around 2-5 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. The input folder contains 23 files and 24 chains. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both equal chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
  
-<<<<<<< HEAD
-| <img src="images/1G65_ORIGINAL.png" width="200" height="200"> | <img src="images/1G65_BUILT.png" width="200" height="200"> | <img src="images/1G65_SUPERIMPOSED.png" width="200" height="200"> |
-| :---: | :---: | :---: |
-| *Original* | *Built* | *Superimposition*|
- 
-   ### Example 3, 5VOX
-=======
 ### Example 2, 1G65
->>>>>>> 204b3b2e590689871c25a71c6f9ca02f258ce29c
   
 The second example corresponds to the 20S proteosome from Saccharomyces cerevisiae. It is a Hetero 28-mer (stoichiometry: A2B2C2D2E2F2G2H2I2J2K2L2M2N2). Based on the input provided files, the following command will recover the complete complex:
 
@@ -96,6 +88,10 @@ python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45
  -45: is the new clashes threshold (default is 30)
  
 The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 6 files and 8 different chains, and only some of them have a common chain. All superimpositions below the set thresholds are used to add the rotated chains to the complex. Notice that even though there are less number of files/chains than the total number of chains of the original complex, it is able to reconstruct the complete macrocomplex in 27 iterations.
+
+| <img src="images/1G65_ORIGINAL.png" width="200" height="200"> | <img src="images/1G65_BUILT.png" width="200" height="200"> | <img src="images/1G65_SUPERIMPOSED.png" width="200" height="200"> |
+| :---: | :---: | :---: |
+| *Original* | *Built* | *Superimposition*|
 
 ### Example 3, 5VOX
 
