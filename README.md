@@ -64,7 +64,7 @@ Every time the function is called it needs certain parameters in order for it to
 	* A counter to keep track of the iterations the recursive function has gone through, `iterations`. It is 0 on the first call, it increases in 1 on each iteration.
 	* A boolean, `False` by default, `pdb_iterations`, that indicates whether the user wants to save a PDB file every time a chain is added to the complex.
   
-In each iteration a file is going to be processed. First, a structure instance is going to be created from the file. Then, the `Superimposition` function is going to be called with a reference and a sample structure as parameters. This function does all the possible superimpositions between the two chains from the sample structure and all the chains from the reference one, only if the number of CA, for proteins, or C4’, for nucleic acids, atoms, obtained with the `Key_atom_retriever` function, is the same in both chains, and also if they are the same kind of molecule, i.e., DNA, RNA or PROTEIN. It returns a list of key, value tuples with a tuple of the reference and sample chains identifiers as key and the Superimposer instance of those two chains as value, which is sorted by the RMSD of the value, as well as a boolean that informs of whether a common chain between the reference and the sample structure has been found and the RMSD of the best superimposition.
+In each iteration a file is going to be processed. First, a structure instance is going to be created from the file. Then, the `Superimposition` function is going to be called with a reference and a sample structure as parameters. This function does all the possible superimpositions between the two chains from the sample structure and all the chains from the reference one, only if the number of _CA_, for proteins, or _C4’_, for nucleic acids, atoms, obtained with the `Key_atom_retriever` function, is the same in both chains, and also if they are the same kind of molecule, i.e., DNA, RNA or PROTEIN. It returns a list of key, value tuples with a tuple of the reference and sample chains identifiers as key and the Superimposer instance of those two chains as value, which is sorted by the RMSD of the value, as well as a boolean that informs of whether a common chain between the reference and the sample structure has been found and the RMSD of the best superimposition.
 
 If the boolean is false, i.e., no common chain between reference and sample structure has been found, or the smallest RMSD is greater than the threshold, the currently processed file is popped from the list and appended to the end of it, this way, it will be processed in a future iteration, 1 is added to the iteration counter and the function is called again.
 However, if there is a common chain and its RMSD with a given reference chain is less than the threshold, the program loops through the sorted list of tuples of Superimposer objects as values. If its RMSD is greater than the threshold, the loop will continue, going to the next entry of the sorted list of tuples. On the other hand, if the RMSD is good, the translation and rotation matrices of the Superimposer instance are applied to the key atoms, CA for proteins or C4’ for nucleic acids, of the putative chain to add, which is the one that is not the common chain with the reference structure, and with these new coordinates, the presence of clashes between the new coordinates of the putative chain to add atoms and the reference structure is checked. If the number of clashes is under the threshold, it keeps checking for the rest of reference chains. If none of the combinations of reference chains and putative chain to add has more clashes than the threshold, the program determines that the putative chain to add is not present in the complex and does not clash with any of the other chains already present in the complex, and therefore it is right to add it.
@@ -76,6 +76,26 @@ After that, the file is popped and appended at the end of the list, the iteratio
 The following figure is a basic flowchart of the algorithm that the program uses, showing all the basic conditions, loops and outcomes.
 
 In this flowchart, the green ellipse corresponds to the calling of the iterative function. The yellow rhmobus are conditions, blue rectangles statements and orange ellipses are loops. The conditions yield either `True` or `False` and depending on it different outcomes will take place. In this figure, it is also represented what happens when the loops end.
+
+#### Key
+* chains: number of chains of the complex in this iteration.
+* nc: number of chains of the final complex provided by the user.
+* iter: number of the iteration that the program is currently in.
+* X: the maximum number of iterations the program will run for, 100 by default.
+* chain in ref: loops through all chains in the reference structure.
+* chian in sample: loops through all chains in the sample structure.
+* sample_mol: molecular type of the sample chain, either RNA, DNA or PROTEIN.
+* ref_mol: molecular type of the reference chain.
+* sample_atoms: length of the list containing all the key atoms of the sampla chain.
+* ref_atoms: length of the list containing all the key atoms of the reference chain.
+* Common chain: boolean informing of whether a common chain has been found between the new file and the reference structure.
+* k, v in RMSDs: loops through the list of key, value tuples, having a tuple of reference chain ID and sample chain ID as key and a Superimposer instance as value.
+* RMSD: smallest RMSD of all the superimpositions carried out between sample and reference chains.
+* threshold<sup>1</sup>: RMSD threshold above which superimpositions will be discarded.
+* clashes: number of clashes between the putative chain to add and a reference chain.
+* threshold<sup>2</sup>: clashes threshold above which putative chains will be discarded.
+* Present chain: boolean informing of whether the putative chain to add is already found in the complex.
+
 <img src="Images/ALGORITHM.png" width="1000" height="1000">
 
 ## Tutorial
