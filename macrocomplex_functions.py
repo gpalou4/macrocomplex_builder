@@ -178,11 +178,13 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 	if ref_structure[0].__len__() == nc: 
 		logging.info("The whole macrocomplex has been successfully build with the desired number of chains")
 		logging.info("The final complex has %d chains" % (ref_structure[0].__len__()))
+		print ("The end, we reached %d chains" % nc)
 		return 	ref_structure			#END OF THE RECURSIVE FUNCTION
 	elif n > len(files_list):
 		logging.info("The whole macrocomplex has been build")
 		logging.info("The final complex has %d chains, not %d, as requested" % (ref_structure[0].__len__(), nc))
 		logging.info("We have arrived to iteration %d" %(i))
+		print("The end, we cannot add any more chains, it has %d chains" % ref_structure[0].__len__())
 		return ref_structure		#END OF THE RECURSIVE FUNCTION
 
 	### Selects the file to analyze in this iteration. It is always the first element of the list of files because once analyzed it is substracted and appended at the end of the list ###
