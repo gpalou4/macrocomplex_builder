@@ -132,13 +132,13 @@ for ID in [chain.get_id() for chain in ref_structure[0].get_chains()]:		#loops t
 	logging.info("Chain %s", ID)		#prints the ID
 
 # Calling the RECURSIVE FUNCTION for the first time. See DOC for its parameters #
-MacrocomplexBuilder(ref_structure = ref_structure, files_list = files, it = 0, command_arguments = arguments)	#calling the iterative function
+MacrocomplexBuilder(ref_structure = ref_structure, files_list = files, it = 0, not_added = 0, command_arguments = arguments)	#calling the iterative function
 
 ### MACROCOMPLEX BUILDING PROCESS FINISHED ###
 
-io = Bio.PDB.PDBIO()		#Creates the PDBIO object, which writes a structure object as a PDB file
+io = Bio.PDB.MMCIFIO()		#Creates the PDBIO object, which writes a structure object as a PDB file
 io.set_structure(ref_structure[0])		#Sets the reference structure object to be written in a PDB file
-io.save("macrocomplex.pdb")		#the whole macrocomplex gets saved in "macrocomplex.pdb"
+io.save("macrocomplex.cif")		#the whole macrocomplex gets saved in "macrocomplex.pdb"
 stop = timeit.default_timer()
 logging.info("The program has finished running! It took %f seconds" % (stop - start))
 logging.info("Output files %s saved in %s" %("macrocomplex.pdb and macrocomplex.log",os.path.abspath(arguments.outdir)))

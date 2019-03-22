@@ -46,6 +46,17 @@ def Key_atom_retriever(chain):
 			atoms.append(res['C4\''])	#append C4' atoms to the list of atoms
 	return(atoms, molecule)		# Return all key atoms list and the type of molecule to which they belong
 
+def ID_creator(IDs):
+	"""This function creates IDs"""
+	alphabet = list(string.ascii_uppercase)
+	for char1 in alphabet:
+		for char2 in alphabet:
+			ID = char1+char2
+			if ID not in IDs:
+				return ID
+			else:
+				continue
+
 def superimposition(ref_structure, sample_structure):
 	"""This function, given a reference and a sample structure does the superimposition of every combination of pairs of chains and calculates the RMSD.
 	It returns a dictionary with a tuple of the reference and sample chain as a tuple and the superimposer instance resulting from those two chains, as
@@ -107,7 +118,7 @@ def superimposition(ref_structure, sample_structure):
 		logging.info("The combination of chains with the lowest RMSD is ref chain %s and sample chain %s with an RMSD of %f", best_ref_chain_ID, best_sample_chain_ID, best_RMSD)
 	return(all_superimpositions, superimposed_chains, best_RMSD)
 
-def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
+def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_arguments):
 	"""This recursive function superimposes the most similar chain of a binary interaction PDB file with a reference structure and adds the transformed chain to the building complex
 
 	Arguments:
@@ -147,6 +158,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 
 	### Saving arguments passed on to the function ###
 	i = it 															#number of iterations
+	n = not_added
 	nc = command_arguments.number_chains							#number of chains		
 	clashes_threshold = command_arguments.clashes 					#clashes threshold
 	RMSD_threshold = command_arguments.rmsd_threshold 				#RMSD threshold
@@ -160,13 +172,14 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 	### Prints the current iteration and number of chains of the current complex ###
 	logging.info("This is the iteration #%d of the recursive function" %(i))
 	logging.info("The complex has %d chains at this point" % (ref_structure[0].__len__()))
+	print("The complex has %d chains at this point" % (ref_structure[0].__len__()))
 
 	### Checks if the current macrocomplex satisfies the desired number of chains or just stops at iteration 150 ### 
 	if ref_structure[0].__len__() == nc: 
 		logging.info("The whole macrocomplex has been successfully build with the desired number of chains")
 		logging.info("The final complex has %d chains" % (ref_structure[0].__len__()))
 		return 	ref_structure			#END OF THE RECURSIVE FUNCTION
-	elif i == iterations:
+	elif n > len(files_list):
 		logging.info("The whole macrocomplex has been build")
 		logging.info("The final complex has %d chains, not %d, as requested" % (ref_structure[0].__len__(), nc))
 		logging.info("We have arrived to iteration %d" %(i))
@@ -188,7 +201,8 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 		file = files_list.pop(0)		#substracts the current file
 		files_list.append(file)			#and adds it at the end of the list of files
 		i += 1							#calling again the recursive function to analyze the next file
-		return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = i, command_arguments = command_arguments)	#call again the iterative function, j does not change
+		n += 1
+		return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = i, not_added = n, command_arguments = command_arguments)	#call again the iterative function, j does not change
 	### There are superimposed chains ###
 	else:
 		## Loops through the superimposition dictionary, obtaining the superimposition instances and the reference and sample IDs ##
@@ -225,26 +239,42 @@ def MacrocomplexBuilder(ref_structure, files_list, it, command_arguments):
 			if present_chain is False:						
 				logging.info("Chain %s superimposed with chain %s yields rotated chain %s which is not in the complex" %(chains[0],chains[1],chain_to_add.id))
 				chain_ids = [chain.id for chain in ref_structure[0].get_chains()]	#list containing IDs of all chains present in reference structure
-				if chain_to_add.id not in chain_ids:		#checks whether the chain to add ID is in chain_ids
-					ref_structure[0].add(chain_to_add)		#adds chain_to_add to the building macrocomplex structure
+				if len(chain_ids) < 62:
+					if chain_to_add.id not in chain_ids:		#checks whether the chain to add ID is in chain_ids
+						ref_structure[0].add(chain_to_add)		#adds chain_to_add to the building macrocomplex structure
+						logging.info("Added Chain %s" % chain_to_add.id)
+						print("Added Chain %s" % chain_to_add.id)
+					elif chain_to_add.id in chain_ids:			#chain_to_add ID is present on chain_ids
+						for i in range(0,len(alphabet)):		#loops through the previous generated alphabet
+							if alphabet[i] not in chain_ids:	#looks for a letter not used as an ID in the reference structure
+								chain_to_add.id = alphabet[i]		#reassigns chain_to_add ID to a new ID with that letter
+								ref_structure[0].add(chain_to_add)	#adds chain_to_add to the building macrocomplex structure
+								logging.info("Added Chain %s" % chain_to_add.id)
+								print("Added Chain %s" % chain_to_add.id)
+								break
+				elif len(chain_ids) >= 62:
+					chain_to_add.id = ID_creator(chain_ids)
+					ref_structure[0].add(chain_to_add)	#adds chain_to_add to the building macrocomplex structure
 					logging.info("Added Chain %s" % chain_to_add.id)
-				elif chain_to_add.id in chain_ids:			#chain_to_add ID is present on chain_ids
-					for i in range(0,len(alphabet)):		#loops through the previous generated alphabet
-						if alphabet[i] not in chain_ids:	#looks for a letter not used as an ID in the reference structure
-							chain_to_add.id = alphabet[i]		#reassigns chain_to_add ID to a new ID with that letter
-							ref_structure[0].add(chain_to_add)	#adds chain_to_add to the building macrocomplex structure
-							logging.info("Added Chain %s" % chain_to_add.id)
-							break
+					print("Added Chain %s" % chain_to_add.id)
+					#break
 				## Checks whether the user provided the iterations argument, then save each iteration of the current complex in a PDB file ##
 				if pdb_iterations:		
-					io = Bio.PDB.PDBIO()							#creates a PDBIO instance
+					io = Bio.PDB.MMCIFIO()							#creates a PDBIO instance
 					io.set_structure(ref_structure[0])				#assigns the reference structure to the IO object
 					io.save("macrocomplex_chains_%d.pdb" %(ref_structure[0].__len__()))	#saves the structure on a file
 					logging.info("saving macrocomplex_chains_%d.pdb in %s" %(ref_structure[0].__len__(),outdir))
-				break							#breaks loop
+				#break							#breaks loop
+				file = files_list.pop(0)		#substracts the first file of the files list
+				files_list.append(file)			#adds the file at the end of the files list
+				i += 1							#adds one to the iteration variable
+				n = 0
+				#this is what makes the function recursive, it calls itself on the return, executing the whole function again and again until certain condition is met
+				return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = i, not_added = n, command_arguments = command_arguments)
 	### Once the current file has been analyzed it is substracted and appended at the end of the files list ###
 	file = files_list.pop(0)		#substracts the first file of the files list
 	files_list.append(file)			#adds the file at the end of the files list
 	i += 1							#adds one to the iteration variable
+	n += 1
 	#this is what makes the function recursive, it calls itself on the return, executing the whole function again and again until certain condition is met
-	return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = i, command_arguments = command_arguments)		
+	return MacrocomplexBuilder(ref_structure = ref_structure, files_list = files_list, it = i, not_added = n, command_arguments = command_arguments)		
