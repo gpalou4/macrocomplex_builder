@@ -57,7 +57,7 @@ def ID_creator(IDs):
 			else:
 				continue
 
-def superimposition(ref_structure, sample_structure):
+def superimposition(ref_structure, sample_structure, rmsd_threshold):
 	"""This function, given a reference and a sample structure does the superimposition of every combination of pairs of chains and calculates the RMSD.
 	It returns a dictionary with a tuple of the reference and sample chain as a tuple and the superimposer instance resulting from those two chains, as
 	well as two variables, the ID of the chain with the smallest RMSD when superimposing with the reference structure and the RMSD itself
@@ -104,6 +104,8 @@ def superimposition(ref_structure, sample_structure):
 				super_imposer = Bio.PDB.Superimposer()				#creates superimposer instance
 				super_imposer.set_atoms(ref_atoms, sample_atoms)	#creates ROTATION and TRANSLATION matrices from lists of atoms to align
 				RMSD = super_imposer.rms 							#retrieves RMSD
+				if RMSD > rmsd_threshold:
+					continue
 				if prev_RMSD is True or RMSD < prev_RMSD:			#checks that the RMSD of this combination is smaller than the previous one
 					best_sample_chain_ID = sample_chain.id 		
 					best_ref_chain_ID = ref_chain.id 				#with this condition, the superimposer instance and other important
@@ -169,22 +171,23 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 
 	alphabet = list(string.ascii_uppercase)	+ list(string.ascii_lowercase) + list(string.digits)		#creates an alphabet containing all the possible characters that can be used as chain IDs 
 
+	chains = ref_structure[0].__len__()
 	### Prints the current iteration and number of chains of the current complex ###
-	logging.info("This is the iteration #%d of the recursive function" %(i))
-	logging.info("The complex has %d chains at this point" % (ref_structure[0].__len__()))
-	print("The complex has %d chains at this point" % (ref_structure[0].__len__()))
+	logging.info("This is the iteration #%d of the recursive function" % i )
+	logging.info("The complex has %d chains at this point" % chains)
+	print ("The complex has %d chains at this point" % chains )
 
 	### Checks if the current macrocomplex satisfies the desired number of chains or just stops at iteration 150 ### 
-	if ref_structure[0].__len__() == nc: 
+	if chains == nc: 
 		logging.info("The whole macrocomplex has been successfully build with the desired number of chains")
-		logging.info("The final complex has %d chains" % (ref_structure[0].__len__()))
+		logging.info("The final complex has %d chains" % chains)
 		print ("The end, we reached %d chains" % nc)
 		return 	ref_structure			#END OF THE RECURSIVE FUNCTION
 	elif n > len(files_list):
 		logging.info("The whole macrocomplex has been build")
-		logging.info("The final complex has %d chains, not %d, as requested" % (ref_structure[0].__len__(), nc))
+		logging.info("The final complex has %d chains, not %d, as requested" % (chains, nc))
 		logging.info("We have arrived to iteration %d" %(i))
-		print("The end, we cannot add any more chains, it has %d chains" % ref_structure[0].__len__())
+		print("The end, we cannot add any more chains, it has %d chains" % chains)
 		return ref_structure		#END OF THE RECURSIVE FUNCTION
 
 	### Selects the file to analyze in this iteration. It is always the first element of the list of files because once analyzed it is substracted and appended at the end of the list ###
@@ -196,7 +199,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 	sample_model = sample_structure[0]		#obtains the first and only available model of the sample structure 
 
 	### Calling the superimposition function to obtain the superimposition of every combination of pairs of chains between the reference and sample structures
-	all_superimpositions, superimposed_chains, best_RMSD = superimposition(ref_structure, sample_structure)
+	all_superimpositions, superimposed_chains, best_RMSD = superimposition(ref_structure, sample_structure, RMSD_threshold)
 
 	### There are no superimposed chains or RMSD is above the threshold --> Call again the recursive function ###
 	if superimposed_chains is False or best_RMSD > RMSD_threshold:		#if condition is met, there are no superimposed chains, or the RMSD is not small enough to be considered
