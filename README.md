@@ -231,7 +231,7 @@ The computation time is around 30-35 seconds and the RMDS between the reconstruc
 The fifth example corresponds to DNA Stretching in the Nucleosome, which facilitates alkylation by an intercalating antitumor agent. It is an Hetero 8-mer (stoichiometry: A2B2C2D2). Based on the input provided files, the following command will recover the complete complex:
 
 ```bash
-python3 macrocomplex_builder.py -i 6kuy -nc 10
+python3 macrocomplex_builder.py -i 3kuy -nc 10
 ```
 
 The computation time is around 1-3 seconds and the RMSD between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 41 files and 10 different chains. This example contains two DNA chains and it can reconstruct the complex correctly with 10 iterations. 
@@ -243,7 +243,22 @@ The computation time is around 1-3 seconds and the RMSD between the reconstructe
 
 ### Example 6, Virus Capsids
 
+This last example is to show that our program can build complexes of more than 62 chains and more of 99,999 atoms, above the limit of the PDB format, by means of the MMCIF format, a modification of the PDB format that was created so bigger complexes could be stored in a file. These two examples are virus capsids. The first, the `capsid_virus` example has 60 chains, however, they are quite big, and in total, the structure has around 400,000 atoms, more than the PDB format could take.
+
+These complexes take much more time to be built than the other ones, given their size and number of chains. The algorithm used has a linear cost, for every time a chain is added, the number of possible superimpositions increases by two units, having at the last iterations around ~400 possible superimpositions and having to calculate clashes between ~200 chains.
+
 ```bash
-python3 macrocomplex_builder.py -i 6kuy -nc 10
+python3 macrocomplex_builder.py -i capsid_virus -nc 60
 ```
+This other capsid, the `mosaic_virus` example has 180 chains and in order to build the complex, we have to be a little more flexible with the thresholds, allowing the common chain to have a maximum of 1 amstrong of RMSD and allowing a maximum of 70 clashes with other chains already present in the complex.
+
+```bash
+python3 macrocomplex_builder.py -i mosaic_virus -nc 180 -rmsd 1 -cl 70
+```
+
+If we take a look at the pictures, and if we opened the complexes with Chimera, we can see that the structure has the shape of a sphere, or even of an icosaedre, shapes of pentagons or hexagons could be seen on the display of the chains, which kind of confirms the legitimacy of the complex, for virus capsids are known to have those kind of shapes. We do not have the original structures, and even if we did, the superimposition would be too computational and time expensive.
+
+| <img src="Images/CAPSID_RIBBON.png" width="450" height="300"> | <img src="Images/MOSAIC_RIBBON.png" width="450" height="450"> |
+| :---: | :---: | :---: |
+| *Virus Capsid* | *Virus Mosaic* |
 
