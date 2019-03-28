@@ -258,7 +258,7 @@ python3 macrocomplex_builder.py -i mosaic_virus -nc 180 -rmsd 1 -cl 70
 
 If we take a look at the pictures, and if we opened the complexes with Chimera, we can see that the structure has the shape of a sphere, or even of an icosaedre, shapes of pentagons or hexagons could be seen on the display of the chains, which kind of confirms the legitimacy of the complex, for virus capsids are known to have those kind of shapes. We do not have the original structures, and even if we did, the superimposition would be too computational and time expensive.
 
-| <img src="Images/CAPSID_RIBBON.png" width="450" height="300"> | <img src="Images/MOSAIC_RIBBON.png" width="450" height="450"> |
+| <img src="Images/CAPSID_RIBBON.PNG" width="450" height="450"> | <img src="Images/MOSAIC_RIBBON.PNG" width="450" height="450"> |
 | :---: | :---: |
 | *Virus Capsid* | *Virus Mosaic* |
 
