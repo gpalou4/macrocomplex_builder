@@ -92,9 +92,9 @@ explicar:
 ## Algorithm
 
 This is a program that given a set of binary protein-protein or RNA/DNA-protein interactions, builds a macro-molecular complex by means of a recursive function. The algorithm of the program is quite straightforward and is the following.
-The input that is going to be passed onto the program consists of two **required** arguments: the input directory, `-i`, containing all the binary interaction PDB files which are going to be used to build the complex and the wanted number of chains for the target complex, i.e., the number of chains that the user wants the final complex to have. There are other arguments that allow the user to customize a bit the program execution by changing some of the parameters that the program needs to run. These are `-rmsd`, `-cl` and `-it`, which are the RMSD and clashes thresholds and the maximum number of iterations the program is going to run for if the desired number of chains is not reached. It also has the `-pi` flag that if present, will make the program save a PDB every time a chain is added to the complex and the `-v` flag that prints the progression log in the command line if present.
+The input that is going to be passed onto the program consists of two **required** arguments: the input directory, `-i`, containing all the binary interaction PDB files which are going to be used to build the complex and the wanted number of chains for the target complex, i.e., the number of chains that the user wants the final complex to have. There are other arguments that allow the user to customize a bit the program execution by changing some of the parameters that the program needs to run. These are `-rmsd` and `-cl`  which are the RMSD and clashes thresholds. It also has the `-pi` flag that if present, will make the program save a PDB/MMCIF every time a chain is added to the complex and the `-v` flag that prints the progression log in the command line if present.
 
-Once the program is executed, the recursive function will loop through the list of files present in the input directory and in each iteration, it will add a chain, resulting from the best superimposition of one of the two chains in the new file against one of the chains of the reference structure, which is the building complex. The program will finish running once the number of chains of the complex equals the one specified by the user in the `-nc` argument, or if this is not the case, after a certain amount of iterations, that can be changed with the `-it` argument.
+Once the program is executed, the recursive function will loop iteratively through the list of files present in the input directory and in each iteration, it will add a chain,if possible, resulting from the best superimposition of one of the two chains in the new file against one of the chains of the reference structure, which is the building complex. The program will finish running once the number of chains of the complex equals the one specified by the user in the `-nc` argument, or if this is not the case, after all the files have been processed once without adding any new chains to the complex.
 
 Every time the function is called it needs certain parameters in order for it to work, they are the following:
 * A reference structure, `ref_structure`, which is the building-complex structure, the first PDB file on the first iteration. Its number of chains keeps increasing as iterations take place.
@@ -156,6 +156,10 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
   - `-nc`, `--number_chains`: this argument is **required** and indicates the number of chains that the final complex must have.
   - `-rmsd`, `--rmsd_threshold`: this argument is **optional** and if set, the RMSD threshold will take its value. If not, it will take a value of 0.3 by default.
   - `-cl`, `--clashes_theshold`: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
+
+## Examples
+
+Here, we show you the commands necessary to run the script and build the following complexes by using the folders in the `examples` directory. Also, the output files that the script generates from these examples can be found in the `examples_output` folder. There is also a small explanation of the complexes, and a brief analysis of the time it takes ths script to run the example and the quality of the complex it builds.
 
 ### Example 1, 6EZM
 
@@ -259,7 +263,7 @@ python3 macrocomplex_builder.py -i mosaic_virus -nc 180 -rmsd 1 -cl 70
 
 If we take a look at the pictures, and if we opened the complexes with Chimera, we can see that the structure has the shape of a sphere, or even of an icosaedre, shapes of pentagons or hexagons could be seen on the display of the chains, which kind of confirms the legitimacy of the complex, for virus capsids are known to have those kind of shapes. We do not have the original structures, and even if we did, the superimposition would be too computational and time expensive.
 
-| <img src="Images/CAPSID_RIBBON.PNG" width="470" height="470"> | <img src="Images/MOSAIC_RIBBON.PNG" width="470" height="470"> |
+| <img src="Images/CAPSID_RIBBON.PNG" width="450" height="450"> | <img src="Images/MOSAIC_RIBBON.PNG" width="450" height="450"> |
 | :---: | :---: |
 | *Virus Capsid* | *Virus Mosaic* |
 
