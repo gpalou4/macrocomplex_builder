@@ -99,13 +99,14 @@ Once the program is executed, the recursive function will loop through the list 
 Every time the function is called it needs certain parameters in order for it to work, they are the following:
 * A reference structure, `ref_structure`, which is the building-complex structure, the first PDB file on the first iteration. Its number of chains keeps increasing as iterations take place.
 * A list containing all the input files, `files_list`. It does not change during the whole running time.
+* An integer to keep track of the iteration the recursive is currently in, `it`.
+* An integer to keep track of the files that have been processed and no chains have been added afer having processed it, `not_added`.
 * An `ArgumentParser` instance containing all the arguments, optional and required that are needed to run the program. This instance, `command_arguments` will contain the following arguments:
 	* The input directory, `indir`.
 	* The output directory, `outdir`.
 	* An RMSD threshold, `RMSD_threshold`, that will set the limit for superimpositions to be taken as correct. It does not change during the whole running time.
 	* A clashes threshold, `clashes_threshold`, that will be the maximum number of clashes that a chain can have with a reference structure in order to be considered as not present in the complex. It does not change during the whole running time.
 	* The number of chains that the complex must eventually have, `nc`.
-	* A counter to keep track of the iterations the recursive function has gone through, `iterations`. It is 0 on the first call, it increases in 1 on each iteration.
 	* A boolean, `False` by default, `pdb_iterations`, that indicates whether the user wants to save a PDB file every time a chain is added to the complex.
   
 In each iteration a file is going to be processed. First, a structure instance is going to be created from the file. Then, the `Superimposition` function is going to be called with a reference and a sample structure as parameters. This function does all the possible superimpositions between the two chains from the sample structure and all the chains from the reference one, only if the number of _CA_, for proteins, or _C4’_, for nucleic acids, atoms, obtained with the `Key_atom_retriever` function, is the same in both chains, and also if they are the same kind of molecule, i.e., DNA, RNA or PROTEIN. It returns a list of key, value tuples with a tuple of the reference and sample chains identifiers as key and the Superimposer instance of those two chains as value, which is sorted by the RMSD of the value, as well as a boolean that informs of whether a common chain between the reference and the sample structure has been found and the RMSD of the best superimposition.
@@ -113,7 +114,7 @@ In each iteration a file is going to be processed. First, a structure instance i
 If the boolean is false, i.e., no common chain between reference and sample structure has been found, or the smallest RMSD is greater than the threshold, the currently processed file is popped from the list and appended to the end of it, this way, it will be processed in a future iteration, 1 is added to the iteration counter and the function is called again.
 However, if there is a common chain and its RMSD with a given reference chain is less than the threshold, the program loops through the sorted list of tuples of Superimposer objects as values. If its RMSD is greater than the threshold, the loop will continue, going to the next entry of the sorted list of tuples. On the other hand, if the RMSD is good, the translation and rotation matrices of the Superimposer instance are applied to the key atoms, CA for proteins or C4’ for nucleic acids, of the putative chain to add, which is the one that is not the common chain with the reference structure, and with these new coordinates, the presence of clashes between the new coordinates of the putative chain to add atoms and the reference structure is checked. If the number of clashes is under the threshold, it keeps checking for the rest of reference chains. If none of the combinations of reference chains and putative chain to add has more clashes than the threshold, the program determines that the putative chain to add is not present in the complex and does not clash with any of the other chains already present in the complex, and therefore it is right to add it.
 
-On the contrary, it only takes one combination exceeding the threshold of clashes to cancel the addition of that rotated chain, for it will mean that it is already in the complex or collides with a given chain, and as a consequence, cannot be added to the complex. When this last scenario takes place, a boolean is generated and takes the value of `True`. This indicates that the chain is already present in the complex. If at the end of the loop through reference chains, this boolean is still true, it will mean that the chain is not present in the complex and will be added with a correct ID, that will be changed to another if there already exists another chain in the complex with the same ID. When the chain is successfully added to the reference structure, the loop through the dictionary is broken, for a chain has already been added from the file.
+On the contrary, it only takes one combination exceeding the threshold of clashes to cancel the addition of that rotated chain, for it will mean that it is already in the complex or collides with a given chain, and as a consequence, cannot be added to the complex. When this last scenario takes place, a boolean is generated and takes the value of `True`. This indicates that the chain is already present in the complex. If at the end of the loop through reference chains, this boolean is still true, it will mean that the chain is not present in the complex and will be added with a correct ID, that will be changed to another if there already exists another chain in the complex with the same ID. When the chain is successfully added to the reference structure, the recursive function is called again, and the counter of iterations increases by one and the one of files that have not added chains goes back to 0.
 
 After that, the file is popped and appended at the end of the list, the iteration counter increases by one and the function calls itself again. The function will end when the number of chains is reached or if that is not the case, when a certain number of iterations have taken place.
 
@@ -124,8 +125,8 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
 #### Key
 * chains: number of chains of the complex in this iteration.
 * nc: number of chains of the final complex provided by the user.
-* iter: number of the iteration that the program is currently in.
-* X: the maximum number of iterations the program will run for, 100 by default.
+* n: number of files that have been processed without adding any new chains to the complex.
+* files: number of files on the input directory.
 * chain in ref: loops through all chains in the reference structure.
 * chian in sample: loops through all chains in the sample structure.
 * sample_mol: molecular type of the sample chain, either RNA, DNA or PROTEIN.
@@ -135,26 +136,25 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
 * Common chain: boolean informing of whether a common chain has been found between the new file and the reference structure.
 * k, v in RMSDs: loops through the list of key, value tuples, having a tuple of reference chain ID and sample chain ID as key and a Superimposer instance as value.
 * RMSD: smallest RMSD of all the superimpositions carried out between sample and reference chains.
-* threshold<sup>1</sup>: RMSD threshold above which superimpositions will be discarded.
+* threshold<sub>1</sub>: RMSD threshold above which superimpositions will be discarded.
 * clashes: number of clashes between the putative chain to add and a reference chain.
-* threshold<sup>2</sup>: clashes threshold above which putative chains will be discarded.
+* threshold<sub>2</sub>: clashes threshold above which putative chains will be discarded.
 * Present chain: boolean informing of whether the putative chain to add is already found in the complex.
 
-<img src="Images/ALGORITHM.png" width="1000" height="1000">
+<img src="Images/ALGORITHM_2.png" width="1000" height="1000">
 
 ## Tutorial
 
 ### **Command-line arguments**
 
   - `-h`, `--help`: this flag will show the usage of the program as well as a description of what it does as well as an explanation of all the parameters it has and can modify or offer some information when executing the program.
-  - `-i`, `--input`: this argument is **required** can either be an absolute or relative path of the input folder containing all the binary-interaction PDB files that are going to be used to build the complex.
-  - `-o`, `--output`: this argument is **optional** and if set, all the output files will be saved in this folder. If not set, by default, the output files will be saved in a folder named: _input_foldername_output_.
+  - `-i`, `--indir`: this argument is **required** can either be an absolute or relative path of the input folder containing all the binary-interaction PDB files that are going to be used to build the complex.
+  - `-o`, `--outdir`: this argument is **optional** and if set, all the output files will be saved in this folder. If not set, by default, the output files will be saved in a folder named: _input_foldername_output_.
   - `-v`, `--verbose`: this argument is **optional** and will print the progression log in the standard error if set.
   - `-pi`, `--pdb_iterations`: this argument is **optional** and will save a new PDB file every time a chain is added to the complex if set.
   - `-nc`, `--number_chains`: this argument is **required** and indicates the number of chains that the final complex must have.
   - `-rmsd`, `--rmsd_threshold`: this argument is **optional** and if set, the RMSD threshold will take its value. If not, it will take a value of 0.3 by default.
   - `-cl`, `--clashes_theshold`: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
-  - `-it`, `--iterations`: this argument is **optional** and if set, the maximum number of iterations will run for, if the number of chains is not reached will take its value. If not set, it will take a value of 100 by default.
 
 ### Example 1, 6EZM
 
@@ -259,6 +259,6 @@ python3 macrocomplex_builder.py -i mosaic_virus -nc 180 -rmsd 1 -cl 70
 If we take a look at the pictures, and if we opened the complexes with Chimera, we can see that the structure has the shape of a sphere, or even of an icosaedre, shapes of pentagons or hexagons could be seen on the display of the chains, which kind of confirms the legitimacy of the complex, for virus capsids are known to have those kind of shapes. We do not have the original structures, and even if we did, the superimposition would be too computational and time expensive.
 
 | <img src="Images/CAPSID_RIBBON.png" width="450" height="300"> | <img src="Images/MOSAIC_RIBBON.png" width="450" height="450"> |
-| :---: | :---: | :---: |
+| :---: | :---: |
 | *Virus Capsid* | *Virus Mosaic* |
 
