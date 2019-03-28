@@ -68,6 +68,7 @@ The input files consist of pairs of interactions (protein-protein or RNA/DNA-pro
 
 - The program scales badly as a consequence of the exponential increase of the total comparisons that it has to make. However, for the most examples it lasts less than 30 seconds. 
 - The stoichiometry is not requested. Instead the program relies on the number of chains of the target complex given by the user
+- The two chains that are superimposed must be equal (same number of atoms and residues).
 - No GIU interface developed yet.
 - The maximum number of chains the target complex can have is 738.
 - Some examples do not work. For instance, the microtubule.
