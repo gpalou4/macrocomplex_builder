@@ -13,7 +13,7 @@
 - [Requirements](#requirements)
 - [Information](#information)
   - [Input files](#input-files)
-  - [Limitations](#Limitations)
+  - [Limitations](#limitations)
 - [Biological background](#background)
 - [Algorithm](#algorithm)
 - [Tutorial](#tutorial)
@@ -50,9 +50,26 @@ The package can be downloaded using Git:
 
 The following versions of packages/modules must be installed in order to run our program properly:
 
-- [Python 3.6.7]
+- Python v3.6.7
+  - Sys
+  - Os
+  - Timeit
+- Biopython v1.73
+- Argparse v1.1
+- Logging v0.5.1.2
+- Re v2.2.1
 
+## Information
+### Input files
 
+The input files consist of pairs of interactions (protein-protein or RNA/DNA-protein) in PDB format. All of them must be provided in the same input directory and it is not necessary to provide at least one chain of each type.
+
+### Limitations
+
+- The program scales badly as a consequence of the exponential increase of the total comparisons that it has to make. However, for the most examples it lasts less than 30 seconds. 
+- The stoichiometry is not requested. Instead the program relies on the number of chains of the target complex given by the user
+- No GIU interface developed yet.
+- The maximum number of chains the target complex can have is 738.
 
 ## Algorithm
 
