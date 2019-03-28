@@ -1,0 +1,990 @@
+DEBUG:...STARTING...
+INFO:Parameters used are:
+  - Number of chains: 36
+  - RMSD threshold: 0.3000
+  - Clashes threshold 30
+INFO:The initial complex has 2 chains and are the following:
+INFO:Chain u
+INFO:Chain y
+INFO:This is the iteration #0 of the recursive function
+INFO:The complex has 2 chains at this point
+INFO:We are processing the file uy.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain u
+INFO:The RMSD between chain u of the reference and chain u of the sample is 0.000000
+INFO:Processing sample chain y
+INFO:The RMSD between chain u of the reference and chain y of the sample is 0.000575
+INFO:Processing reference chain y
+INFO:Processing sample chain u
+INFO:The RMSD between chain y of the reference and chain u of the sample is 0.000575
+INFO:Processing sample chain y
+INFO:The RMSD between chain y of the reference and chain y of the sample is 0.000000
+INFO:The combination of chains with the lowest RMSD is ref chain u and sample chain u with an RMSD of 0.000000
+INFO:We are processing the superimposition of ref chain u with sample chain u with an RMSD of 0.000000
+INFO:Putative chain to add is y
+INFO:The number of clashes between the chain to add y and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain y with sample chain y with an RMSD of 0.000000
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain u with sample chain y with an RMSD of 0.000575
+INFO:Putative chain to add is y
+INFO:The number of clashes between the chain to add y and reference chain u is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain y with sample chain u with an RMSD of 0.000575
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 1572, therefore the chain is the same and it is skipped
+INFO:This is the iteration #1 of the recursive function
+INFO:The complex has 2 chains at this point
+INFO:We are processing the file vz.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain y
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:This is the iteration #2 of the recursive function
+INFO:The complex has 2 chains at this point
+INFO:We are processing the file xX.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain X
+INFO:The RMSD between chain u of the reference and chain X of the sample is 0.000576
+INFO:Processing sample chain x
+INFO:Processing reference chain y
+INFO:Processing sample chain X
+INFO:The RMSD between chain y of the reference and chain X of the sample is 0.000560
+INFO:Processing sample chain x
+INFO:The combination of chains with the lowest RMSD is ref chain y and sample chain X with an RMSD of 0.000560
+INFO:We are processing the superimposition of ref chain y with sample chain X with an RMSD of 0.000560
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain u with sample chain X with an RMSD of 0.000576
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:Chain u superimposed with chain X yields rotated chain X which is not in the complex
+INFO:Added Chain X
+INFO:This is the iteration #3 of the recursive function
+INFO:The complex has 3 chains at this point
+INFO:We are processing the file zw.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain w
+INFO:The RMSD between chain u of the reference and chain w of the sample is 0.000575
+INFO:Processing sample chain z
+INFO:Processing reference chain y
+INFO:Processing sample chain w
+INFO:The RMSD between chain y of the reference and chain w of the sample is 0.000009
+INFO:Processing sample chain z
+INFO:Processing reference chain X
+INFO:Processing sample chain w
+INFO:The RMSD between chain X of the reference and chain w of the sample is 0.000562
+INFO:Processing sample chain z
+INFO:The combination of chains with the lowest RMSD is ref chain y and sample chain w with an RMSD of 0.000009
+INFO:We are processing the superimposition of ref chain y with sample chain w with an RMSD of 0.000009
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain X with sample chain w with an RMSD of 0.000562
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:Chain X superimposed with chain w yields rotated chain w which is not in the complex
+INFO:Added Chain w
+INFO:This is the iteration #4 of the recursive function
+INFO:The complex has 4 chains at this point
+INFO:We are processing the file uy.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain u
+INFO:The RMSD between chain u of the reference and chain u of the sample is 0.000000
+INFO:Processing sample chain y
+INFO:The RMSD between chain u of the reference and chain y of the sample is 0.000575
+INFO:Processing reference chain y
+INFO:Processing sample chain u
+INFO:The RMSD between chain y of the reference and chain u of the sample is 0.000575
+INFO:Processing sample chain y
+INFO:The RMSD between chain y of the reference and chain y of the sample is 0.000000
+INFO:Processing reference chain X
+INFO:Processing sample chain u
+INFO:The RMSD between chain X of the reference and chain u of the sample is 0.000577
+INFO:Processing sample chain y
+INFO:The RMSD between chain X of the reference and chain y of the sample is 0.000562
+INFO:Processing reference chain w
+INFO:Processing sample chain u
+INFO:The RMSD between chain w of the reference and chain u of the sample is 0.000575
+INFO:Processing sample chain y
+INFO:The RMSD between chain w of the reference and chain y of the sample is 0.000035
+INFO:The combination of chains with the lowest RMSD is ref chain u and sample chain u with an RMSD of 0.000000
+INFO:We are processing the superimposition of ref chain u with sample chain u with an RMSD of 0.000000
+INFO:Putative chain to add is y
+INFO:The number of clashes between the chain to add y and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain y with sample chain y with an RMSD of 0.000000
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain w with sample chain y with an RMSD of 0.000035
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:Chain w superimposed with chain y yields rotated chain u which is not in the complex
+INFO:Added Chain A
+INFO:This is the iteration #5 of the recursive function
+INFO:The complex has 5 chains at this point
+INFO:We are processing the file vz.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain y
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain X
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain w
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain A
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:This is the iteration #6 of the recursive function
+INFO:The complex has 5 chains at this point
+INFO:We are processing the file xX.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain X
+INFO:The RMSD between chain u of the reference and chain X of the sample is 0.000576
+INFO:Processing sample chain x
+INFO:Processing reference chain y
+INFO:Processing sample chain X
+INFO:The RMSD between chain y of the reference and chain X of the sample is 0.000560
+INFO:Processing sample chain x
+INFO:Processing reference chain X
+INFO:Processing sample chain X
+INFO:The RMSD between chain X of the reference and chain X of the sample is 0.000038
+INFO:Processing sample chain x
+INFO:Processing reference chain w
+INFO:Processing sample chain X
+INFO:The RMSD between chain w of the reference and chain X of the sample is 0.000561
+INFO:Processing sample chain x
+INFO:Processing reference chain A
+INFO:Processing sample chain X
+INFO:The RMSD between chain A of the reference and chain X of the sample is 0.000577
+INFO:Processing sample chain x
+INFO:The combination of chains with the lowest RMSD is ref chain X and sample chain X with an RMSD of 0.000038
+INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000038
+INFO:Putative chain to add is x
+INFO:The number of clashes between the chain to add x and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain A is 0, it is under the threshold
+INFO:Chain X superimposed with chain X yields rotated chain x which is not in the complex
+INFO:Added Chain x
+INFO:This is the iteration #7 of the recursive function
+INFO:The complex has 6 chains at this point
+INFO:We are processing the file zw.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain w
+INFO:The RMSD between chain u of the reference and chain w of the sample is 0.000575
+INFO:Processing sample chain z
+INFO:Processing reference chain y
+INFO:Processing sample chain w
+INFO:The RMSD between chain y of the reference and chain w of the sample is 0.000009
+INFO:Processing sample chain z
+INFO:Processing reference chain X
+INFO:Processing sample chain w
+INFO:The RMSD between chain X of the reference and chain w of the sample is 0.000562
+INFO:Processing sample chain z
+INFO:Processing reference chain w
+INFO:Processing sample chain w
+INFO:The RMSD between chain w of the reference and chain w of the sample is 0.000034
+INFO:Processing sample chain z
+INFO:Processing reference chain A
+INFO:Processing sample chain w
+INFO:The RMSD between chain A of the reference and chain w of the sample is 0.000574
+INFO:Processing sample chain z
+INFO:Processing reference chain x
+INFO:Processing sample chain w
+INFO:Processing sample chain z
+INFO:The RMSD between chain x of the reference and chain z of the sample is 0.000025
+INFO:The combination of chains with the lowest RMSD is ref chain y and sample chain w with an RMSD of 0.000009
+INFO:We are processing the superimposition of ref chain y with sample chain w with an RMSD of 0.000009
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain x with sample chain z with an RMSD of 0.000025
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain A is 13, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain x is 7, it is under the threshold
+INFO:Chain x superimposed with chain z yields rotated chain w which is not in the complex
+INFO:Added Chain B
+INFO:This is the iteration #8 of the recursive function
+INFO:The complex has 7 chains at this point
+INFO:We are processing the file uy.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain u
+INFO:The RMSD between chain u of the reference and chain u of the sample is 0.000000
+INFO:Processing sample chain y
+INFO:The RMSD between chain u of the reference and chain y of the sample is 0.000575
+INFO:Processing reference chain y
+INFO:Processing sample chain u
+INFO:The RMSD between chain y of the reference and chain u of the sample is 0.000575
+INFO:Processing sample chain y
+INFO:The RMSD between chain y of the reference and chain y of the sample is 0.000000
+INFO:Processing reference chain X
+INFO:Processing sample chain u
+INFO:The RMSD between chain X of the reference and chain u of the sample is 0.000577
+INFO:Processing sample chain y
+INFO:The RMSD between chain X of the reference and chain y of the sample is 0.000562
+INFO:Processing reference chain w
+INFO:Processing sample chain u
+INFO:The RMSD between chain w of the reference and chain u of the sample is 0.000575
+INFO:Processing sample chain y
+INFO:The RMSD between chain w of the reference and chain y of the sample is 0.000035
+INFO:Processing reference chain A
+INFO:Processing sample chain u
+INFO:The RMSD between chain A of the reference and chain u of the sample is 0.000034
+INFO:Processing sample chain y
+INFO:The RMSD between chain A of the reference and chain y of the sample is 0.000574
+INFO:Processing reference chain x
+INFO:Processing sample chain u
+INFO:Processing sample chain y
+INFO:Processing reference chain B
+INFO:Processing sample chain u
+INFO:The RMSD between chain B of the reference and chain u of the sample is 0.000576
+INFO:Processing sample chain y
+INFO:The RMSD between chain B of the reference and chain y of the sample is 0.000035
+INFO:The combination of chains with the lowest RMSD is ref chain u and sample chain u with an RMSD of 0.000000
+INFO:We are processing the superimposition of ref chain u with sample chain u with an RMSD of 0.000000
+INFO:Putative chain to add is y
+INFO:The number of clashes between the chain to add y and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain y with sample chain y with an RMSD of 0.000000
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain A with sample chain u with an RMSD of 0.000034
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain B with sample chain y with an RMSD of 0.000035
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain w with sample chain y with an RMSD of 0.000035
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain X with sample chain y with an RMSD of 0.000562
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain A with sample chain y with an RMSD of 0.000574
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain u with sample chain y with an RMSD of 0.000575
+INFO:Putative chain to add is y
+INFO:The number of clashes between the chain to add y and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain y with sample chain u with an RMSD of 0.000575
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain w with sample chain u with an RMSD of 0.000575
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain B with sample chain u with an RMSD of 0.000576
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain X with sample chain u with an RMSD of 0.000577
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:This is the iteration #9 of the recursive function
+INFO:The complex has 7 chains at this point
+INFO:We are processing the file vz.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain y
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain X
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain w
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain A
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain x
+INFO:Processing sample chain v
+INFO:The RMSD between chain x of the reference and chain v of the sample is 0.000603
+INFO:Processing sample chain z
+INFO:The RMSD between chain x of the reference and chain z of the sample is 0.000025
+INFO:Processing reference chain B
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:The combination of chains with the lowest RMSD is ref chain x and sample chain z with an RMSD of 0.000025
+INFO:We are processing the superimposition of ref chain x with sample chain z with an RMSD of 0.000025
+INFO:Putative chain to add is v
+INFO:The number of clashes between the chain to add v and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain x is 2, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain B is 0, it is under the threshold
+INFO:Chain x superimposed with chain z yields rotated chain v which is not in the complex
+INFO:Added Chain v
+INFO:This is the iteration #10 of the recursive function
+INFO:The complex has 8 chains at this point
+INFO:We are processing the file xX.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain X
+INFO:The RMSD between chain u of the reference and chain X of the sample is 0.000576
+INFO:Processing sample chain x
+INFO:Processing reference chain y
+INFO:Processing sample chain X
+INFO:The RMSD between chain y of the reference and chain X of the sample is 0.000560
+INFO:Processing sample chain x
+INFO:Processing reference chain X
+INFO:Processing sample chain X
+INFO:The RMSD between chain X of the reference and chain X of the sample is 0.000038
+INFO:Processing sample chain x
+INFO:Processing reference chain w
+INFO:Processing sample chain X
+INFO:The RMSD between chain w of the reference and chain X of the sample is 0.000561
+INFO:Processing sample chain x
+INFO:Processing reference chain A
+INFO:Processing sample chain X
+INFO:The RMSD between chain A of the reference and chain X of the sample is 0.000577
+INFO:Processing sample chain x
+INFO:Processing reference chain x
+INFO:Processing sample chain X
+INFO:Processing sample chain x
+INFO:The RMSD between chain x of the reference and chain x of the sample is 0.000025
+INFO:Processing reference chain B
+INFO:Processing sample chain X
+INFO:The RMSD between chain B of the reference and chain X of the sample is 0.000562
+INFO:Processing sample chain x
+INFO:Processing reference chain v
+INFO:Processing sample chain X
+INFO:Processing sample chain x
+INFO:The RMSD between chain v of the reference and chain x of the sample is 0.000606
+INFO:The combination of chains with the lowest RMSD is ref chain x and sample chain x with an RMSD of 0.000025
+INFO:We are processing the superimposition of ref chain x with sample chain x with an RMSD of 0.000025
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000038
+INFO:Putative chain to add is x
+INFO:The number of clashes between the chain to add x and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain y with sample chain X with an RMSD of 0.000560
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain w with sample chain X with an RMSD of 0.000561
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain B with sample chain X with an RMSD of 0.000562
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain u with sample chain X with an RMSD of 0.000576
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain A with sample chain X with an RMSD of 0.000577
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain v with sample chain x with an RMSD of 0.000606
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:This is the iteration #11 of the recursive function
+INFO:The complex has 8 chains at this point
+INFO:We are processing the file zw.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain w
+INFO:The RMSD between chain u of the reference and chain w of the sample is 0.000575
+INFO:Processing sample chain z
+INFO:Processing reference chain y
+INFO:Processing sample chain w
+INFO:The RMSD between chain y of the reference and chain w of the sample is 0.000009
+INFO:Processing sample chain z
+INFO:Processing reference chain X
+INFO:Processing sample chain w
+INFO:The RMSD between chain X of the reference and chain w of the sample is 0.000562
+INFO:Processing sample chain z
+INFO:Processing reference chain w
+INFO:Processing sample chain w
+INFO:The RMSD between chain w of the reference and chain w of the sample is 0.000034
+INFO:Processing sample chain z
+INFO:Processing reference chain A
+INFO:Processing sample chain w
+INFO:The RMSD between chain A of the reference and chain w of the sample is 0.000574
+INFO:Processing sample chain z
+INFO:Processing reference chain x
+INFO:Processing sample chain w
+INFO:Processing sample chain z
+INFO:The RMSD between chain x of the reference and chain z of the sample is 0.000025
+INFO:Processing reference chain B
+INFO:Processing sample chain w
+INFO:The RMSD between chain B of the reference and chain w of the sample is 0.000034
+INFO:Processing sample chain z
+INFO:Processing reference chain v
+INFO:Processing sample chain w
+INFO:Processing sample chain z
+INFO:The RMSD between chain v of the reference and chain z of the sample is 0.000606
+INFO:The combination of chains with the lowest RMSD is ref chain y and sample chain w with an RMSD of 0.000009
+INFO:We are processing the superimposition of ref chain y with sample chain w with an RMSD of 0.000009
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain x with sample chain z with an RMSD of 0.000025
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain A is 13, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain x is 7, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain B is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain B with sample chain w with an RMSD of 0.000034
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain w with sample chain w with an RMSD of 0.000034
+INFO:Putative chain to add is z
+INFO:The number of clashes between the chain to add z and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain X with sample chain w with an RMSD of 0.000562
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain A with sample chain w with an RMSD of 0.000574
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain u with sample chain w with an RMSD of 0.000575
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain v with sample chain z with an RMSD of 0.000606
+INFO:Putative chain to add is w
+INFO:The number of clashes between the chain to add w and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add w and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:This is the iteration #12 of the recursive function
+INFO:The complex has 8 chains at this point
+INFO:We are processing the file uy.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain u
+INFO:The RMSD between chain u of the reference and chain u of the sample is 0.000000
+INFO:Processing sample chain y
+INFO:The RMSD between chain u of the reference and chain y of the sample is 0.000575
+INFO:Processing reference chain y
+INFO:Processing sample chain u
+INFO:The RMSD between chain y of the reference and chain u of the sample is 0.000575
+INFO:Processing sample chain y
+INFO:The RMSD between chain y of the reference and chain y of the sample is 0.000000
+INFO:Processing reference chain X
+INFO:Processing sample chain u
+INFO:The RMSD between chain X of the reference and chain u of the sample is 0.000577
+INFO:Processing sample chain y
+INFO:The RMSD between chain X of the reference and chain y of the sample is 0.000562
+INFO:Processing reference chain w
+INFO:Processing sample chain u
+INFO:The RMSD between chain w of the reference and chain u of the sample is 0.000575
+INFO:Processing sample chain y
+INFO:The RMSD between chain w of the reference and chain y of the sample is 0.000035
+INFO:Processing reference chain A
+INFO:Processing sample chain u
+INFO:The RMSD between chain A of the reference and chain u of the sample is 0.000034
+INFO:Processing sample chain y
+INFO:The RMSD between chain A of the reference and chain y of the sample is 0.000574
+INFO:Processing reference chain x
+INFO:Processing sample chain u
+INFO:Processing sample chain y
+INFO:Processing reference chain B
+INFO:Processing sample chain u
+INFO:The RMSD between chain B of the reference and chain u of the sample is 0.000576
+INFO:Processing sample chain y
+INFO:The RMSD between chain B of the reference and chain y of the sample is 0.000035
+INFO:Processing reference chain v
+INFO:Processing sample chain u
+INFO:Processing sample chain y
+INFO:The combination of chains with the lowest RMSD is ref chain u and sample chain u with an RMSD of 0.000000
+INFO:We are processing the superimposition of ref chain u with sample chain u with an RMSD of 0.000000
+INFO:Putative chain to add is y
+INFO:The number of clashes between the chain to add y and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain y is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain y with sample chain y with an RMSD of 0.000000
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain A with sample chain u with an RMSD of 0.000034
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain B with sample chain y with an RMSD of 0.000035
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain w with sample chain y with an RMSD of 0.000035
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain X with sample chain y with an RMSD of 0.000562
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain A with sample chain y with an RMSD of 0.000574
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain u with sample chain y with an RMSD of 0.000575
+INFO:Putative chain to add is y
+INFO:The number of clashes between the chain to add y and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add y and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain y with sample chain u with an RMSD of 0.000575
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain w with sample chain u with an RMSD of 0.000575
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain B with sample chain u with an RMSD of 0.000576
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain X with sample chain u with an RMSD of 0.000577
+INFO:Putative chain to add is u
+INFO:The number of clashes between the chain to add u and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add u and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:This is the iteration #13 of the recursive function
+INFO:The complex has 8 chains at this point
+INFO:We are processing the file vz.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain y
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain X
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain w
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain A
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain x
+INFO:Processing sample chain v
+INFO:The RMSD between chain x of the reference and chain v of the sample is 0.000603
+INFO:Processing sample chain z
+INFO:The RMSD between chain x of the reference and chain z of the sample is 0.000025
+INFO:Processing reference chain B
+INFO:Processing sample chain v
+INFO:Processing sample chain z
+INFO:Processing reference chain v
+INFO:Processing sample chain v
+INFO:The RMSD between chain v of the reference and chain v of the sample is 0.000032
+INFO:Processing sample chain z
+INFO:The RMSD between chain v of the reference and chain z of the sample is 0.000606
+INFO:The combination of chains with the lowest RMSD is ref chain x and sample chain z with an RMSD of 0.000025
+INFO:We are processing the superimposition of ref chain x with sample chain z with an RMSD of 0.000025
+INFO:Putative chain to add is v
+INFO:The number of clashes between the chain to add v and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain x is 2, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain v is 1592, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain v with sample chain v with an RMSD of 0.000032
+INFO:Putative chain to add is z
+INFO:The number of clashes between the chain to add z and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain x with sample chain v with an RMSD of 0.000603
+INFO:Putative chain to add is v
+INFO:The number of clashes between the chain to add v and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add v and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain v with sample chain z with an RMSD of 0.000606
+INFO:Putative chain to add is z
+INFO:The number of clashes between the chain to add z and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add z and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:This is the iteration #14 of the recursive function
+INFO:The complex has 8 chains at this point
+INFO:We are processing the file xX.pdb
+INFO:Processing reference chain u
+INFO:Processing sample chain X
+INFO:The RMSD between chain u of the reference and chain X of the sample is 0.000576
+INFO:Processing sample chain x
+INFO:Processing reference chain y
+INFO:Processing sample chain X
+INFO:The RMSD between chain y of the reference and chain X of the sample is 0.000560
+INFO:Processing sample chain x
+INFO:Processing reference chain X
+INFO:Processing sample chain X
+INFO:The RMSD between chain X of the reference and chain X of the sample is 0.000038
+INFO:Processing sample chain x
+INFO:Processing reference chain w
+INFO:Processing sample chain X
+INFO:The RMSD between chain w of the reference and chain X of the sample is 0.000561
+INFO:Processing sample chain x
+INFO:Processing reference chain A
+INFO:Processing sample chain X
+INFO:The RMSD between chain A of the reference and chain X of the sample is 0.000577
+INFO:Processing sample chain x
+INFO:Processing reference chain x
+INFO:Processing sample chain X
+INFO:Processing sample chain x
+INFO:The RMSD between chain x of the reference and chain x of the sample is 0.000025
+INFO:Processing reference chain B
+INFO:Processing sample chain X
+INFO:The RMSD between chain B of the reference and chain X of the sample is 0.000562
+INFO:Processing sample chain x
+INFO:Processing reference chain v
+INFO:Processing sample chain X
+INFO:Processing sample chain x
+INFO:The RMSD between chain v of the reference and chain x of the sample is 0.000606
+INFO:The combination of chains with the lowest RMSD is ref chain x and sample chain x with an RMSD of 0.000025
+INFO:We are processing the superimposition of ref chain x with sample chain x with an RMSD of 0.000025
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 1572, therefore the chain is the same and it is skipped
+INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000038
+INFO:Putative chain to add is x
+INFO:The number of clashes between the chain to add x and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add x and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain y with sample chain X with an RMSD of 0.000560
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain w with sample chain X with an RMSD of 0.000561
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain B with sample chain X with an RMSD of 0.000562
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain u with sample chain X with an RMSD of 0.000576
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain A with sample chain X with an RMSD of 0.000577
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:We are processing the superimposition of ref chain v with sample chain x with an RMSD of 0.000606
+INFO:Putative chain to add is X
+INFO:The number of clashes between the chain to add X and reference chain u is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain y is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain X is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain w is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain x is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain B is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and reference chain v is 0, it is under the threshold
+INFO:The number of clashes between the chain to add X and rhe reference structure is 0, therefore the chain is too far away and is not added
+INFO:This is the iteration #15 of the recursive function
+INFO:The complex has 8 chains at this point
+INFO:The whole macrocomplex has been build
+INFO:The final complex has 8 chains, not 36, as requested
+INFO:We have arrived to iteration 15
+INFO:Output files macrocomplex.pdb and macrocomplex.log saved in D:\Documents\BIM\2Q\PYT\PROJECT\macrocomplex_builder\examples\microtubul_out3
+INFO:The program has finished running! It took 13.247914 seconds

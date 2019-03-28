@@ -132,18 +132,19 @@ for ID in [chain.get_id() for chain in ref_structure[0].get_chains()]:		#loops t
 	logging.info("Chain %s", ID)		#prints the ID
 
 # Calling the RECURSIVE FUNCTION for the first time. See DOC for its parameters #
-MacrocomplexBuilder(ref_structure = ref_structure, files_list = files, it = 0, not_added = 0, command_arguments = arguments)	#calling the iterative function
+ref_structure = MacrocomplexBuilder(ref_structure = ref_structure, files_list = files, it = 0, not_added = 0, command_arguments = arguments)	#calling the iterative function
 
 ### MACROCOMPLEX BUILDING PROCESS FINISHED ###
-if len(list(ref_structure[0].get_atoms())) > 99999:
-	io = Bio.PDB.MMCIFIO()		#Creates the PDBIO object, which writes a structure object as a PDB file
-	io.set_structure(ref_structure[0])		#Sets the reference structure object to be written in a PDB file
-	io.save("macrocomplex.cif")	
-else: 
-	io = Bio.PDB.PDBIO()
-	io.set_structure(ref_structure[0])		#Sets the reference structure object to be written in a PDB file
-	io.save("macrocomplex.pdb")	
-	#the whole macrocomplex gets saved in "macrocomplex.pdb"
+if len(list(ref_structure[0].get_atoms())) > 99999 or len(list(ref_structure[0].get_chains())) > 62:		#checks that the structure has has less atoms than the maximum for a PDB, 99,999
+	io = Bio.PDB.MMCIFIO()								#creates the MMCIFIO object, that can contain more than 99,999 atom coordinates
+	io.set_structure(ref_structure[0])					#sets the reference structure object to be written in a MMCIF file
+	io.save("macrocomplex.cif")							#saves the file in output directory
+	logging.info("Output files %s saved in %s" %("macrocomplex.cif and macrocomplex.log",os.path.abspath(arguments.outdir)))
+else: 													#checks that the structure has more than 99,999 atoms
+	io = Bio.PDB.PDBIO()								#creates the PDBIO object
+	io.set_structure(ref_structure[0])					#sets the reference structure object to be written in a PDB file
+	io.save("macrocomplex.pdb")							#the whole macrocomplex gets saved in "macrocomplex.pdb"
+	logging.info("Output files %s saved in %s" %("macrocomplex.pdb and macrocomplex.log",os.path.abspath(arguments.outdir)))
+	
 stop = timeit.default_timer()
 logging.info("The program has finished running! It took %f seconds" % (stop - start))
-logging.info("Output files %s saved in %s" %("macrocomplex.pdb and macrocomplex.log",os.path.abspath(arguments.outdir)))

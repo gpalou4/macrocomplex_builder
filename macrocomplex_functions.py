@@ -46,16 +46,30 @@ def Key_atom_retriever(chain):
 			atoms.append(res['C4\''])	#append C4' atoms to the list of atoms
 	return(atoms, molecule)		# Return all key atoms list and the type of molecule to which they belong
 
-def ID_creator(IDs):
+def ID_creator(IDs, ID):
 	"""This function creates IDs"""
-	alphabet = list(string.ascii_uppercase)
-	for char1 in alphabet:
-		for char2 in alphabet:
-			ID = char1+char2
-			if ID not in IDs:
-				return ID
-			else:
-				continue
+	UP = list(string.ascii_uppercase)	
+	LOW = list(string.ascii_lowercase)
+	DIG = list(string.digits)
+	alphabet = UP + LOW + DIG		#creates an alphabet containing all the possible characters that can be used as chain IDs
+
+	if len(IDs) < 62:
+		if ID not in IDs:
+			return ID
+		if ID in IDs:
+			for i in range(0, len(alphabet)):
+				if alphabet[i] not in IDs:
+					return alphabet[i]
+				else:
+					continue
+	elif len(IDs) >= 62:
+		for char1 in alphabet:
+			for char2 in alphabet:
+				ID = char1 + char2
+				if ID not in IDs:
+					return ID
+				else:
+					continue
 
 def superimposition(ref_structure, sample_structure, rmsd_threshold):
 	"""This function, given a reference and a sample structure does the superimposition of every combination of pairs of chains and calculates the RMSD.
@@ -105,6 +119,7 @@ def superimposition(ref_structure, sample_structure, rmsd_threshold):
 				super_imposer.set_atoms(ref_atoms, sample_atoms)	#creates ROTATION and TRANSLATION matrices from lists of atoms to align
 				RMSD = super_imposer.rms 							#retrieves RMSD
 				if RMSD > rmsd_threshold:
+					logging.info("The RMSD between chain %s of the reference and chain %s of the sample is %f", ref_chain.id, sample_chain.id, RMSD)
 					continue
 				if prev_RMSD is True or RMSD < prev_RMSD:			#checks that the RMSD of this combination is smaller than the previous one
 					best_sample_chain_ID = sample_chain.id 		
@@ -160,7 +175,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 
 	### Saving arguments passed on to the function ###
 	i = it 															#number of iterations
-	n = not_added
+	n = not_added													#number of files that have been parsed but no chain has been added
 	nc = command_arguments.number_chains							#number of chains		
 	clashes_threshold = command_arguments.clashes 					#clashes threshold
 	RMSD_threshold = command_arguments.rmsd_threshold 				#RMSD threshold
@@ -223,9 +238,11 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 			sample_atoms, sample_molecule = Key_atom_retriever(chain_to_add)		#retrieves all key atoms (CA or C4') and molecule type of chain_to_add
 			logging.info("Putative chain to add is %s" % chain_to_add.id)
 			## Loops through all the chains from the reference structure ##
+			all_atoms = []
 			for chain in ref_structure[0].get_chains():					
 				ref_atoms, ref_molecule = Key_atom_retriever(chain)		#retrieves all key atoms (CA or C4') and molecule type of the reference present chain
 				## Makes a Neighbor Search to look for clashes between the chain to add and the chains from the reference structure ##
+				all_atoms.extend(ref_atoms)
 				Neighbor = Bio.PDB.NeighborSearch(ref_atoms)			#creates an instance of class NeighborSearch, given a list of reference atoms 
 				clashes = []		#declares a list that will contain all the atoms that clash between the reference and sample chains
 				for atom in sample_atoms:								#loops through the list of atoms of chain_to_add
@@ -240,29 +257,30 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 				elif len(clashes) <= clashes_threshold:		
 					logging.info("The number of clashes between the chain to add %s and reference chain %s is %d, it is under the threshold" % (chain_to_add.id, chain.id,len(clashes)))
 					continue								#continue the loops, as we must ensure that chain_to_add does not clash with ANY reference chain
+			#Neighbor2 = Bio.PDB.NeighborSearch(all_atoms)
+			#clashes2 = []
+			#for atom2 in sample_atoms:								#loops through the list of atoms of chain_to_add
+			#	atoms_clashed2 = Neighbor2.search(atom.coord, 65)		#produces a Neighbor search that returns all atoms/residues/chains/models/structures that have at least one atom within radius of center. 
+			#	if len(atoms_clashed2) > 0:				#if there are clashes
+			#		clashes2.extend(atoms_clashed2)		#adds the atoms list to the list of clashes
+			#if len(clashes2) > 100:		#checks that the number of total clashes is above the threshold
+			#	logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is NOT too far away and is added" % (chain_to_add.id,len(clashes2)))
+				#logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is too far away and is not added" % (chain_to_add.id,len(clashes2)))
+				#continue
+			#elif len(clashes2) < 100:		#checks that the number of total clashes is above the threshold
+			#	present_chain = True					#then, chain_to_add is considered a chain already present in the complex
+			#	logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is too far away and is not added" % (chain_to_add.id,len(clashes2)))
+				#logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is too far away and is not added" % (chain_to_add.id,len(clashes2)))
+			#	continue 	
 			## Rotated chain to add is not a chain already in the building macrocomplex structure, then adds it, with its original ID or with a new one ##
 			if present_chain is False:						
 				logging.info("Chain %s superimposed with chain %s yields rotated chain %s which is not in the complex" %(chains[0],chains[1],chain_to_add.id))
 				chain_ids = [chain.id for chain in ref_structure[0].get_chains()]	#list containing IDs of all chains present in reference structure
-				if len(chain_ids) < 62:
-					if chain_to_add.id not in chain_ids:		#checks whether the chain to add ID is in chain_ids
-						ref_structure[0].add(chain_to_add)		#adds chain_to_add to the building macrocomplex structure
-						logging.info("Added Chain %s" % chain_to_add.id)
-						print("Added Chain %s" % chain_to_add.id)
-					elif chain_to_add.id in chain_ids:			#chain_to_add ID is present on chain_ids
-						for i in range(0,len(alphabet)):		#loops through the previous generated alphabet
-							if alphabet[i] not in chain_ids:	#looks for a letter not used as an ID in the reference structure
-								chain_to_add.id = alphabet[i]		#reassigns chain_to_add ID to a new ID with that letter
-								ref_structure[0].add(chain_to_add)	#adds chain_to_add to the building macrocomplex structure
-								logging.info("Added Chain %s" % chain_to_add.id)
-								print("Added Chain %s" % chain_to_add.id)
-								break
-				elif len(chain_ids) >= 62:
-					chain_to_add.id = ID_creator(chain_ids)
-					ref_structure[0].add(chain_to_add)	#adds chain_to_add to the building macrocomplex structure
-					logging.info("Added Chain %s" % chain_to_add.id)
-					print("Added Chain %s" % chain_to_add.id)
-					#break
+				ID = ID_creator(chain_ids, chain_to_add.id)
+				chain_to_add.id = ID
+				ref_structure[0].add(chain_to_add)	#adds chain_to_add to the building macrocomplex structure
+				logging.info("Added Chain %s" % ID)
+				print("Added Chain %s" % ID)
 				## Checks whether the user provided the iterations argument, then save each iteration of the current complex in a PDB file ##
 				if pdb_iterations:		
 					io = Bio.PDB.MMCIFIO()							#creates a PDBIO instance
