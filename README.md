@@ -14,7 +14,7 @@
 - [Information](#information)
   - [Input files](#input-files)
   - [Limitations](#limitations)
-- [Biological background](#background)
+- [Biological background](#biological-background)
 - [Algorithm](#algorithm)
 - [Tutorial](#tutorial)
   - [Command-line arguments](#command-line-arguments)
