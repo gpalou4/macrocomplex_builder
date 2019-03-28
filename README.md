@@ -74,7 +74,8 @@ The input files consist of pairs of interactions (protein-protein or RNA/DNA-pro
 
 ## Biological background
 
-
+The extended use of experimental techniques such as x-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy has led to the determination of a lot of individual protein structures, or their domains, successfully. Although this information is very valuable, increasing evidence suggests that proteins do not work as individual entities but in complex with other macromolecules. Some examples are the nucleosome, the spliceosome, the proteasome and the ribossome.
+As a consequence, the focus of modern structural genomics has shifted towards the study of macromolecular complexes (Petoukhov MV 2005 et al.) However, the assembly and study of these macromolecular complexes is very hard by the conventional methods due to their large size and structural flexibility. Since in many cases the structures of individual subunits and/or interactions among them are available, in silico models can be built to predict the complete macromolecular structure.
 
 ## Algorithm
 
