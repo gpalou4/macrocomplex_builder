@@ -66,17 +66,17 @@ The input files consist of pairs of interactions (protein-protein or RNA/DNA-pro
 
 ### Limitations
 
-- The program scales badly as a consequence of the exponential increase of the total comparisons that it has to make. However, for the most examples it lasts less than 30 seconds. 
-- The stoichiometry is not requested. Instead the program relies on the number of chains of the target complex given by the user
-- The two chains that are superimposed must be equal (same number of atoms and residues).
+- The program scales badly as a consequence of the exponential increase of the total comparisons that it has to make. However, for the most examples it takes less than 30 seconds. 
+- The stoichiometry is not requested. Instead, the program relies on the number of chains of the target complex given by the user.
+- The two chains that are superimposed must be identical (same number of atoms and residues).
 - No GIU interface developed yet.
 - The maximum number of chains the target complex can have is 738.
-- Some examples do not work. For instance, the microtubule.
+- Open complexes...
 
 ## Biological background
 
 The extended use of experimental techniques such as x-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy has led to the determination of a lot of individual protein structures, or their domains, successfully. Although this information is very valuable, increasing evidence suggests that proteins do not work as individual entities but in complex with other macromolecules. Some examples are the nucleosome, the spliceosome, the proteasome and the ribosome.
-As a consequence, the focus of modern structural genomics has shifted towards the study of macromolecular complexes (Petoukhov MV 2005 et al.) However, the assembly and study of these macromolecular complexes is very hard by the conventional methods due to their large size and structural flexibility. Since in many cases the structures of individual subunits and/or interactions among them are available, in silico models can be built to predict the complete macromolecular structure.
+As a consequence, the focus of modern structural genomics has shifted towards the study of macromolecular complexes (Petoukhov MV 2005 et al.) However, the assembly and study of these macromolecular complexes is very hard by the conventional methods due to their large size and structural flexibility. Since in many cases, the structures of individual subunits and/or interactions among them are available, in silico models can be built to predict the complete macromolecular structure.
 
 ## Algorithm
 
