@@ -47,7 +47,22 @@ def Key_atom_retriever(chain):
 	return(atoms, molecule)		# Return all key atoms list and the type of molecule to which they belong
 
 def ID_creator(IDs, ID):
-	"""This function creates IDs"""
+	"""This function returns an ID for the new chain to be added to the complex. It generates a single character ID for the first
+	62 IDs, being all the uppercase, lowercase letters and digits, i.e., 26 + 26 + 10 = 62. Then, it generates two-character IDs,
+	by combining all the uppercase letters, generating up to 26**2 IDs, which is 676 new IDs. This is a total of 738 chain IDs. It
+	also needs a list with all the chain IDs, so it does not return an ID already present in the list of chain IDs already in the complex
+
+	Arguments:
+
+	IDs (list): a list containing the IDs of all chains present in the building complex
+
+	ID (string): the ID that the chain has by default, i.e., the ID it has on the PDB file
+
+	Returns:
+
+	ID (string): the new ID that is not present in the list of IDs
+
+	"""
 	UP = list(string.ascii_uppercase)	
 	LOW = list(string.ascii_lowercase)
 	DIG = list(string.digits)
@@ -144,6 +159,10 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 
 	files_list (list): a list containing all the pdb files of binary interactions between the different subunits or chains that form the complex
 
+	it (int): this is a counter that keeps track of the interaction of the iterative function
+
+	not_added (int): this is a counter that keeps track of the files that have been parsed but no chains were added to the complex
+
 	command_arguments(argparse object): is the object containing all the command-line arguments. Contains:
 
 			RMSD (float): this is the RMSD threshold. If the RMSD of a superimposition between reference and sample structures is greater than this value, it will be
@@ -156,14 +175,11 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 			number_chains (int): this is the numbers of chains that the complex must have in order to stop running. However, if these value is never reached, the program
 			will stop after a certain number of iterations
 			
-			it (int): this is a counter that keeps track of the interaction of the iterative function
-			
 			indir(str): this is the input directory relative path
 
 			outdir(str): this is the output directory relative path
 
 			iterations(boolean): this is set True if the user wants a pdb file for each iteration of the complex. Otherwise is False
-
 
 	It is an iterative function, it calls itself until certain condition is met, then:
 
@@ -182,7 +198,6 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 	indir = command_arguments.indir 								#input directory relative path
 	outdir = command_arguments.outdir 								#output directory relative path
 	pdb_iterations = command_arguments.pdb_iterations 				#if True, each iteration is stored in a pdb file
-	iterations = command_arguments.it 								#maximum number of iterations
 
 	alphabet = list(string.ascii_uppercase)	+ list(string.ascii_lowercase) + list(string.digits)		#creates an alphabet containing all the possible characters that can be used as chain IDs 
 

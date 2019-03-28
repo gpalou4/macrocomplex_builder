@@ -61,13 +61,6 @@ parser.add_argument('-cl', '--clashes_threshold',		#CLASHES argument
 					type = int,
 					help = "If set, the threshold of the number of clashes will take this value. If not, it will be 30 by default. The output of the program is very sensitive to this value, we advise to be careful when modifying it.")
 
-parser.add_argument('-it', '--iterations',		#ITERATIONS argument
-					dest = "it",
-					action = "store",
-					default = 100,
-					type = int,
-					help = "If set, the maximum number of iterations will run for will take this value. If not, it will be 100 by default. This parameter will only be important if the complex is big and needs lots of iterations to finish.")
-
 ### Saving and checking the command-line arguments ###
 
 arguments = parser.parse_args()
