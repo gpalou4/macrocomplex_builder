@@ -82,10 +82,12 @@ As a consequence, the focus of modern structural genomics has shifted towards th
 
 explicar:
 
-(dibujo en paint?)
-binary interactions
-superimposition
-reconstruccion iterativa del complejo
+  (dibujo en paint?)
+  binary interactions
+  superimposition
+  clashes
+  RMSD
+  reconstruccion iterativa del complejo
 
 ## Algorithm
 
