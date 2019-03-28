@@ -70,6 +70,11 @@ The input files consist of pairs of interactions (protein-protein or RNA/DNA-pro
 - The stoichiometry is not requested. Instead the program relies on the number of chains of the target complex given by the user
 - No GIU interface developed yet.
 - The maximum number of chains the target complex can have is 738.
+- Some examples do not work. For instance, the microtubule.
+
+## Biological background
+
+
 
 ## Algorithm
 
