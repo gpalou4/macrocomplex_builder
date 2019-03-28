@@ -10,7 +10,7 @@
   - [via Git](#1-via-git)
   - [via Setup](#2-via-setup)
   - [via Pip](#3-via-pip)
-- [Requirements](#Requirements)
+- [Requirements](#requirements)
 - [Information](#information)
   - [Input files](#input-files)
   - [Limitations](#Limitations)
@@ -23,6 +23,7 @@
   - [Example 3](#example-3-5vox)
   - [Example 4](#example-4-5oom)
   - [Example 5](#example-5-3kuy)
+  - [Example 6](#example-6-virus-capsids)
 <!-- /TOC -->
 
 ## Description
@@ -44,6 +45,14 @@ The package can be downloaded using Git:
 ### **2) via Setup**
 
 ### **3) via Pip**
+
+## Requirements
+
+The following versions of packages/modules must be installed in order to run our program properly:
+
+- [Python 3.6.7]
+
+
 
 ## Algorithm
 
