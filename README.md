@@ -125,7 +125,7 @@ python3 macrocomplex_builder.py -i 6ezm -nc 24
  
  -24: indicates that the final complex must have 24 chains
  
- The computation time is around 2-5 seconds, and the RMDS between the reconstructed complex and the original PDB file is 0.639 Â. The input folder contains 23 files and 24 chains. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both equal chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
+ The computation time is around 2-5 seconds, and the RMSD between the reconstructed complex and the original PDB file is 0.639 Â. The input folder contains 23 files and 24 chains. In this particular example, there is always a common chain (chain A) between any two binary interactions. For that reason, in each iteration occurs a superimposition between both equal chains A with an RMSD of 0, giving a total of 24 iterations and 24 chains.
  
 | <img src="Images/6EZM_ORIGINAL.png" width="300" height="300"> | <img src="Images/6EZM_BUILT.png" width="300" height="300"> | <img src="Images/6EZM_SUPERIMPOSED.png" width="300" height="300"> |
 | :---: | :---: | :---: |
@@ -144,7 +144,7 @@ python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45
  
  -45: is the new clashes threshold (default is 30)
  
-The computation time is around 10-15 seconds and the RMDS between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMDS and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 6 files and 8 different chains, and only some of them have a common chain. All superimpositions below the set thresholds are used to add the rotated chains to the complex. Notice that even though there are less number of files/chains than the total number of chains of the original complex, it is able to reconstruct the complete macrocomplex in 27 iterations.
+The computation time is around 10-15 seconds and the RMSD between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMSD and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 6 files and 8 different chains, and only some of them have a common chain. All superimpositions below the set thresholds are used to add the rotated chains to the complex. Notice that even though there are less number of files/chains than the total number of chains of the original complex, it is able to reconstruct the complete macrocomplex in 27 iterations.
 
 | <img src="Images/1G65_ORIGINAL.png" width="300" height="372"> | <img src="Images/1G65_BUILT.png" width="300" height="372"> | <img src="Images/1G65_SUPERIMPOSED.png" width="300" height="372"> |
 | :---: | :---: | :---: |
@@ -176,18 +176,26 @@ Where:
  -120: is the the number of maximum iterations (default is 100)
  
 
-The computation time is around 30-35 seconds and the RMDS between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 124 files and 53 different chains. This case is interesting as it contains also RNA molecules, exhibiting the flexibility of reconstructing not only prot-prot interactions but also prot-dna or prot-rna interactions. Moreover, with the default number of iterations only 49 chains can be build. By increasing it up to 118, the whole complex can be reconstructed correctly.
+The computation time is around 30-35 seconds and the RMDS between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 124 files and 53 different chains. This case is interesting as it contains also RNA molecules, exhibiting the flexibility of reconstructing not only prot-prot interactions but also prot-dna or prot-rna interactions. Only two chains with the same molecule type can be superimposed, therefore the program will skip the superimpositions that doesn't fit this criteria. Moreover, with the default number of iterations only 49 chains can be build. By increasing it up to 118, the whole complex can be reconstructed correctly.
 
 | <img src="Images/5OOM_ORIGINAL.png" width="300" height="280"> | <img src="Images/5OOM_BUILT.png" width="300" height="280"> | <img src="Images/5OOM_SUPERIMPOSED.png" width="300" height="280"> |
 | :---: | :---: | :---: |
 | *Original* | *Built* | *Superimposition*|
 
 ### Example 5, 3KUY
-  
+
+The fifth example corresponds to DNA Stretching in the Nucleosome, which facilitates alkylation by an intercalating antitumor agent. It is an Hetero 8-mer (stoichiometry: A2B2C2D2). Based on the input provided files, the following command will recover the complete complex:
+
 ```bash
 python3 macrocomplex_builder.py -i 6kuy -nc 10
 ```
 
+The computation time is around 1-3 seconds and the RMSD between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 41 files and 10 different chains. This example contains two DNA chains and it can reconstruct the complex correctly with 10 iterations. 
+
 | <img src="Images/3KUY_ORIGINAL.png" width="300" height="300"> | <img src="Images/3KUY_BUILT.png" width="300" height="300"> | <img src="Images/3KUY_SUPERIMPOSED.png" width="300" height="300"> |
 | :---: | :---: | :---: |
 | *Original* | *Built* | *Superimposition*|
+
+
+### Example 6, Virus Capsids
+
