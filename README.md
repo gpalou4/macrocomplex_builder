@@ -74,7 +74,7 @@ The input files consist of pairs of interactions (protein-protein or RNA/DNA-pro
 
 ## Biological background
 
-The extended use of experimental techniques such as x-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy has led to the determination of a lot of individual protein structures, or their domains, successfully. Although this information is very valuable, increasing evidence suggests that proteins do not work as individual entities but in complex with other macromolecules. Some examples are the nucleosome, the spliceosome, the proteasome and the ribossome.
+The extended use of experimental techniques such as x-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy has led to the determination of a lot of individual protein structures, or their domains, successfully. Although this information is very valuable, increasing evidence suggests that proteins do not work as individual entities but in complex with other macromolecules. Some examples are the nucleosome, the spliceosome, the proteasome and the ribosome.
 As a consequence, the focus of modern structural genomics has shifted towards the study of macromolecular complexes (Petoukhov MV 2005 et al.) However, the assembly and study of these macromolecular complexes is very hard by the conventional methods due to their large size and structural flexibility. Since in many cases the structures of individual subunits and/or interactions among them are available, in silico models can be built to predict the complete macromolecular structure.
 
 ## Algorithm
@@ -172,9 +172,9 @@ python3 macrocomplex_builder.py -i 1g65 -nc 28 -rmsd 0.5 -cl 45
 ```
  Where:
  
- -0.5: is the new RMSD threshold (default is 0.3)
+ -The new RMSD threshold (default is 0.3) is 0.5
  
- -45: is the new clashes threshold (default is 30)
+ -The new clashes threshold (default is 30) is 45
  
 The computation time is around 10-15 seconds and the RMSD between the reconstructed complex and the original PDB file is 0.975 Â. In this example, we must change the RMSD and clashes thresholds because it can only recover 27 chains with the default values. The input folder contains 6 files and 8 different chains, and only some of them have a common chain. All superimpositions below the set thresholds are used to add the rotated chains to the complex. Notice that even though there are less number of files/chains than the total number of chains of the original complex, it is able to reconstruct the complete macrocomplex in 27 iterations.
 
@@ -205,7 +205,7 @@ python3 macrocomplex_builder.py -i 5oom -nc 53 -it 118
 ```
 Where:
  
- -120: is the the number of maximum iterations (default is 100)
+ -The number of maximum iterations (default is 100) is 118
  
 
 The computation time is around 30-35 seconds and the RMDS between the reconstructed complex and the original PDB file is surprisingly 0 Â. The input folder contains 124 files and 53 different chains. This case is interesting as it contains also RNA molecules, exhibiting the flexibility of reconstructing not only prot-prot interactions but also prot-dna or prot-rna interactions. Only two chains with the same molecule type can be superimposed, therefore the program will skip the superimpositions that doesn't fit this criteria. Moreover, with the default number of iterations only 49 chains can be build. By increasing it up to 118, the whole complex can be reconstructed correctly.
@@ -230,4 +230,8 @@ The computation time is around 1-3 seconds and the RMSD between the reconstructe
 
 
 ### Example 6, Virus Capsids
+
+```bash
+python3 macrocomplex_builder.py -i 6kuy -nc 10
+```
 
