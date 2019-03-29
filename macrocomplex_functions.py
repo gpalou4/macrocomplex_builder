@@ -259,7 +259,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 						clashes.extend(atoms_clashed)		#adds the atoms list to the list of clashes
 				if len(clashes) > clashes_threshold:		#checks that the number of total clashes is above the threshold
 					present_chain = True					#then, chain_to_add is considered a chain already present in the complex
-					logging.info("The number of clashes between the chain to add %s and reference chain %s is %d, therefore the chain is the same and it is skipped" % (chain_to_add.id, chain.id,len(clashes)))
+					logging.info("The number of clashes between the chain to add %s and reference chain %s is %d, therefore the chain is skipped" % (chain_to_add.id, chain.id,len(clashes)))
 					break 									#skips continuing through the loop, as it already clashes with one reference chain
 				## Checks that the number of total clashes is under the threshold ##
 				elif len(clashes) <= clashes_threshold:		
