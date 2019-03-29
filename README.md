@@ -18,7 +18,7 @@
 - [Algorithm](#algorithm)
 - [Tutorial](#tutorial)
   - [Command-line arguments](#command-line-arguments)
-  - [Examples](#Examples)
+- [Examples](#Examples)
   - [Example 1](#example-1-6ezm)
   - [Example 2](#example-2-1g65)
   - [Example 3](#example-3-5vox)
