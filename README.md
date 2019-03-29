@@ -83,7 +83,7 @@ Our approach is based in the use of superimpositions between the subunit chains.
 Example: 
 Having two binary protein interactions (reference: A-B, sample: C-D), we make the superimpositions (4 in total: C/A, C/B, D/A, D/B) of the sample chains to the reference chains. Then, two chains will be superimposed (one reference chain with one sample chain), while the other sample chain will be displaced in space along with its superimposed partner chain. First we are interested in the one with the lowest RMSD, for instance, the superimposition between A/C --> B-A/C-D. We assume then, that A and C chains are the same, and that the interaction with D (the non-superimposed chain) is now placed correctly. To confirm this, we also need to check the clashes between the non-superimposed chain (D) and the rest of chains of the complex (2 reference chains in this case). Clashes are unfavorable interactions where atoms are too close together. If there are too much clashes, that means that these chains are not placed correctly which means that this superimposition, although it has a good RMSD score, must be skipped. If the number of clashes is admisible, the final structure will be B-A/C-D. We can keep doing the same strategy with the next binary interaction. But now, having 3 chains in the complex, there will be more superimpositions and more comparisons to make.
 
-| <img src="Images/biological_background.png" width="500" height="500"> |
+| <img src="Images/biological_background.png" width="1000" height="500"> |
 
 explicar:
 
