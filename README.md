@@ -137,7 +137,7 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
 * threshold<sub>2</sub>: clashes threshold above which putative chains will be discarded.
 * Present chain: boolean informing of whether the putative chain to add is already found in the complex.
 
-<img src="Images/ALGORITHM3.png" width="1000" height="1000">
+<img src="Images/ALGORITHM.png" width="1000" height="1000">
 
 ## Tutorial
 
