@@ -18,6 +18,7 @@
 - [Algorithm](#algorithm)
 - [Tutorial](#tutorial)
   - [Command-line arguments](#command-line-arguments)
+  - [Examples](#Examples)
   - [Example 1](#example-1-6ezm)
   - [Example 2](#example-2-1g65)
   - [Example 3](#example-3-5vox)
@@ -87,7 +88,7 @@ After the superimposition is done, and have a reasonable RMSD, we are interested
 
 Example: 
 
-Having two binary protein interactions (reference: A-B, sample: C-D), we make the superimpositions of the sample chains to the reference chains (4 in total: C/A, C/B, D/A, D/B). Then, two chains are superimposed (one reference chain with one sample chain), while the other sample chain is displaced in space along with its superimposed partner chain. We start with the one with the lowest RMSD (and below a given threshold), for instance, the superimposition between A/C --> B-A/C-D. We assume then, that A and C chains are the same, and that the interaction with D (the non-superimposed chain) is now placed correctly. To confirm this, we also need to check the clashes between the non-superimposed chain (D) and the rest of chains of the reference structure (2 reference chains in this case). If there are too much clashes, that means that the putative chain to add is not placed correctly which means that this superimposition, although it has a good RMSD score, must be rejected. After skipping this superimposition, we look for the next best RMSD score, and look for clashes again, and so on and so forth. On the other hand, if the number of clashes is admisible, the final structure will be B-A/C-D. We can keep doing the same strategy with the next binary interaction. But now, having 3 chains in the complex, there will be more superimpositions and more comparisons to make.
+Having two binary protein interactions (reference: *A-B*, sample:*C-D*), we make the superimpositions of the sample chains to the reference chains (4 in total:*C/A*, *C/B*, *D/A*, *D/B*). Then, we rank them by RMSD and start processing them. We start with the one with the lowest RMSD (and below a given threshold), for instance, the superimposition between *A/C*, then *B/C* and so on. We assume then, that chains *A* and *C* are the same, and that the interaction with D (the non-superimposed chain) is now placed correctly. To confirm this, we also need to check for the presence of clashes between the non-superimposed chain, *D*, and the rest of chains of the reference structure (2 reference chains in this case). If there are too many clashes, that means that the putative chain to add is already present in the complex or colliding with another chain, which means that this superimposition, although it has a good RMSD score, must be rejected. After skipping this superimposition, we look for the next best RMSD score, and look for clashes again, and so on and so forth. On the other hand, if the number of clashes is below the treshold, the final structure will be *B-A-D*. We can keep following the same strategy with the next binary interaction. But now, having 3 chains in the complex, there will be more superimpositions and more comparisons to make.
 
 <img src="Images/biological_background.png" width="1000" height="500">
 
