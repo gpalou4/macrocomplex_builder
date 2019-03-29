@@ -220,7 +220,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 	pdb_parser = Bio.PDB.PDBParser(QUIET = True)		#parses the sample PDB file and creates a sample PDBParser object
 	sample_structure = pdb_parser.get_structure("sample", file_path)		#saves the Structure object of the sample PDBParser object
 	sample_model = sample_structure[0]		#obtains the first and only available model of the sample structure 
-
+	print(list(sample_model.get_chains()))
 	### Calling the superimposition function to obtain the superimposition of every combination of pairs of chains between the reference and sample structures
 	all_superimpositions, superimposed_chains, best_RMSD = superimposition(ref_structure, sample_structure, RMSD_threshold)
 
@@ -241,7 +241,13 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 				continue							#if not, skip that superimposition
 			sup.apply(sample_model.get_atoms())		#applies ROTATION and TRANSLATION matrices to all the atoms in the sample model
 			## Gets the sample chain that was not superimposed with the reference chain --> putative chain to add ##
+			#chain_to_add = [chain for chain in sample_model.get_chains() if chain.get_id() != chains[0]][0]		
+			#my_list = [chain for chain in sample_model.get_chains() if chain.get_id() != chains[0]]
+			#print(my_list)
+			print(list(sample_model.get_chains()))
 			chain_to_add = [chain for chain in sample_model.get_chains() if chain.get_id() != chains[0]][0]		
+			print(chain_to_add)
+			#sys.exit()
 			present_chain = False		#this variable indicates whether the chain to add is present on the building complex or not: False => not present, True => present
 			sample_atoms, sample_molecule = Key_atom_retriever(chain_to_add)		#retrieves all key atoms (CA or C4') and molecule type of chain_to_add
 			logging.info("Putative chain to add is %s" % chain_to_add.id)
