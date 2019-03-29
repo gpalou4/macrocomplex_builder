@@ -1,6 +1,6 @@
 DEBUG:...STARTING...
 INFO:Parameters used are:
-  - Number of chains: 30
+  - Number of chains: 100
   - RMSD threshold: 0.3000
   - Clashes threshold 30
 INFO:The initial complex has 2 chains and are the following:
@@ -3743,8 +3743,8 @@ INFO:The number of clashes between the chain to add G and reference chain E is 0
 INFO:The number of clashes between the chain to add G and reference chain G is 356, therefore the chain is the same and it is skipped
 INFO:This is the iteration #59 of the recursive function
 INFO:The complex has 10 chains at this point
-INFO:The whole macrocomplex has been build
-INFO:The final complex has 10 chains, not 30, as requested
+INFO:The whole macrocomplex has been successfully build
+INFO:The final complex has 10 chains
 INFO:We have arrived to iteration 59
 INFO:Output files macrocomplex.pdb and macrocomplex.log saved in D:\Documents\BIM\2Q\PYT\PROJECT\macrocomplex_builder\examples\3kuy_2
-INFO:The program has finished running! It took 4.814440 seconds
+INFO:The program has finished running! It took 7.085202 seconds

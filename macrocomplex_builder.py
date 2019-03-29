@@ -20,14 +20,14 @@ requiredNamed.add_argument('-i', '--indir',			#INPUT FOLDER argument
 							dest = "indir",
 							action = "store",
 							required=True,
-							help = "Input folder (or path) containing all PDB files with the protein binary interactions. It is a compulsory argument.")
+							help = "Input folder (or path) containing all PDB files with the protein binary interactions. It is a required argument.")
 
-requiredNamed.add_argument('-nc', '--number_chains',		#NUMBER OF CHAINS argument
+parser.add_argument('-nc', '--number_chains',		#NUMBER OF CHAINS argument
 							dest = "number_chains",
 							action = "store",
-							required=True,
 							type = int,
-							help = "Number of chains desired for the target complex. This is a compulsory argument.")
+							default = 100,
+							help = "Number of chains desired for the target complex. This is an optional argument.")
 
 parser.add_argument('-o', '--outdir',			#OUTPUT FOLDER argument
 					dest = "outdir",
@@ -75,8 +75,6 @@ else:		#INPUT has been provided
 		arguments.indir = os.path.abspath(arguments.indir)
 	else:		#provided INPUT is not a directory
 		raise NameError("ERROR! Incorrect input folder name!")
-if not arguments.number_chains:		#checking if the NUMBER OF CHAINS has been provided
-	raise NameError("ERROR! The number of chains of the target complex has not been provided! Please, use the help flag, --help, h to see the program instructions!")
 
 os.chdir(arguments.indir + "/../")
 
@@ -106,12 +104,6 @@ if re.search("\d",files[0]):		# Checking if the files
 	files = sorted(files, key=lambda x: str("".join([i for i in x if i.isdigit()])))
 else:
 	files = sorted(files)
-#print(files)
-#if re.search("\d",files[0]):
-#	popped_last = files.pop(-1)
-#	files.insert(0,popped_last)
-#print(files)
-#sys.exit()
 
 logging.info("Parameters used are:\n  - Number of chains: %d\n  - RMSD threshold: %.4f\n  - Clashes threshold %d" % (arguments.number_chains, arguments.rmsd_threshold, arguments.clashes))
 

@@ -68,22 +68,22 @@ def ID_creator(IDs, ID):
 	DIG = list(string.digits)
 	alphabet = UP + LOW + DIG		#creates an alphabet containing all the possible characters that can be used as chain IDs
 
-	if len(IDs) < 62:
-		if ID not in IDs:
+	if len(IDs) < 62:				#checks if the length of the lsit containing the IDs of all chains in the complex is smaller than 62
+		if ID not in IDs:			#checks if the ID by default of the chain is present on the IDs list
 			return ID
-		if ID in IDs:
-			for i in range(0, len(alphabet)):
-				if alphabet[i] not in IDs:
+		elif ID in IDs:				#checks if the ID by default is indeed on the list	
+			for i in range(0, len(alphabet)):		#loops through all the characters on the alphabet
+				if alphabet[i] not in IDs:			#checks if that character is not already taken as an ID
 					return alphabet[i]
-				else:
+				else:								#if it is already an ID, keeps looping through the alphabet
 					continue
-	elif len(IDs) >= 62:
+	elif len(IDs) >= 62:			#checks if the length of the lsit containing the IDs of all chains in the complex is greater than 62
 		for char1 in alphabet:
 			for char2 in alphabet:
-				ID = char1 + char2
-				if ID not in IDs:
+				ID = char1 + char2	#creates a 2 character ID by combining two uppercase letters
+				if ID not in IDs:	#checks if new ID is not on the list of IDs
 					return ID
-				else:
+				else:				#if it is indeed on the list, keeps loopting
 					continue
 
 def superimposition(ref_structure, sample_structure, rmsd_threshold):
@@ -205,20 +205,13 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 	### Prints the current iteration and number of chains of the current complex ###
 	logging.info("This is the iteration #%d of the recursive function" % i )
 	logging.info("The complex has %d chains at this point" % chains)
-	print ("The complex has %d chains at this point" % chains )
 
 	### Checks if the current macrocomplex satisfies the desired number of chains or just stops at iteration 150 ### 
-	if chains == nc: 
-		logging.info("The whole macrocomplex has been successfully build with the desired number of chains")
+	if chains == nc or n > len(files_list): 
+		logging.info("The whole macrocomplex has been successfully build")
 		logging.info("The final complex has %d chains" % chains)
-		print ("The end, we reached %d chains" % nc)
-		return 	ref_structure			#END OF THE RECURSIVE FUNCTION
-	elif n > len(files_list):
-		logging.info("The whole macrocomplex has been build")
-		logging.info("The final complex has %d chains, not %d, as requested" % (chains, nc))
 		logging.info("We have arrived to iteration %d" %(i))
-		print("The end, we cannot add any more chains, it has %d chains" % chains)
-		return ref_structure		#END OF THE RECURSIVE FUNCTION
+		return 	ref_structure			#END OF THE RECURSIVE FUNCTION
 
 	### Selects the file to analyze in this iteration. It is always the first element of the list of files because once analyzed it is substracted and appended at the end of the list ###
 	sample = files_list[0]		#saves the first file name of the list of files as the sample
@@ -271,22 +264,7 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 				## Checks that the number of total clashes is under the threshold ##
 				elif len(clashes) <= clashes_threshold:		
 					logging.info("The number of clashes between the chain to add %s and reference chain %s is %d, it is under the threshold" % (chain_to_add.id, chain.id,len(clashes)))
-					continue								#continue the loops, as we must ensure that chain_to_add does not clash with ANY reference chain
-			#Neighbor2 = Bio.PDB.NeighborSearch(all_atoms)
-			#clashes2 = []
-			#for atom2 in sample_atoms:								#loops through the list of atoms of chain_to_add
-			#	atoms_clashed2 = Neighbor2.search(atom.coord, 65)		#produces a Neighbor search that returns all atoms/residues/chains/models/structures that have at least one atom within radius of center. 
-			#	if len(atoms_clashed2) > 0:				#if there are clashes
-			#		clashes2.extend(atoms_clashed2)		#adds the atoms list to the list of clashes
-			#if len(clashes2) > 100:		#checks that the number of total clashes is above the threshold
-			#	logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is NOT too far away and is added" % (chain_to_add.id,len(clashes2)))
-				#logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is too far away and is not added" % (chain_to_add.id,len(clashes2)))
-				#continue
-			#elif len(clashes2) < 100:		#checks that the number of total clashes is above the threshold
-			#	present_chain = True					#then, chain_to_add is considered a chain already present in the complex
-			#	logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is too far away and is not added" % (chain_to_add.id,len(clashes2)))
-				#logging.info("The number of clashes between the chain to add %s and rhe reference structure is %d, therefore the chain is too far away and is not added" % (chain_to_add.id,len(clashes2)))
-			#	continue 	
+					continue								#continue the loops, as we must ensure that chain_to_add does not clash with ANY reference chain 	
 			## Rotated chain to add is not a chain already in the building macrocomplex structure, then adds it, with its original ID or with a new one ##
 			if present_chain is False:						
 				logging.info("Chain %s superimposed with chain %s yields rotated chain %s which is not in the complex" %(chains[0],chains[1],chain_to_add.id))
@@ -295,14 +273,18 @@ def MacrocomplexBuilder(ref_structure, files_list, it, not_added, command_argume
 				chain_to_add.id = ID
 				ref_structure[0].add(chain_to_add)	#adds chain_to_add to the building macrocomplex structure
 				logging.info("Added Chain %s" % ID)
-				print("Added Chain %s" % ID)
 				## Checks whether the user provided the iterations argument, then save each iteration of the current complex in a PDB file ##
-				if pdb_iterations:		
-					io = Bio.PDB.MMCIFIO()							#creates a PDBIO instance
-					io.set_structure(ref_structure[0])				#assigns the reference structure to the IO object
-					io.save("macrocomplex_chains_%d.pdb" %(ref_structure[0].__len__()))	#saves the structure on a file
-					logging.info("saving macrocomplex_chains_%d.pdb in %s" %(ref_structure[0].__len__(),outdir))
-				#break							#breaks loop
+				if pdb_iterations:
+					if len(list(ref_structure[0].get_atoms())) > 99999 or len(list(ref_structure[0].get_chains())) > 62:		#checks that the structure has has less atoms than the maximum for a PDB, 99,999
+						io = Bio.PDB.MMCIFIO()								#creates the MMCIFIO object, that can contain more than 99,999 atom coordinates
+						io.set_structure(ref_structure[0])					#sets the reference structure object to be written in a MMCIF file
+						io.save("macrocomplex_chains_%d.cif" %(ref_structure[0].__len__()))	#saves the structure on a file
+						logging.info("saving macrocomplex_chains_%d.cif in %s" %(ref_structure[0].__len__(),os.path.abspath(outdir)))
+					else: 													#checks that the structure has more than 99,999 atoms
+						io = Bio.PDB.PDBIO()								#creates the PDBIO object
+						io.set_structure(ref_structure[0])					#sets the reference structure object to be written in a PDB file
+						io.save("macrocomplex_chains_%d.pdb" %(ref_structure[0].__len__()))	#saves the structure on a file
+						logging.info("saving macrocomplex_chains_%d.pdb in %s" %(ref_structure[0].__len__(),os.path.abspath(outdir)))
 				file = files_list.pop(0)		#substracts the first file of the files list
 				files_list.append(file)			#adds the file at the end of the files list
 				i += 1							#adds one to the iteration variable

@@ -67,12 +67,10 @@ The input files consist of pairs of interactions (protein-protein or RNA/DNA-pro
 
 ### Limitations
 
-- The program scales badly as a consequence of the exponential increase of the total comparisons that it has to make. However, for the most examples it takes less than 30 seconds. 
-- The stoichiometry is not requested. Instead, the program relies on the number of chains of the target complex given by the user.
+- The program scales badly as a consequence of the linear increase of the total comparisons that it has to make. However, for the most examples it takes less than 30 seconds. 
 - The two chains that are superimposed must be identical (same number of atoms and residues).
-- No GIU interface developed yet.
-- The maximum number of chains the target complex can have is 738.
-- Open complexes...
+- No GUI interface developed yet.
+- For open complexes, i.e., complexes that have open ends in any of their dimensions, e.g., microtubule, the program does not work as good as with closed complexes, as are the examples we provide on the tutorial.
 
 ## Biological background
 
@@ -95,9 +93,9 @@ Having two binary protein interactions (reference: *A-B*, sample:*C-D*), we make
 ## Algorithm
 
 This is a program that given a set of binary protein-protein or RNA/DNA-protein interactions, builds a macro-molecular complex by means of a recursive function. The algorithm of the program is quite straightforward and is the following.
-The input that is going to be passed onto the program consists of two **required** arguments: the input directory, `-i`, containing all the binary interaction PDB files which are going to be used to build the complex and the wanted number of chains for the target complex, i.e., the number of chains that the user wants the final complex to have. There are other arguments that allow the user to customize a bit the program execution by changing some of the parameters that the program needs to run. These are `-rmsd` and `-cl`  which are the RMSD and clashes thresholds. It also has the `-pi` flag that if present, will make the program save a PDB/MMCIF every time a chain is added to the complex and the `-v` flag that prints the progression log in the command line if present.
+The input that is going to be passed onto the program consists of one **required** argument: the input directory, `-i`, containing all the binary interaction PDB files which are going to be used to build the complex. There are other arguments that allow the user to customize a bit the program execution by changing some of the parameters that the program needs to run. These are `-rmsd` and `-cl`  which are the RMSD and clashes thresholds and `-nc`, wanted number of chains for the target complex, 100, by default, i.e., the number of chains that the user wants the final complex to have. This parameter should be modified if the user knows tha number of chains the target complex should have, so it finishes early and also if the user knows or suspects that the complex will have more than 100 chains. It also has the `-pi` flag that if present, will make the program save a PDB/MMCIF every time a chain is added to the complex and the `-v` flag that prints the progression log in the command line if present.
 
-Once the program is executed, the recursive function will loop iteratively through the list of files present in the input directory and in each iteration, it will add a chain,if possible, resulting from the best superimposition of one of the two chains in the new file against one of the chains of the reference structure, which is the building complex. The program will finish running once the number of chains of the complex equals the one specified by the user in the `-nc` argument, or if this is not the case, after all the files have been processed once without adding any new chains to the complex.
+Once the program is executed, the recursive function will loop iteratively through the list of files present in the input directory and in each iteration, it will add a chain,if possible, resulting from the best superimposition of one of the two chains in the new file against one of the chains of the reference structure, which is the building complex. The program will finish running once the number of chains of the complex equals the one specified in the `-nc` argument, or if this is not the case, after all the files have been processed once without adding any new chains to the complex.
 
 Every time the function is called it needs certain parameters in order for it to work, they are the following:
 * A reference structure, `ref_structure`, which is the building-complex structure, the first PDB file on the first iteration. Its number of chains keeps increasing as iterations take place.
@@ -128,7 +126,7 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
 
 #### Key
 * chains: number of chains of the complex in this iteration.
-* nc: number of chains of the final complex provided by the user.
+* nc: number of chains of the final complex.
 * n: number of files that have been processed without adding any new chains to the complex.
 * files: number of files on the input directory.
 * chain in ref: loops through all chains in the reference structure.
@@ -145,7 +143,7 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
 * threshold<sub>2</sub>: clashes threshold above which putative chains will be discarded.
 * Present chain: boolean informing of whether the putative chain to add is already found in the complex.
 
-<img src="Images/ALGORITHM_2.png" width="1000" height="1000">
+<img src="Images/ALGORITHM3.png" width="1000" height="1000">
 
 ## Tutorial
 
@@ -156,7 +154,7 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
   - `-o`, `--outdir`: this argument is **optional** and if set, all the output files will be saved in this folder. If not set, by default, the output files will be saved in a folder named: _input_foldername_output_.
   - `-v`, `--verbose`: this argument is **optional** and will print the progression log in the standard error if set.
   - `-pi`, `--pdb_iterations`: this argument is **optional** and will save a new PDB file every time a chain is added to the complex if set.
-  - `-nc`, `--number_chains`: this argument is **required** and indicates the number of chains that the final complex must have.
+  - `-nc`, `--number_chains`: this argument is **optional** and if set indicates the number of chains the user wants the final complex to have. If not, it will take a value of 100 by default.
   - `-rmsd`, `--rmsd_threshold`: this argument is **optional** and if set, the RMSD threshold will take its value. If not, it will take a value of 0.3 by default.
   - `-cl`, `--clashes_theshold`: this argument is **optional** and if set, the clashes threshold will take its value. If not, it will take a value of 30 by default.
 
