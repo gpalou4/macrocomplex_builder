@@ -78,6 +78,12 @@ The input files consist of pairs of interactions (protein-protein or RNA/DNA-pro
 The extended use of experimental techniques such as x-ray crystallography and nuclear magnetic resonance (NMR) spectroscopy has led to the determination of a lot of individual protein structures, or their domains, successfully. Although this information is very valuable, increasing evidence suggests that proteins do not work as individual entities but in complex with other macromolecules. Some examples are the nucleosome, the spliceosome, the proteasome and the ribosome.
 As a consequence, the focus of modern structural genomics has shifted towards the study of macromolecular complexes (Petoukhov MV 2005 et al.) However, the assembly and study of these macromolecular complexes is very hard by the conventional methods due to their large size and structural flexibility. Since in many cases, the structures of individual subunits and/or interactions among them are available, in silico models can be built to predict the complete macromolecular structure.
 
+Our approach is based in the use of superimpositions between the subunit chains. A superimposition is the procedure by which two molcule structures (two proteins, two DNA/RNA molecules, etc) are placed in space minimizing the distance between the backbone atoms of both structures. To do so, a Translation and Rotation matrix is calculated for one structure, and it is applied so that it fits the coordinates of the other structure. Once two molecules are superimposed we need to quantify how different the two structures are. The typical measurement is the Root-Mean-Square deviation. It is a measurement of the average distance between two sets of atoms (usually the backbone atoms) of the superimposed molecules.
+
+
+
+
+
 
 
 explicar:
