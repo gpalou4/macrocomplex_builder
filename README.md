@@ -154,7 +154,8 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
 
 ## Examples
 
-Here, we show you the commands necessary to run the script and build the following complexes by using the folders in the `examples` directory. Also, the output files that the script generates from these examples can be found in the `examples_output` folder. There is also a small explanation of the complexes, and a brief analysis of the time it takes ths script to run the example and the quality of the complex it builds.
+Here, we show you the commands necessary to run the script and build the following complexes by using the folders in the `examples` directory. Also, the output files that the script generates from these examples can be found in the `examples_output` folder. There is also a small explanation of the complexes, and a brief analysis of the time it takes the script to run the example and the quality of the complex it builds.
+As a reminder, it is not necessary to provide the number of chains of the final complex, but we have added it in the commands so it finishes earlier.
 
 ### Example 1, 6EZM
 
