@@ -1,4 +1,4 @@
-# Macrocomplex builder, aka Brandon The Builder
+# *BRANDON* macrocomplex builder
 
 *by Guillermo Palou Márquez and Javier Sánchez Utgés*
 
@@ -6,9 +6,7 @@
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 - [Description](#description)
-- [SBI-Python project](#sbi-python-project)
 - [Installation](#installation)
-  - [via Git](#1-via-git)
 - [Requirements](#requirements)
 - [Information](#information)
   - [Input files](#input-files)
