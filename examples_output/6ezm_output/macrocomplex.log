@@ -13,18 +13,20 @@ INFO:Processing reference chain A
 INFO:Processing sample chain A
 INFO:The RMSD between chain A of the reference and chain A of the sample is 0.000000
 INFO:Processing sample chain B
+INFO:The RMSD between chain A of the reference and chain B of the sample is 0.318013
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
 INFO:The RMSD between chain B of the reference and chain B of the sample is 0.000000
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is B
 INFO:The number of clashes between the chain to add B and reference chain A is 0, it is under the threshold
-INFO:The number of clashes between the chain to add B and reference chain B is 777, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add B and reference chain B is 777, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain B with sample chain B with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 777, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 777, therefore the chain is skipped
 INFO:This is the iteration #1 of the recursive function
 INFO:The complex has 2 chains at this point
 INFO:We are processing the file pair_his3_sc_XB.pdb
@@ -32,9 +34,12 @@ INFO:Processing reference chain A
 INFO:Processing sample chain A
 INFO:The RMSD between chain A of the reference and chain A of the sample is 0.000000
 INFO:Processing sample chain B
+INFO:The RMSD between chain A of the reference and chain B of the sample is 0.317511
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.522695
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is B
@@ -42,7 +47,7 @@ INFO:The number of clashes between the chain to add B and reference chain A is 0
 INFO:The number of clashes between the chain to add B and reference chain B is 2, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain C
-INFO:This is the iteration #3 of the recursive function
+INFO:This is the iteration #2 of the recursive function
 INFO:The complex has 3 chains at this point
 INFO:We are processing the file pair_his3_sc_XC.pdb
 INFO:Processing reference chain A
@@ -52,11 +57,14 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.264374
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
 INFO:The RMSD between chain B of the reference and chain B of the sample is 0.276897
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.370953
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is B
@@ -65,7 +73,7 @@ INFO:The number of clashes between the chain to add B and reference chain B is 1
 INFO:The number of clashes between the chain to add B and reference chain C is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain D
-INFO:This is the iteration #4 of the recursive function
+INFO:This is the iteration #3 of the recursive function
 INFO:The complex has 4 chains at this point
 INFO:We are processing the file pair_his3_sc_XD.pdb
 INFO:Processing reference chain A
@@ -75,15 +83,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.297313
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.470561
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.272378
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.405693
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is B
@@ -93,7 +105,7 @@ INFO:The number of clashes between the chain to add B and reference chain C is 0
 INFO:The number of clashes between the chain to add B and reference chain D is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain E
-INFO:This is the iteration #5 of the recursive function
+INFO:This is the iteration #4 of the recursive function
 INFO:The complex has 5 chains at this point
 INFO:We are processing the file pair_his3_sc_XE.pdb
 INFO:Processing reference chain A
@@ -103,10 +115,14 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.247507
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.303574
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.405733
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
@@ -116,6 +132,7 @@ INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
 INFO:Processing sample chain B
+INFO:The RMSD between chain E of the reference and chain B of the sample is 0.366707
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is B
@@ -126,7 +143,7 @@ INFO:The number of clashes between the chain to add B and reference chain D is 0
 INFO:The number of clashes between the chain to add B and reference chain E is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain F
-INFO:This is the iteration #6 of the recursive function
+INFO:This is the iteration #5 of the recursive function
 INFO:The complex has 6 chains at this point
 INFO:We are processing the file pair_his3_sc_XF.pdb
 INFO:Processing reference chain A
@@ -136,15 +153,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.243754
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.471934
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.204949
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.310814
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -166,7 +187,7 @@ INFO:The number of clashes between the chain to add B and reference chain E is 0
 INFO:The number of clashes between the chain to add B and reference chain F is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain G
-INFO:This is the iteration #7 of the recursive function
+INFO:This is the iteration #6 of the recursive function
 INFO:The complex has 7 chains at this point
 INFO:We are processing the file pair_his3_sc_XG.pdb
 INFO:Processing reference chain A
@@ -176,15 +197,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.282446
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.491150
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.247874
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.403897
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -194,6 +219,7 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.380823
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
@@ -211,23 +237,29 @@ INFO:The number of clashes between the chain to add B and reference chain F is 0
 INFO:The number of clashes between the chain to add B and reference chain G is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain H
-INFO:This is the iteration #8 of the recursive function
+INFO:This is the iteration #7 of the recursive function
 INFO:The complex has 8 chains at this point
 INFO:We are processing the file pair_his3_sc_XH.pdb
 INFO:Processing reference chain A
 INFO:Processing sample chain A
 INFO:The RMSD between chain A of the reference and chain A of the sample is 0.000000
 INFO:Processing sample chain B
+INFO:The RMSD between chain A of the reference and chain B of the sample is 0.314160
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.451250
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.386641
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.471319
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -237,10 +269,12 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.421023
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
 INFO:Processing sample chain B
+INFO:The RMSD between chain G of the reference and chain B of the sample is 0.363243
 INFO:Processing reference chain H
 INFO:Processing sample chain A
 INFO:The RMSD between chain H of the reference and chain A of the sample is 0.282446
@@ -259,7 +293,7 @@ INFO:The number of clashes between the chain to add B and reference chain G is 0
 INFO:The number of clashes between the chain to add B and reference chain H is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain I
-INFO:This is the iteration #9 of the recursive function
+INFO:This is the iteration #8 of the recursive function
 INFO:The complex has 9 chains at this point
 INFO:We are processing the file pair_his3_sc_XI.pdb
 INFO:Processing reference chain A
@@ -269,15 +303,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.205582
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.400328
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.276138
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.331297
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -287,6 +325,7 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.307090
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
@@ -299,6 +338,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.180179
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.225824
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
@@ -315,7 +355,7 @@ INFO:The number of clashes between the chain to add B and reference chain H is 0
 INFO:The number of clashes between the chain to add B and reference chain I is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain J
-INFO:This is the iteration #10 of the recursive function
+INFO:This is the iteration #9 of the recursive function
 INFO:The complex has 10 chains at this point
 INFO:We are processing the file pair_his3_sc_XJ.pdb
 INFO:Processing reference chain A
@@ -325,15 +365,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.282804
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.500175
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.206887
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.392066
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -343,6 +387,7 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.371214
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
@@ -355,6 +400,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.193267
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.289584
 INFO:Processing reference chain J
@@ -377,7 +423,7 @@ INFO:The number of clashes between the chain to add B and reference chain I is 1
 INFO:The number of clashes between the chain to add B and reference chain J is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain K
-INFO:This is the iteration #11 of the recursive function
+INFO:This is the iteration #10 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file pair_his3_sc_XK.pdb
 INFO:Processing reference chain A
@@ -387,14 +433,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.265899
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.389820
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.376531
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.407890
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -404,16 +455,20 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.371553
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
 INFO:Processing sample chain B
+INFO:The RMSD between chain G of the reference and chain B of the sample is 0.342508
 INFO:Processing reference chain H
 INFO:Processing sample chain A
 INFO:The RMSD between chain H of the reference and chain A of the sample is 0.282446
 INFO:Processing sample chain B
+INFO:The RMSD between chain H of the reference and chain B of the sample is 0.314877
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.194958
 INFO:Processing reference chain J
@@ -442,7 +497,7 @@ INFO:The number of clashes between the chain to add B and reference chain J is 0
 INFO:The number of clashes between the chain to add B and reference chain K is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain L
-INFO:This is the iteration #12 of the recursive function
+INFO:This is the iteration #11 of the recursive function
 INFO:The complex has 12 chains at this point
 INFO:We are processing the file pair_his3_sc_XL.pdb
 INFO:Processing reference chain A
@@ -452,9 +507,12 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.235189
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.416610
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.250203
 INFO:Processing reference chain D
@@ -484,7 +542,9 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.288770
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
+INFO:The RMSD between chain I of the reference and chain B of the sample is 0.328384
 INFO:Processing reference chain J
 INFO:Processing sample chain A
 INFO:The RMSD between chain J of the reference and chain A of the sample is 0.205582
@@ -517,7 +577,7 @@ INFO:The number of clashes between the chain to add B and reference chain K is 0
 INFO:The number of clashes between the chain to add B and reference chain L is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain M
-INFO:This is the iteration #13 of the recursive function
+INFO:This is the iteration #12 of the recursive function
 INFO:The complex has 13 chains at this point
 INFO:We are processing the file pair_his3_sc_XM.pdb
 INFO:Processing reference chain A
@@ -527,15 +587,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.253193
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.425760
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.261308
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.377792
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -545,6 +609,7 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.357713
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
@@ -557,6 +622,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.213905
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.231287
 INFO:Processing reference chain J
@@ -597,7 +663,7 @@ INFO:The number of clashes between the chain to add B and reference chain L is 0
 INFO:The number of clashes between the chain to add B and reference chain M is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain N
-INFO:This is the iteration #14 of the recursive function
+INFO:This is the iteration #13 of the recursive function
 INFO:The complex has 14 chains at this point
 INFO:We are processing the file pair_his3_sc_XN.pdb
 INFO:Processing reference chain A
@@ -607,15 +673,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.207741
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.405039
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.286187
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.339278
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -638,6 +708,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.224781
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.247121
 INFO:Processing reference chain J
@@ -684,7 +755,7 @@ INFO:The number of clashes between the chain to add B and reference chain M is 0
 INFO:The number of clashes between the chain to add B and reference chain N is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain O
-INFO:This is the iteration #15 of the recursive function
+INFO:This is the iteration #14 of the recursive function
 INFO:The complex has 15 chains at this point
 INFO:We are processing the file pair_his3_sc_XO.pdb
 INFO:Processing reference chain A
@@ -694,11 +765,14 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.222772
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
 INFO:The RMSD between chain B of the reference and chain B of the sample is 0.242614
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.431546
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
@@ -708,6 +782,7 @@ INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
 INFO:Processing sample chain B
+INFO:The RMSD between chain E of the reference and chain B of the sample is 0.369943
 INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
@@ -717,13 +792,17 @@ INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
 INFO:Processing sample chain B
+INFO:The RMSD between chain G of the reference and chain B of the sample is 0.337077
 INFO:Processing reference chain H
 INFO:Processing sample chain A
 INFO:The RMSD between chain H of the reference and chain A of the sample is 0.282446
 INFO:Processing sample chain B
+INFO:The RMSD between chain H of the reference and chain B of the sample is 0.385055
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
+INFO:The RMSD between chain I of the reference and chain B of the sample is 0.383144
 INFO:Processing reference chain J
 INFO:Processing sample chain A
 INFO:The RMSD between chain J of the reference and chain A of the sample is 0.205582
@@ -733,18 +812,22 @@ INFO:Processing reference chain K
 INFO:Processing sample chain A
 INFO:The RMSD between chain K of the reference and chain A of the sample is 0.282804
 INFO:Processing sample chain B
+INFO:The RMSD between chain K of the reference and chain B of the sample is 0.391067
 INFO:Processing reference chain L
 INFO:Processing sample chain A
 INFO:The RMSD between chain L of the reference and chain A of the sample is 0.265899
 INFO:Processing sample chain B
+INFO:The RMSD between chain L of the reference and chain B of the sample is 0.332805
 INFO:Processing reference chain M
 INFO:Processing sample chain A
 INFO:The RMSD between chain M of the reference and chain A of the sample is 0.235189
 INFO:Processing sample chain B
+INFO:The RMSD between chain M of the reference and chain B of the sample is 0.300353
 INFO:Processing reference chain N
 INFO:Processing sample chain A
 INFO:The RMSD between chain N of the reference and chain A of the sample is 0.253193
 INFO:Processing sample chain B
+INFO:The RMSD between chain N of the reference and chain B of the sample is 0.328280
 INFO:Processing reference chain O
 INFO:Processing sample chain A
 INFO:The RMSD between chain O of the reference and chain A of the sample is 0.207741
@@ -770,7 +853,7 @@ INFO:The number of clashes between the chain to add B and reference chain N is 0
 INFO:The number of clashes between the chain to add B and reference chain O is 1, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain P
-INFO:This is the iteration #16 of the recursive function
+INFO:This is the iteration #15 of the recursive function
 INFO:The complex has 16 chains at this point
 INFO:We are processing the file pair_his3_sc_XP.pdb
 INFO:Processing reference chain A
@@ -780,42 +863,54 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.255278
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
 INFO:The RMSD between chain B of the reference and chain B of the sample is 0.296553
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.436220
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.333267
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
 INFO:Processing sample chain B
+INFO:The RMSD between chain E of the reference and chain B of the sample is 0.384532
 INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.317398
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
 INFO:Processing sample chain B
+INFO:The RMSD between chain G of the reference and chain B of the sample is 0.381363
 INFO:Processing reference chain H
 INFO:Processing sample chain A
 INFO:The RMSD between chain H of the reference and chain A of the sample is 0.282446
 INFO:Processing sample chain B
+INFO:The RMSD between chain H of the reference and chain B of the sample is 0.371966
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
+INFO:The RMSD between chain I of the reference and chain B of the sample is 0.364594
 INFO:Processing reference chain J
 INFO:Processing sample chain A
 INFO:The RMSD between chain J of the reference and chain A of the sample is 0.205582
 INFO:Processing sample chain B
+INFO:The RMSD between chain J of the reference and chain B of the sample is 0.302480
 INFO:Processing reference chain K
 INFO:Processing sample chain A
 INFO:The RMSD between chain K of the reference and chain A of the sample is 0.282804
 INFO:Processing sample chain B
+INFO:The RMSD between chain K of the reference and chain B of the sample is 0.389883
 INFO:Processing reference chain L
 INFO:Processing sample chain A
 INFO:The RMSD between chain L of the reference and chain A of the sample is 0.265899
@@ -825,6 +920,7 @@ INFO:Processing reference chain M
 INFO:Processing sample chain A
 INFO:The RMSD between chain M of the reference and chain A of the sample is 0.235189
 INFO:Processing sample chain B
+INFO:The RMSD between chain M of the reference and chain B of the sample is 0.359506
 INFO:Processing reference chain N
 INFO:Processing sample chain A
 INFO:The RMSD between chain N of the reference and chain A of the sample is 0.253193
@@ -861,7 +957,7 @@ INFO:The number of clashes between the chain to add B and reference chain O is 0
 INFO:The number of clashes between the chain to add B and reference chain P is 3, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain Q
-INFO:This is the iteration #17 of the recursive function
+INFO:This is the iteration #16 of the recursive function
 INFO:The complex has 17 chains at this point
 INFO:We are processing the file pair_his3_sc_XQ.pdb
 INFO:Processing reference chain A
@@ -871,15 +967,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.220351
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.417003
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.237023
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.341428
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -889,6 +989,7 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.336986
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
@@ -901,6 +1002,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.225658
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.295812
 INFO:Processing reference chain J
@@ -937,6 +1039,7 @@ INFO:Processing reference chain P
 INFO:Processing sample chain A
 INFO:The RMSD between chain P of the reference and chain A of the sample is 0.222772
 INFO:Processing sample chain B
+INFO:The RMSD between chain P of the reference and chain B of the sample is 0.330433
 INFO:Processing reference chain Q
 INFO:Processing sample chain A
 INFO:The RMSD between chain Q of the reference and chain A of the sample is 0.255278
@@ -964,79 +1067,99 @@ INFO:The number of clashes between the chain to add B and reference chain P is 0
 INFO:The number of clashes between the chain to add B and reference chain Q is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain R
-INFO:This is the iteration #18 of the recursive function
+INFO:This is the iteration #17 of the recursive function
 INFO:The complex has 18 chains at this point
 INFO:We are processing the file pair_his3_sc_XR.pdb
 INFO:Processing reference chain A
 INFO:Processing sample chain A
 INFO:The RMSD between chain A of the reference and chain A of the sample is 0.000000
 INFO:Processing sample chain B
+INFO:The RMSD between chain A of the reference and chain B of the sample is 0.410569
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
 INFO:The RMSD between chain B of the reference and chain B of the sample is 0.269146
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.605395
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.422643
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
 INFO:Processing sample chain B
+INFO:The RMSD between chain E of the reference and chain B of the sample is 0.540858
 INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.393189
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
 INFO:Processing sample chain B
+INFO:The RMSD between chain G of the reference and chain B of the sample is 0.545582
 INFO:Processing reference chain H
 INFO:Processing sample chain A
 INFO:The RMSD between chain H of the reference and chain A of the sample is 0.282446
 INFO:Processing sample chain B
+INFO:The RMSD between chain H of the reference and chain B of the sample is 0.514243
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
+INFO:The RMSD between chain I of the reference and chain B of the sample is 0.471716
 INFO:Processing reference chain J
 INFO:Processing sample chain A
 INFO:The RMSD between chain J of the reference and chain A of the sample is 0.205582
 INFO:Processing sample chain B
+INFO:The RMSD between chain J of the reference and chain B of the sample is 0.457970
 INFO:Processing reference chain K
 INFO:Processing sample chain A
 INFO:The RMSD between chain K of the reference and chain A of the sample is 0.282804
 INFO:Processing sample chain B
+INFO:The RMSD between chain K of the reference and chain B of the sample is 0.534928
 INFO:Processing reference chain L
 INFO:Processing sample chain A
 INFO:The RMSD between chain L of the reference and chain A of the sample is 0.265899
 INFO:Processing sample chain B
+INFO:The RMSD between chain L of the reference and chain B of the sample is 0.447307
 INFO:Processing reference chain M
 INFO:Processing sample chain A
 INFO:The RMSD between chain M of the reference and chain A of the sample is 0.235189
 INFO:Processing sample chain B
+INFO:The RMSD between chain M of the reference and chain B of the sample is 0.516080
 INFO:Processing reference chain N
 INFO:Processing sample chain A
 INFO:The RMSD between chain N of the reference and chain A of the sample is 0.253193
 INFO:Processing sample chain B
+INFO:The RMSD between chain N of the reference and chain B of the sample is 0.477130
 INFO:Processing reference chain O
 INFO:Processing sample chain A
 INFO:The RMSD between chain O of the reference and chain A of the sample is 0.207741
 INFO:Processing sample chain B
+INFO:The RMSD between chain O of the reference and chain B of the sample is 0.457041
 INFO:Processing reference chain P
 INFO:Processing sample chain A
 INFO:The RMSD between chain P of the reference and chain A of the sample is 0.222772
 INFO:Processing sample chain B
+INFO:The RMSD between chain P of the reference and chain B of the sample is 0.346460
 INFO:Processing reference chain Q
 INFO:Processing sample chain A
 INFO:The RMSD between chain Q of the reference and chain A of the sample is 0.255278
 INFO:Processing sample chain B
+INFO:The RMSD between chain Q of the reference and chain B of the sample is 0.310700
 INFO:Processing reference chain R
 INFO:Processing sample chain A
 INFO:The RMSD between chain R of the reference and chain A of the sample is 0.220351
 INFO:Processing sample chain B
+INFO:The RMSD between chain R of the reference and chain B of the sample is 0.465836
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is B
@@ -1060,7 +1183,7 @@ INFO:The number of clashes between the chain to add B and reference chain Q is 0
 INFO:The number of clashes between the chain to add B and reference chain R is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain S
-INFO:This is the iteration #19 of the recursive function
+INFO:This is the iteration #18 of the recursive function
 INFO:The complex has 19 chains at this point
 INFO:We are processing the file pair_his3_sc_XS.pdb
 INFO:Processing reference chain A
@@ -1070,15 +1193,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.279972
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.470841
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.238066
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.404621
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -1088,6 +1215,7 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.416007
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
@@ -1100,7 +1228,9 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.241296
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
+INFO:The RMSD between chain I of the reference and chain B of the sample is 0.311637
 INFO:Processing reference chain J
 INFO:Processing sample chain A
 INFO:The RMSD between chain J of the reference and chain A of the sample is 0.205582
@@ -1135,10 +1265,12 @@ INFO:Processing reference chain P
 INFO:Processing sample chain A
 INFO:The RMSD between chain P of the reference and chain A of the sample is 0.222772
 INFO:Processing sample chain B
+INFO:The RMSD between chain P of the reference and chain B of the sample is 0.402193
 INFO:Processing reference chain Q
 INFO:Processing sample chain A
 INFO:The RMSD between chain Q of the reference and chain A of the sample is 0.255278
 INFO:Processing sample chain B
+INFO:The RMSD between chain Q of the reference and chain B of the sample is 0.346046
 INFO:Processing reference chain R
 INFO:Processing sample chain A
 INFO:The RMSD between chain R of the reference and chain A of the sample is 0.220351
@@ -1146,7 +1278,9 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain R of the reference and chain B of the sample is 0.185423
 INFO:Processing reference chain S
 INFO:Processing sample chain A
+INFO:The RMSD between chain S of the reference and chain A of the sample is 0.410569
 INFO:Processing sample chain B
+INFO:The RMSD between chain S of the reference and chain B of the sample is 0.523954
 INFO:The combination of chains with the lowest RMSD is ref chain A and sample chain A with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is B
@@ -1171,7 +1305,7 @@ INFO:The number of clashes between the chain to add B and reference chain R is 0
 INFO:The number of clashes between the chain to add B and reference chain S is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain T
-INFO:This is the iteration #20 of the recursive function
+INFO:This is the iteration #19 of the recursive function
 INFO:The complex has 20 chains at this point
 INFO:We are processing the file pair_his3_sc_XT.pdb
 INFO:Processing reference chain A
@@ -1181,15 +1315,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.257857
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.442757
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.270748
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.347043
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -1199,6 +1337,7 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.338235
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
@@ -1211,6 +1350,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.239584
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.289447
 INFO:Processing reference chain J
@@ -1247,10 +1387,12 @@ INFO:Processing reference chain P
 INFO:Processing sample chain A
 INFO:The RMSD between chain P of the reference and chain A of the sample is 0.222772
 INFO:Processing sample chain B
+INFO:The RMSD between chain P of the reference and chain B of the sample is 0.339935
 INFO:Processing reference chain Q
 INFO:Processing sample chain A
 INFO:The RMSD between chain Q of the reference and chain A of the sample is 0.255278
 INFO:Processing sample chain B
+INFO:The RMSD between chain Q of the reference and chain B of the sample is 0.383696
 INFO:Processing reference chain R
 INFO:Processing sample chain A
 INFO:The RMSD between chain R of the reference and chain A of the sample is 0.220351
@@ -1258,7 +1400,9 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain R of the reference and chain B of the sample is 0.267561
 INFO:Processing reference chain S
 INFO:Processing sample chain A
+INFO:The RMSD between chain S of the reference and chain A of the sample is 0.410569
 INFO:Processing sample chain B
+INFO:The RMSD between chain S of the reference and chain B of the sample is 0.505412
 INFO:Processing reference chain T
 INFO:Processing sample chain A
 INFO:The RMSD between chain T of the reference and chain A of the sample is 0.279972
@@ -1289,7 +1433,7 @@ INFO:The number of clashes between the chain to add B and reference chain S is 0
 INFO:The number of clashes between the chain to add B and reference chain T is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain U
-INFO:This is the iteration #21 of the recursive function
+INFO:This is the iteration #20 of the recursive function
 INFO:The complex has 21 chains at this point
 INFO:We are processing the file pair_his3_sc_XU.pdb
 INFO:Processing reference chain A
@@ -1299,15 +1443,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.195726
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.390950
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
 INFO:The RMSD between chain C of the reference and chain B of the sample is 0.283403
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.306305
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -1330,6 +1478,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.228852
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.272014
 INFO:Processing reference chain J
@@ -1371,6 +1520,7 @@ INFO:Processing reference chain Q
 INFO:Processing sample chain A
 INFO:The RMSD between chain Q of the reference and chain A of the sample is 0.255278
 INFO:Processing sample chain B
+INFO:The RMSD between chain Q of the reference and chain B of the sample is 0.309951
 INFO:Processing reference chain R
 INFO:Processing sample chain A
 INFO:The RMSD between chain R of the reference and chain A of the sample is 0.220351
@@ -1378,7 +1528,9 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain R of the reference and chain B of the sample is 0.221143
 INFO:Processing reference chain S
 INFO:Processing sample chain A
+INFO:The RMSD between chain S of the reference and chain A of the sample is 0.410569
 INFO:Processing sample chain B
+INFO:The RMSD between chain S of the reference and chain B of the sample is 0.444908
 INFO:Processing reference chain T
 INFO:Processing sample chain A
 INFO:The RMSD between chain T of the reference and chain A of the sample is 0.279972
@@ -1415,7 +1567,7 @@ INFO:The number of clashes between the chain to add B and reference chain T is 0
 INFO:The number of clashes between the chain to add B and reference chain U is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain V
-INFO:This is the iteration #22 of the recursive function
+INFO:This is the iteration #21 of the recursive function
 INFO:The complex has 22 chains at this point
 INFO:We are processing the file pair_his3_sc_XV.pdb
 INFO:Processing reference chain A
@@ -1425,14 +1577,19 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.249134
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.431390
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.344927
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
 INFO:Processing sample chain B
+INFO:The RMSD between chain D of the reference and chain B of the sample is 0.432584
 INFO:Processing reference chain E
 INFO:Processing sample chain A
 INFO:The RMSD between chain E of the reference and chain A of the sample is 0.297313
@@ -1442,10 +1599,12 @@ INFO:Processing reference chain F
 INFO:Processing sample chain A
 INFO:The RMSD between chain F of the reference and chain A of the sample is 0.247507
 INFO:Processing sample chain B
+INFO:The RMSD between chain F of the reference and chain B of the sample is 0.405853
 INFO:Processing reference chain G
 INFO:Processing sample chain A
 INFO:The RMSD between chain G of the reference and chain A of the sample is 0.243754
 INFO:Processing sample chain B
+INFO:The RMSD between chain G of the reference and chain B of the sample is 0.333431
 INFO:Processing reference chain H
 INFO:Processing sample chain A
 INFO:The RMSD between chain H of the reference and chain A of the sample is 0.282446
@@ -1453,6 +1612,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.269513
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.214316
 INFO:Processing reference chain J
@@ -1474,6 +1634,7 @@ INFO:Processing reference chain M
 INFO:Processing sample chain A
 INFO:The RMSD between chain M of the reference and chain A of the sample is 0.235189
 INFO:Processing sample chain B
+INFO:The RMSD between chain M of the reference and chain B of the sample is 0.314718
 INFO:Processing reference chain N
 INFO:Processing sample chain A
 INFO:The RMSD between chain N of the reference and chain A of the sample is 0.253193
@@ -1488,10 +1649,12 @@ INFO:Processing reference chain P
 INFO:Processing sample chain A
 INFO:The RMSD between chain P of the reference and chain A of the sample is 0.222772
 INFO:Processing sample chain B
+INFO:The RMSD between chain P of the reference and chain B of the sample is 0.367895
 INFO:Processing reference chain Q
 INFO:Processing sample chain A
 INFO:The RMSD between chain Q of the reference and chain A of the sample is 0.255278
 INFO:Processing sample chain B
+INFO:The RMSD between chain Q of the reference and chain B of the sample is 0.310123
 INFO:Processing reference chain R
 INFO:Processing sample chain A
 INFO:The RMSD between chain R of the reference and chain A of the sample is 0.220351
@@ -1499,7 +1662,9 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain R of the reference and chain B of the sample is 0.234059
 INFO:Processing reference chain S
 INFO:Processing sample chain A
+INFO:The RMSD between chain S of the reference and chain A of the sample is 0.410569
 INFO:Processing sample chain B
+INFO:The RMSD between chain S of the reference and chain B of the sample is 0.468811
 INFO:Processing reference chain T
 INFO:Processing sample chain A
 INFO:The RMSD between chain T of the reference and chain A of the sample is 0.279972
@@ -1542,7 +1707,7 @@ INFO:The number of clashes between the chain to add B and reference chain U is 0
 INFO:The number of clashes between the chain to add B and reference chain V is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain W
-INFO:This is the iteration #23 of the recursive function
+INFO:This is the iteration #22 of the recursive function
 INFO:The complex has 23 chains at this point
 INFO:We are processing the file pair_his3_sc_XW.pdb
 INFO:Processing reference chain A
@@ -1552,10 +1717,14 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain A of the reference and chain B of the sample is 0.150606
 INFO:Processing reference chain B
 INFO:Processing sample chain A
+INFO:The RMSD between chain B of the reference and chain A of the sample is 0.318013
 INFO:Processing sample chain B
+INFO:The RMSD between chain B of the reference and chain B of the sample is 0.325959
 INFO:Processing reference chain C
 INFO:Processing sample chain A
+INFO:The RMSD between chain C of the reference and chain A of the sample is 0.317511
 INFO:Processing sample chain B
+INFO:The RMSD between chain C of the reference and chain B of the sample is 0.335693
 INFO:Processing reference chain D
 INFO:Processing sample chain A
 INFO:The RMSD between chain D of the reference and chain A of the sample is 0.264374
@@ -1583,6 +1752,7 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain H of the reference and chain B of the sample is 0.268700
 INFO:Processing reference chain I
 INFO:Processing sample chain A
+INFO:The RMSD between chain I of the reference and chain A of the sample is 0.314160
 INFO:Processing sample chain B
 INFO:The RMSD between chain I of the reference and chain B of the sample is 0.288288
 INFO:Processing reference chain J
@@ -1632,11 +1802,14 @@ INFO:Processing sample chain B
 INFO:The RMSD between chain R of the reference and chain B of the sample is 0.244403
 INFO:Processing reference chain S
 INFO:Processing sample chain A
+INFO:The RMSD between chain S of the reference and chain A of the sample is 0.410569
 INFO:Processing sample chain B
+INFO:The RMSD between chain S of the reference and chain B of the sample is 0.397643
 INFO:Processing reference chain T
 INFO:Processing sample chain A
 INFO:The RMSD between chain T of the reference and chain A of the sample is 0.279972
 INFO:Processing sample chain B
+INFO:The RMSD between chain T of the reference and chain B of the sample is 0.306311
 INFO:Processing reference chain U
 INFO:Processing sample chain A
 INFO:The RMSD between chain U of the reference and chain A of the sample is 0.257857
@@ -1680,9 +1853,8 @@ INFO:The number of clashes between the chain to add B and reference chain V is 0
 INFO:The number of clashes between the chain to add B and reference chain W is 0, it is under the threshold
 INFO:Chain A superimposed with chain A yields rotated chain B which is not in the complex
 INFO:Added Chain X
-INFO:This is the iteration #24 of the recursive function
-INFO:The complex has 24 chains at this point
-INFO:The whole macrocomplex has been successfully build with the desired number of chains
+INFO:The whole macrocomplex has been successfully build
 INFO:The final complex has 24 chains
-INFO:The program has finished running! It took 5.029991 seconds
+INFO:We have arrived to iteration 23
 INFO:Output files macrocomplex.pdb and macrocomplex.log saved in D:\Documents\BIM\2Q\PYT\PROJECT\macrocomplex_builder\examples\6ezm_output
+INFO:The program has finished running! It took 7.170360 seconds

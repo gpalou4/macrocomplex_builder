@@ -23,10 +23,10 @@ INFO:The combination of chains with the lowest RMSD is ref chain A and sample ch
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:This is the iteration #1 of the recursive function
 INFO:The complex has 2 chains at this point
 INFO:We are processing the file 5dn6_AE.pdb
@@ -184,14 +184,14 @@ INFO:The number of clashes between the chain to add B and reference chain D is 0
 INFO:The number of clashes between the chain to add B and reference chain E is 7, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain H is 0, it is under the threshold
-INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain B with sample chain B with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #6 of the recursive function
 INFO:The complex has 6 chains at this point
 INFO:We are processing the file 5dn6_CD.pdb
@@ -338,13 +338,13 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #9 of the recursive function
 INFO:The complex has 8 chains at this point
 INFO:We are processing the file 5dn6_CH.pdb
@@ -397,14 +397,14 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #10 of the recursive function
 INFO:The complex has 8 chains at this point
 INFO:We are processing the file 5dn6_CV.pdb
@@ -653,7 +653,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain F and sample ch
 INFO:We are processing the superimposition of ref chain F with sample chain F with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -663,7 +663,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #14 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_DG.pdb
@@ -726,13 +726,13 @@ INFO:The combination of chains with the lowest RMSD is ref chain G and sample ch
 INFO:We are processing the superimposition of ref chain G with sample chain G with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #15 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_DH.pdb
@@ -795,14 +795,14 @@ INFO:The combination of chains with the lowest RMSD is ref chain H and sample ch
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #16 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_DZ.pdb
@@ -865,7 +865,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain Z and sample ch
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is Z
 INFO:The number of clashes between the chain to add Z and reference chain A is 0, it is under the threshold
@@ -878,7 +878,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:This is the iteration #17 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_EG.pdb
@@ -942,13 +942,13 @@ INFO:We are processing the superimposition of ref chain G with sample chain G wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #18 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_EH.pdb
@@ -1012,14 +1012,14 @@ INFO:We are processing the superimposition of ref chain H with sample chain H wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #19 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_FG.pdb
@@ -1088,13 +1088,13 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain F with sample chain F with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #20 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_FH.pdb
@@ -1160,7 +1160,7 @@ INFO:The number of clashes between the chain to add H and reference chain A is 3
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -1170,7 +1170,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #21 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_FZ.pdb
@@ -1242,7 +1242,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -1252,7 +1252,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #22 of the recursive function
 INFO:The complex has 11 chains at this point
 INFO:We are processing the file 5dn6_GI.pdb
@@ -1488,13 +1488,13 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #25 of the recursive function
 INFO:The complex has 13 chains at this point
 INFO:We are processing the file 5dn6_IJ.pdb
@@ -2098,7 +2098,7 @@ INFO:The number of clashes between the chain to add X and reference chain J is 0
 INFO:The number of clashes between the chain to add X and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain K is 0, it is under the threshold
-INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000000
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -2117,7 +2117,7 @@ INFO:The number of clashes between the chain to add K and reference chain L is 1
 INFO:The number of clashes between the chain to add K and reference chain J is 14, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain R is 0, it is under the threshold
-INFO:The number of clashes between the chain to add K and reference chain K is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add K and reference chain K is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain K with an RMSD of 0.007633
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -2133,7 +2133,7 @@ INFO:The number of clashes between the chain to add K and reference chain W is 0
 INFO:The number of clashes between the chain to add K and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain L is 0, it is under the threshold
-INFO:The number of clashes between the chain to add K and reference chain J is 243, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add K and reference chain J is 243, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain K with an RMSD of 0.008132
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -2392,7 +2392,7 @@ INFO:The number of clashes between the chain to add V and reference chain H is 0
 INFO:The number of clashes between the chain to add V and reference chain B is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain F is 0, it is under the threshold
-INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain V with sample chain V with an RMSD of 0.000000
 INFO:Putative chain to add is W
 INFO:The number of clashes between the chain to add W and reference chain A is 0, it is under the threshold
@@ -2404,7 +2404,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:This is the iteration #33 of the recursive function
 INFO:The complex has 20 chains at this point
 INFO:We are processing the file 5dn6_XY.pdb
@@ -2792,7 +2792,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain W with sample chain W with an RMSD of 0.000000
 INFO:Putative chain to add is 1
 INFO:The number of clashes between the chain to add 1 and reference chain A is 0, it is under the threshold
@@ -2816,7 +2816,7 @@ INFO:The number of clashes between the chain to add 1 and reference chain X is 0
 INFO:The number of clashes between the chain to add 1 and reference chain M is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain U is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain Y is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is skipped
 INFO:This is the iteration #36 of the recursive function
 INFO:The complex has 22 chains at this point
 INFO:We are processing the file 5dn6_12.pdb
@@ -3087,7 +3087,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain W with sample chain W with an RMSD of 0.000000
 INFO:Putative chain to add is 2
 INFO:The number of clashes between the chain to add 2 and reference chain A is 0, it is under the threshold
@@ -3112,7 +3112,7 @@ INFO:The number of clashes between the chain to add 2 and reference chain M is 0
 INFO:The number of clashes between the chain to add 2 and reference chain U is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 2 and reference chain Y is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 2 and reference chain 1 is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 2 and reference chain 2 is 49, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 2 and reference chain 2 is 49, therefore the chain is skipped
 INFO:This is the iteration #38 of the recursive function
 INFO:The complex has 23 chains at this point
 INFO:We are processing the file 5dn6_3X.pdb
@@ -3386,10 +3386,10 @@ INFO:The combination of chains with the lowest RMSD is ref chain A and sample ch
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:This is the iteration #40 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_AE.pdb
@@ -3518,10 +3518,10 @@ INFO:We are processing the superimposition of ref chain A with sample chain A wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:This is the iteration #41 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_AG.pdb
@@ -3648,13 +3648,13 @@ WARNING:Cannot superimpose. The number of atoms of the reference chain 3 is 19 a
 INFO:The combination of chains with the lowest RMSD is ref chain G and sample chain G with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain G with sample chain G with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #42 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_AH.pdb
@@ -3781,14 +3781,14 @@ WARNING:Cannot superimpose. The number of atoms of the reference chain 3 is 19 a
 INFO:The combination of chains with the lowest RMSD is ref chain H and sample chain H with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #43 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_BG.pdb
@@ -3920,13 +3920,13 @@ INFO:The number of clashes between the chain to add B and reference chain D is 0
 INFO:The number of clashes between the chain to add B and reference chain E is 7, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain H is 0, it is under the threshold
-INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain B with sample chain B with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #44 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_BH.pdb
@@ -4058,14 +4058,14 @@ INFO:The number of clashes between the chain to add B and reference chain D is 0
 INFO:The number of clashes between the chain to add B and reference chain E is 7, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain H is 0, it is under the threshold
-INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain B with sample chain B with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #45 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_CD.pdb
@@ -4193,7 +4193,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain C and sample ch
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is C
 INFO:The number of clashes between the chain to add C and reference chain A is 0, it is under the threshold
@@ -4202,7 +4202,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:This is the iteration #46 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_CF.pdb
@@ -4335,7 +4335,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -4345,7 +4345,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #47 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_CG.pdb
@@ -4478,13 +4478,13 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #48 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_CH.pdb
@@ -4617,14 +4617,14 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #49 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_CV.pdb
@@ -4759,7 +4759,7 @@ INFO:The number of clashes between the chain to add V and reference chain H is 0
 INFO:The number of clashes between the chain to add V and reference chain B is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain F is 0, it is under the threshold
-INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain V with sample chain V with an RMSD of 0.000000
 INFO:Putative chain to add is C
 INFO:The number of clashes between the chain to add C and reference chain A is 0, it is under the threshold
@@ -4768,7 +4768,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:This is the iteration #50 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_CW.pdb
@@ -4904,7 +4904,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain W with sample chain W with an RMSD of 0.000000
 INFO:Putative chain to add is C
 INFO:The number of clashes between the chain to add C and reference chain A is 0, it is under the threshold
@@ -4913,7 +4913,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:This is the iteration #51 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_CZ.pdb
@@ -5046,7 +5046,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is Z
 INFO:The number of clashes between the chain to add Z and reference chain A is 0, it is under the threshold
@@ -5059,7 +5059,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:This is the iteration #52 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_DF.pdb
@@ -5187,7 +5187,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain F and sample ch
 INFO:We are processing the superimposition of ref chain F with sample chain F with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -5197,7 +5197,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #53 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_DG.pdb
@@ -5325,13 +5325,13 @@ INFO:The combination of chains with the lowest RMSD is ref chain G and sample ch
 INFO:We are processing the superimposition of ref chain G with sample chain G with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #54 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_DH.pdb
@@ -5459,14 +5459,14 @@ INFO:The combination of chains with the lowest RMSD is ref chain H and sample ch
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #55 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_DZ.pdb
@@ -5594,7 +5594,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain Z and sample ch
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is Z
 INFO:The number of clashes between the chain to add Z and reference chain A is 0, it is under the threshold
@@ -5607,7 +5607,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:This is the iteration #56 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_EG.pdb
@@ -5736,13 +5736,13 @@ INFO:We are processing the superimposition of ref chain G with sample chain G wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #57 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_EH.pdb
@@ -5871,14 +5871,14 @@ INFO:We are processing the superimposition of ref chain H with sample chain H wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #58 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_FG.pdb
@@ -6012,13 +6012,13 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain F with sample chain F with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #59 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_FH.pdb
@@ -6149,7 +6149,7 @@ INFO:The number of clashes between the chain to add H and reference chain A is 3
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -6159,7 +6159,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #60 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_FZ.pdb
@@ -6296,7 +6296,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -6306,7 +6306,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #61 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_GI.pdb
@@ -6444,13 +6444,13 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain I with sample chain I with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #62 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_GL.pdb
@@ -6589,45 +6589,45 @@ INFO:The number of clashes between the chain to add L and reference chain V is 0
 INFO:The number of clashes between the chain to add L and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add L and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add L and reference chain I is 0, it is under the threshold
-INFO:The number of clashes between the chain to add L and reference chain L is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add L and reference chain L is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain L with sample chain L with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain L with an RMSD of 0.025958
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 8, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 4, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain E is 45, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain E is 45, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain L with an RMSD of 0.028298
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 3, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 22, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 361, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 361, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain L with an RMSD of 0.028299
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 10, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 5, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain E is 57, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain E is 57, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain L with an RMSD of 0.030623
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 8, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 4, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain E is 50, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain E is 50, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain L with an RMSD of 0.032031
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 1, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 1, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 617, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 617, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain L with an RMSD of 0.037503
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 6, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 5, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain E is 72, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain E is 72, therefore the chain is skipped
 INFO:This is the iteration #63 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_GZ.pdb
@@ -6764,13 +6764,13 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #64 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_IJ.pdb
@@ -6910,7 +6910,7 @@ INFO:The number of clashes between the chain to add J and reference chain W is 0
 INFO:The number of clashes between the chain to add J and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain L is 0, it is under the threshold
-INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain J with an RMSD of 0.000000
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -6924,7 +6924,7 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain J with an RMSD of 0.004207
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -6938,19 +6938,19 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 128, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 128, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain J with an RMSD of 0.007632
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 73, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 73, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain J with an RMSD of 0.007633
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 109, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 109, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain J with an RMSD of 0.008615
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -6964,19 +6964,19 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 107, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 107, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain J with an RMSD of 0.010648
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 111, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 111, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain L with sample chain J with an RMSD of 0.030623
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 71, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 71, therefore the chain is skipped
 INFO:This is the iteration #65 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_IP.pdb
@@ -7117,7 +7117,7 @@ INFO:The number of clashes between the chain to add P and reference chain Z is 0
 INFO:The number of clashes between the chain to add P and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add P and reference chain L is 0, it is under the threshold
 INFO:The number of clashes between the chain to add P and reference chain J is 0, it is under the threshold
-INFO:The number of clashes between the chain to add P and reference chain P is 238, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add P and reference chain P is 238, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain P with an RMSD of 0.000000
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -7131,19 +7131,19 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain P with an RMSD of 0.008132
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 120, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 120, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain P with an RMSD of 0.008132
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 113, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 113, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain P with an RMSD of 0.008615
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -7157,25 +7157,25 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 271, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 271, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain P with an RMSD of 0.009722
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 104, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 104, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain P with an RMSD of 0.012588
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 81, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 81, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain L with sample chain P with an RMSD of 0.025958
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 42, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 42, therefore the chain is skipped
 INFO:This is the iteration #66 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_IR.pdb
@@ -7317,7 +7317,7 @@ INFO:The number of clashes between the chain to add R and reference chain I is 0
 INFO:The number of clashes between the chain to add R and reference chain L is 0, it is under the threshold
 INFO:The number of clashes between the chain to add R and reference chain J is 0, it is under the threshold
 INFO:The number of clashes between the chain to add R and reference chain P is 0, it is under the threshold
-INFO:The number of clashes between the chain to add R and reference chain R is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add R and reference chain R is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain R with an RMSD of 0.000000
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -7331,37 +7331,37 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain R with an RMSD of 0.009099
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 43, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 43, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain R with an RMSD of 0.010648
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 107, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 107, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain R with an RMSD of 0.011591
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 82, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 82, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain R with an RMSD of 0.011592
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 64, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 64, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain R with an RMSD of 0.012588
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 130, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 130, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain L with sample chain R with an RMSD of 0.037503
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -7375,7 +7375,7 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 203, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 203, therefore the chain is skipped
 INFO:This is the iteration #67 of the recursive function
 INFO:The complex has 24 chains at this point
 INFO:We are processing the file 5dn6_JK.pdb
@@ -7515,7 +7515,7 @@ INFO:The number of clashes between the chain to add J and reference chain W is 0
 INFO:The number of clashes between the chain to add J and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain L is 0, it is under the threshold
-INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain J with an RMSD of 0.000000
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -7534,7 +7534,7 @@ INFO:The number of clashes between the chain to add K and reference chain L is 1
 INFO:The number of clashes between the chain to add K and reference chain J is 14, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain R is 0, it is under the threshold
-INFO:The number of clashes between the chain to add K and reference chain K is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add K and reference chain K is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain K with an RMSD of 0.000005
 INFO:Putative chain to add is J
 INFO:The number of clashes between the chain to add J and reference chain A is 0, it is under the threshold
@@ -7711,7 +7711,7 @@ INFO:The number of clashes between the chain to add X and reference chain J is 0
 INFO:The number of clashes between the chain to add X and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain K is 0, it is under the threshold
-INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000000
 INFO:Putative chain to add is J
 INFO:The number of clashes between the chain to add J and reference chain A is 0, it is under the threshold
@@ -7727,7 +7727,7 @@ INFO:The number of clashes between the chain to add J and reference chain W is 0
 INFO:The number of clashes between the chain to add J and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain L is 0, it is under the threshold
-INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain N with sample chain J with an RMSD of 0.000003
 INFO:Putative chain to add is J
 INFO:The number of clashes between the chain to add J and reference chain A is 0, it is under the threshold
@@ -7754,7 +7754,7 @@ INFO:The number of clashes between the chain to add J and reference chain Y is 0
 INFO:The number of clashes between the chain to add J and reference chain 1 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain 2 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain 3 is 0, it is under the threshold
-INFO:The number of clashes between the chain to add J and reference chain N is 244, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add J and reference chain N is 244, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain J with an RMSD of 0.004207
 INFO:Putative chain to add is J
 INFO:The number of clashes between the chain to add J and reference chain A is 0, it is under the threshold
@@ -7937,7 +7937,7 @@ INFO:The number of clashes between the chain to add X and reference chain J is 0
 INFO:The number of clashes between the chain to add X and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain K is 0, it is under the threshold
-INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000000
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -7956,7 +7956,7 @@ INFO:The number of clashes between the chain to add K and reference chain L is 1
 INFO:The number of clashes between the chain to add K and reference chain J is 14, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain R is 0, it is under the threshold
-INFO:The number of clashes between the chain to add K and reference chain K is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add K and reference chain K is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain K with an RMSD of 0.000005
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -7977,7 +7977,7 @@ INFO:The number of clashes between the chain to add K and reference chain P is 1
 INFO:The number of clashes between the chain to add K and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain K is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain X is 0, it is under the threshold
-INFO:The number of clashes between the chain to add K and reference chain M is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add K and reference chain M is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain N with sample chain K with an RMSD of 0.007633
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -7995,7 +7995,7 @@ INFO:The number of clashes between the chain to add K and reference chain I is 0
 INFO:The number of clashes between the chain to add K and reference chain L is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain J is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain P is 0, it is under the threshold
-INFO:The number of clashes between the chain to add K and reference chain R is 257, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add K and reference chain R is 257, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain K with an RMSD of 0.007633
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -8013,7 +8013,7 @@ INFO:The number of clashes between the chain to add K and reference chain I is 0
 INFO:The number of clashes between the chain to add K and reference chain L is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain J is 0, it is under the threshold
 INFO:The number of clashes between the chain to add K and reference chain P is 0, it is under the threshold
-INFO:The number of clashes between the chain to add K and reference chain R is 64, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add K and reference chain R is 64, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain O with sample chain K with an RMSD of 0.007633
 INFO:Putative chain to add is K
 INFO:The number of clashes between the chain to add K and reference chain A is 0, it is under the threshold
@@ -8204,7 +8204,7 @@ INFO:The number of clashes between the chain to add U and reference chain R is 0
 INFO:The number of clashes between the chain to add U and reference chain K is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain X is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain M is 0, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain U is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain U is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain U with an RMSD of 0.000000
 INFO:Putative chain to add is X
 INFO:The number of clashes between the chain to add X and reference chain A is 0, it is under the threshold
@@ -8224,7 +8224,7 @@ INFO:The number of clashes between the chain to add X and reference chain J is 0
 INFO:The number of clashes between the chain to add X and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain K is 0, it is under the threshold
-INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain U with an RMSD of 0.004207
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8240,7 +8240,7 @@ INFO:The number of clashes between the chain to add U and reference chain W is 0
 INFO:The number of clashes between the chain to add U and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain L is 0, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain J is 243, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain J is 243, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain O with sample chain U with an RMSD of 0.004207
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8267,7 +8267,7 @@ INFO:The number of clashes between the chain to add U and reference chain Y is 0
 INFO:The number of clashes between the chain to add U and reference chain 1 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain 2 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain 3 is 0, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain N is 285, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain N is 285, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain N with sample chain U with an RMSD of 0.004207
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8296,7 +8296,7 @@ INFO:The number of clashes between the chain to add U and reference chain 2 is 0
 INFO:The number of clashes between the chain to add U and reference chain 3 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain N is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain O is 0, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain Q is 202, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain Q is 202, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain U with an RMSD of 0.008667
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8324,7 +8324,7 @@ INFO:The number of clashes between the chain to add U and reference chain 1 is 0
 INFO:The number of clashes between the chain to add U and reference chain 2 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain 3 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain N is 24, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain O is 262, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain O is 262, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain U with an RMSD of 0.008667
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8345,7 +8345,7 @@ INFO:The number of clashes between the chain to add U and reference chain P is 2
 INFO:The number of clashes between the chain to add U and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain K is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain X is 0, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain M is 283, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain M is 283, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Q with sample chain U with an RMSD of 0.008668
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8373,7 +8373,7 @@ INFO:The number of clashes between the chain to add U and reference chain 1 is 0
 INFO:The number of clashes between the chain to add U and reference chain 2 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain 3 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain N is 19, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain O is 283, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain O is 283, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain U with an RMSD of 0.009099
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8389,7 +8389,7 @@ INFO:The number of clashes between the chain to add U and reference chain W is 0
 INFO:The number of clashes between the chain to add U and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add U and reference chain L is 0, it is under the threshold
-INFO:The number of clashes between the chain to add U and reference chain J is 309, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add U and reference chain J is 309, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain U with an RMSD of 0.009722
 INFO:Putative chain to add is U
 INFO:The number of clashes between the chain to add U and reference chain A is 0, it is under the threshold
@@ -8575,7 +8575,7 @@ INFO:The number of clashes between the chain to add V and reference chain H is 0
 INFO:The number of clashes between the chain to add V and reference chain B is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain F is 0, it is under the threshold
-INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain V with sample chain V with an RMSD of 0.000000
 INFO:Putative chain to add is W
 INFO:The number of clashes between the chain to add W and reference chain A is 0, it is under the threshold
@@ -8587,7 +8587,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:This is the iteration #72 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_XY.pdb
@@ -8751,7 +8751,7 @@ INFO:The number of clashes between the chain to add X and reference chain J is 0
 INFO:The number of clashes between the chain to add X and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain K is 0, it is under the threshold
-INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000000
 INFO:Putative chain to add is Y
 INFO:The number of clashes between the chain to add Y and reference chain A is 0, it is under the threshold
@@ -8774,7 +8774,7 @@ INFO:The number of clashes between the chain to add Y and reference chain K is 0
 INFO:The number of clashes between the chain to add Y and reference chain X is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Y and reference chain M is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Y and reference chain U is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Y and reference chain Y is 172, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Y and reference chain Y is 172, therefore the chain is skipped
 INFO:This is the iteration #73 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_1C.pdb
@@ -8927,7 +8927,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is 1
 INFO:The number of clashes between the chain to add 1 and reference chain A is 0, it is under the threshold
@@ -8951,7 +8951,7 @@ INFO:The number of clashes between the chain to add 1 and reference chain X is 0
 INFO:The number of clashes between the chain to add 1 and reference chain M is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain U is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain Y is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is skipped
 INFO:This is the iteration #74 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_1W.pdb
@@ -9107,7 +9107,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain W with sample chain W with an RMSD of 0.000000
 INFO:Putative chain to add is 1
 INFO:The number of clashes between the chain to add 1 and reference chain A is 0, it is under the threshold
@@ -9131,7 +9131,7 @@ INFO:The number of clashes between the chain to add 1 and reference chain X is 0
 INFO:The number of clashes between the chain to add 1 and reference chain M is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain U is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain Y is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is skipped
 INFO:This is the iteration #75 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_12.pdb
@@ -9300,7 +9300,7 @@ INFO:The number of clashes between the chain to add 2 and reference chain M is 0
 INFO:The number of clashes between the chain to add 2 and reference chain U is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 2 and reference chain Y is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 2 and reference chain 1 is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 2 and reference chain 2 is 49, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 2 and reference chain 2 is 49, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain 2 with sample chain 2 with an RMSD of 0.000000
 INFO:Putative chain to add is 1
 INFO:The number of clashes between the chain to add 1 and reference chain A is 0, it is under the threshold
@@ -9324,7 +9324,7 @@ INFO:The number of clashes between the chain to add 1 and reference chain X is 0
 INFO:The number of clashes between the chain to add 1 and reference chain M is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain U is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 1 and reference chain Y is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 1 and reference chain 1 is 58, therefore the chain is skipped
 INFO:This is the iteration #76 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_2W.pdb
@@ -9480,7 +9480,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain W with sample chain W with an RMSD of 0.000000
 INFO:Putative chain to add is 2
 INFO:The number of clashes between the chain to add 2 and reference chain A is 0, it is under the threshold
@@ -9505,7 +9505,7 @@ INFO:The number of clashes between the chain to add 2 and reference chain M is 0
 INFO:The number of clashes between the chain to add 2 and reference chain U is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 2 and reference chain Y is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 2 and reference chain 1 is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 2 and reference chain 2 is 49, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 2 and reference chain 2 is 49, therefore the chain is skipped
 INFO:This is the iteration #77 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_3X.pdb
@@ -9669,7 +9669,7 @@ INFO:The number of clashes between the chain to add X and reference chain J is 0
 INFO:The number of clashes between the chain to add X and reference chain P is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain R is 0, it is under the threshold
 INFO:The number of clashes between the chain to add X and reference chain K is 0, it is under the threshold
-INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add X and reference chain X is 322, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain X with sample chain X with an RMSD of 0.000000
 INFO:Putative chain to add is 3
 INFO:The number of clashes between the chain to add 3 and reference chain A is 0, it is under the threshold
@@ -9695,7 +9695,7 @@ INFO:The number of clashes between the chain to add 3 and reference chain U is 0
 INFO:The number of clashes between the chain to add 3 and reference chain Y is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 3 and reference chain 1 is 0, it is under the threshold
 INFO:The number of clashes between the chain to add 3 and reference chain 2 is 0, it is under the threshold
-INFO:The number of clashes between the chain to add 3 and reference chain 3 is 59, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add 3 and reference chain 3 is 59, therefore the chain is skipped
 INFO:This is the iteration #78 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_AD.pdb
@@ -9843,10 +9843,10 @@ INFO:The combination of chains with the lowest RMSD is ref chain A and sample ch
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:This is the iteration #79 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_AE.pdb
@@ -9995,10 +9995,10 @@ INFO:We are processing the superimposition of ref chain A with sample chain A wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:This is the iteration #80 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_AG.pdb
@@ -10145,13 +10145,13 @@ WARNING:Cannot superimpose. The number of atoms of the reference chain S is 74 a
 INFO:The combination of chains with the lowest RMSD is ref chain G and sample chain G with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain G with sample chain G with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #81 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_AH.pdb
@@ -10298,14 +10298,14 @@ WARNING:Cannot superimpose. The number of atoms of the reference chain S is 74 a
 INFO:The combination of chains with the lowest RMSD is ref chain H and sample chain H with an RMSD of 0.000000
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is A
-INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add A and reference chain A is 1781, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain A with sample chain A with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #82 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_BG.pdb
@@ -10457,13 +10457,13 @@ INFO:The number of clashes between the chain to add B and reference chain D is 0
 INFO:The number of clashes between the chain to add B and reference chain E is 7, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain H is 0, it is under the threshold
-INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain B with sample chain B with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #83 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_BH.pdb
@@ -10615,14 +10615,14 @@ INFO:The number of clashes between the chain to add B and reference chain D is 0
 INFO:The number of clashes between the chain to add B and reference chain E is 7, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add B and reference chain H is 0, it is under the threshold
-INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add B and reference chain B is 1772, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain B with sample chain B with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #84 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_CD.pdb
@@ -10770,7 +10770,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain C and sample ch
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is C
 INFO:The number of clashes between the chain to add C and reference chain A is 0, it is under the threshold
@@ -10779,7 +10779,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:This is the iteration #85 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_CF.pdb
@@ -10932,7 +10932,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -10942,7 +10942,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #86 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_CG.pdb
@@ -11095,13 +11095,13 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #87 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_CH.pdb
@@ -11254,14 +11254,14 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #88 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_CV.pdb
@@ -11416,7 +11416,7 @@ INFO:The number of clashes between the chain to add V and reference chain H is 0
 INFO:The number of clashes between the chain to add V and reference chain B is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add V and reference chain F is 0, it is under the threshold
-INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add V and reference chain V is 256, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain V with sample chain V with an RMSD of 0.000000
 INFO:Putative chain to add is C
 INFO:The number of clashes between the chain to add C and reference chain A is 0, it is under the threshold
@@ -11425,7 +11425,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:This is the iteration #89 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_CW.pdb
@@ -11581,7 +11581,7 @@ INFO:The number of clashes between the chain to add W and reference chain B is 0
 INFO:The number of clashes between the chain to add W and reference chain C is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add W and reference chain V is 2, it is under the threshold
-INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add W and reference chain W is 394, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain W with sample chain W with an RMSD of 0.000000
 INFO:Putative chain to add is C
 INFO:The number of clashes between the chain to add C and reference chain A is 0, it is under the threshold
@@ -11590,7 +11590,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:This is the iteration #90 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_CZ.pdb
@@ -11743,7 +11743,7 @@ INFO:The number of clashes between the chain to add C and reference chain E is 0
 INFO:The number of clashes between the chain to add C and reference chain G is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add C and reference chain B is 0, it is under the threshold
-INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add C and reference chain C is 1736, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain C with sample chain C with an RMSD of 0.000000
 INFO:Putative chain to add is Z
 INFO:The number of clashes between the chain to add Z and reference chain A is 0, it is under the threshold
@@ -11756,7 +11756,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:This is the iteration #91 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_DF.pdb
@@ -11904,7 +11904,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain F and sample ch
 INFO:We are processing the superimposition of ref chain F with sample chain F with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -11914,7 +11914,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #92 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_DG.pdb
@@ -12062,13 +12062,13 @@ INFO:The combination of chains with the lowest RMSD is ref chain G and sample ch
 INFO:We are processing the superimposition of ref chain G with sample chain G with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #93 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_DH.pdb
@@ -12216,14 +12216,14 @@ INFO:The combination of chains with the lowest RMSD is ref chain H and sample ch
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #94 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_DZ.pdb
@@ -12371,7 +12371,7 @@ INFO:The combination of chains with the lowest RMSD is ref chain Z and sample ch
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is D
 INFO:The number of clashes between the chain to add D and reference chain A is 8, it is under the threshold
-INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add D and reference chain D is 1684, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain D with sample chain D with an RMSD of 0.000000
 INFO:Putative chain to add is Z
 INFO:The number of clashes between the chain to add Z and reference chain A is 0, it is under the threshold
@@ -12384,7 +12384,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:This is the iteration #95 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_EG.pdb
@@ -12533,13 +12533,13 @@ INFO:We are processing the superimposition of ref chain G with sample chain G wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #96 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_EH.pdb
@@ -12688,14 +12688,14 @@ INFO:We are processing the superimposition of ref chain H with sample chain H wi
 INFO:Putative chain to add is E
 INFO:The number of clashes between the chain to add E and reference chain A is 9, it is under the threshold
 INFO:The number of clashes between the chain to add E and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add E and reference chain E is 1664, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain E with sample chain E with an RMSD of 0.000000
 INFO:Putative chain to add is H
 INFO:The number of clashes between the chain to add H and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:This is the iteration #97 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_FG.pdb
@@ -12849,13 +12849,13 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain F with sample chain F with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #98 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_FH.pdb
@@ -13006,7 +13006,7 @@ INFO:The number of clashes between the chain to add H and reference chain A is 3
 INFO:The number of clashes between the chain to add H and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain E is 0, it is under the threshold
 INFO:The number of clashes between the chain to add H and reference chain G is 0, it is under the threshold
-INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add H and reference chain H is 380, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain H with sample chain H with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -13016,7 +13016,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #99 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_FZ.pdb
@@ -13173,7 +13173,7 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is F
 INFO:The number of clashes between the chain to add F and reference chain A is 0, it is under the threshold
@@ -13183,7 +13183,7 @@ INFO:The number of clashes between the chain to add F and reference chain G is 1
 INFO:The number of clashes between the chain to add F and reference chain H is 0, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain B is 9, it is under the threshold
 INFO:The number of clashes between the chain to add F and reference chain C is 6, it is under the threshold
-INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add F and reference chain F is 1660, therefore the chain is skipped
 INFO:This is the iteration #100 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_GI.pdb
@@ -13341,13 +13341,13 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain I with sample chain I with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #101 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_GL.pdb
@@ -13506,70 +13506,70 @@ INFO:The number of clashes between the chain to add L and reference chain V is 0
 INFO:The number of clashes between the chain to add L and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add L and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add L and reference chain I is 0, it is under the threshold
-INFO:The number of clashes between the chain to add L and reference chain L is 242, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add L and reference chain L is 242, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain L with sample chain L with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain L with an RMSD of 0.025958
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 8, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 4, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain E is 45, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain E is 45, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain L with an RMSD of 0.028298
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 3, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 22, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 361, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 361, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Q with sample chain L with an RMSD of 0.028298
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 27, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 19, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 521, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 521, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain L with an RMSD of 0.028299
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 541, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 541, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain N with sample chain L with an RMSD of 0.030623
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 1, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 1, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 17, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 345, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 345, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain O with sample chain L with an RMSD of 0.030623
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 3, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain E is 54, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain E is 54, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain L with an RMSD of 0.030623
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 1, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 7, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 363, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 363, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain L with an RMSD of 0.032031
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 1, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 965, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 965, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain S with sample chain L with an RMSD of 0.032031
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain E is 39, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain E is 39, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain L with an RMSD of 0.037503
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 21, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 7, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 685, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 685, therefore the chain is skipped
 INFO:This is the iteration #102 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_GZ.pdb
@@ -13726,13 +13726,13 @@ INFO:The number of clashes between the chain to add Z and reference chain C is 1
 INFO:The number of clashes between the chain to add Z and reference chain F is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add Z and reference chain W is 0, it is under the threshold
-INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add Z and reference chain Z is 186, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Z with sample chain Z with an RMSD of 0.000000
 INFO:Putative chain to add is G
 INFO:The number of clashes between the chain to add G and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add G and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add G and reference chain G is 896, therefore the chain is skipped
 INFO:This is the iteration #103 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_IJ.pdb
@@ -13892,7 +13892,7 @@ INFO:The number of clashes between the chain to add J and reference chain W is 0
 INFO:The number of clashes between the chain to add J and reference chain Z is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add J and reference chain L is 0, it is under the threshold
-INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add J and reference chain J is 244, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain J with an RMSD of 0.000000
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -13906,19 +13906,19 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain N with sample chain J with an RMSD of 0.000003
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 69, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 69, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain O with sample chain J with an RMSD of 0.000004
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 110, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 110, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain S with sample chain J with an RMSD of 0.004207
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -13932,7 +13932,7 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 62, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 62, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain J with an RMSD of 0.004207
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -13946,25 +13946,25 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 98, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 98, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain J with an RMSD of 0.007632
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 131, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 131, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain J with an RMSD of 0.007633
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 102, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 102, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Q with sample chain J with an RMSD of 0.007633
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 59, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 59, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain J with an RMSD of 0.008615
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -13978,19 +13978,19 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 83, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 83, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain J with an RMSD of 0.010648
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 91, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 91, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain L with sample chain J with an RMSD of 0.030623
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 60, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 60, therefore the chain is skipped
 INFO:This is the iteration #104 of the recursive function
 INFO:The complex has 28 chains at this point
 INFO:We are processing the file 5dn6_IP.pdb
@@ -14151,7 +14151,7 @@ INFO:The number of clashes between the chain to add P and reference chain Z is 0
 INFO:The number of clashes between the chain to add P and reference chain I is 0, it is under the threshold
 INFO:The number of clashes between the chain to add P and reference chain L is 0, it is under the threshold
 INFO:The number of clashes between the chain to add P and reference chain J is 0, it is under the threshold
-INFO:The number of clashes between the chain to add P and reference chain P is 238, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add P and reference chain P is 238, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain P with sample chain P with an RMSD of 0.000000
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -14165,13 +14165,13 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 277, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain Q with sample chain P with an RMSD of 0.008132
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 33, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 33, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain K with sample chain P with an RMSD of 0.008132
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -14185,19 +14185,19 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 90, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 90, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain M with sample chain P with an RMSD of 0.008132
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 48, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 48, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain N with sample chain P with an RMSD of 0.008615
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 81, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 81, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain J with sample chain P with an RMSD of 0.008615
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -14211,7 +14211,7 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 84, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 84, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain O with sample chain P with an RMSD of 0.008615
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -14225,25 +14225,25 @@ INFO:The number of clashes between the chain to add I and reference chain F is 0
 INFO:The number of clashes between the chain to add I and reference chain V is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain W is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain Z is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain I is 116, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain I is 116, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain U with sample chain P with an RMSD of 0.009722
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 69, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 69, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain S with sample chain P with an RMSD of 0.009722
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 87, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 87, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain R with sample chain P with an RMSD of 0.012588
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain D is 0, it is under the threshold
 INFO:The number of clashes between the chain to add I and reference chain E is 0, it is under the threshold
-INFO:The number of clashes between the chain to add I and reference chain G is 67, therefore the chain is the same and it is skipped
+INFO:The number of clashes between the chain to add I and reference chain G is 67, therefore the chain is skipped
 INFO:We are processing the superimposition of ref chain L with sample chain P with an RMSD of 0.025958
 INFO:Putative chain to add is I
 INFO:The number of clashes between the chain to add I and reference chain A is 0, it is under the threshold
@@ -14276,10 +14276,8 @@ INFO:The number of clashes between the chain to add I and reference chain Q is 0
 INFO:The number of clashes between the chain to add I and reference chain S is 0, it is under the threshold
 INFO:Chain L superimposed with chain P yields rotated chain I which is not in the complex
 INFO:Added Chain T
-INFO:This is the iteration #105 of the recursive function
-INFO:The complex has 29 chains at this point
 INFO:The whole macrocomplex has been successfully build
 INFO:The final complex has 29 chains
 INFO:We have arrived to iteration 105
-INFO:Output files macrocomplex.pdb and macrocomplex.log saved in D:\Documents\BIM\2Q\PYT\PROJECT\macrocomplex_builder\examples\5dn6_2
-INFO:The program has finished running! It took 23.982227 seconds
+INFO:Output files macrocomplex.pdb and macrocomplex.log saved in D:\Documents\BIM\2Q\PYT\PROJECT\macrocomplex_builder\examples\5dn6_output
+INFO:The program has finished running! It took 24.997923 seconds
