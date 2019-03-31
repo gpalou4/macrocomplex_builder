@@ -1,5 +1,6 @@
-# Macrocomplex builder
-*Guillermo Palou Márquez and Javier Sánchez Utgés*
+# Macrocomplex builder, aka Brandon The Builder
+
+*by Guillermo Palou Márquez and Javier Sánchez Utgés*
 
 ## **TABLE OF CONTENTS**
 
@@ -28,13 +29,9 @@
 ## Description
 This program is able to reconstruct biological macrocomplexes of protein-protein interactions as well as protein-DNA/RNA interactions given a set of binary interactions and the desired number of chains of the target complex.
 
-## SBI-Python project
-
 ## Installation
 
-### **1) via Git**
-
-The package can be downloaded using Git:
+The package can be downloaded and installed using Git:
 
  ```bash
   git clone https://github.com/gpalou4/macrocomplex_builder
@@ -55,13 +52,16 @@ The following versions of packages/modules must be installed in order to run our
 - Re v2.2.1
 
 ## Information
+
+In this part, we talk about what the program needs to run, i.e., the input and also about the limtations that the program currently has.
+
 ### Input files
 
 The input files consist of pairs of interactions (protein-protein or RNA/DNA-protein) in PDB format. All of them must be provided in the same input directory and it is not necessary to provide at least one chain of each type.
 
 ### Limitations
 
-- The program scales badly as a consequence of the linear increase of the total comparisons that it has to make. However, for the most examples it takes less than 30 seconds. 
+- The program scales badly as a consequence of the linear increase of the total comparisons that it has to make. However, for most of the examples it takes less than 30 seconds. 
 - The two chains that are superimposed must be identical (same number of atoms and residues).
 - No GUI interface developed yet.
 - For open complexes, i.e., complexes that have open ends in any of their dimensions, e.g., microtubule, the program does not work as good as with closed complexes, as are the examples we provide on the tutorial.
@@ -140,6 +140,8 @@ In this flowchart, the green ellipse corresponds to the calling of the iterative
 <img src="Images/ALGORITHM.png" width="1000" height="1000">
 
 ## Tutorial
+
+In this section, we are going to explain how to run the script from the command line, which arguments are required, which optional, etc. Also, we present some examples of complexes that our program can successfully build and do a little bit of benchmarking and analysis of the results.
 
 ### **Command-line arguments**
 
