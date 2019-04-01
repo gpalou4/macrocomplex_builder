@@ -164,11 +164,12 @@ As a reminder, it is not necessary to provide the number of chains of the final 
 
 ### Example 1, 6EZM
 
-The first example is the Imidazoleglycerol-phosphate dehydratase from Saccharomyces cerevisiae. It is a Homo 24-mer (stoichiometry: A24). Based on the input provided files, the following command will recover the complete complex:
+The first example is the Imidazoleglycerol-phosphate dehydratase from Saccharomyces cerevisiae. It is a Homo 24-mer (stoichiometry: A24). Based on the input provided files, the following command will recover the complete complex (if the package is installed, do not type `python3` in the command).
 
 ```bash
 python3 macrocomplex_builder.py -i 6ezm -nc 24
 ```
+
  Where:
  
  -6ezm: is the input folder containing all the binary-interaction PDB files
