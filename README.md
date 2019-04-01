@@ -29,11 +29,16 @@ This program is able to reconstruct biological macrocomplexes of protein-protein
 
 ## Installation
 
-The package can be downloaded and installed using Git:
+The package can be downloaded using Git:
 
  ```bash
   git clone https://github.com/gpalou4/macrocomplex_builder
   cd macrocomplex_builder
+ ```
+ 
+Then, it can be installed via setup.py:
+ ```bash
+  python3 setup.py install
  ```
 
 ## Requirements
