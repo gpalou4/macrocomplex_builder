@@ -36,7 +36,7 @@ The package can be downloaded using Git:
   cd macrocomplex_builder
  ```
  
-Then, it can be installed via setup.py:
+Then, it can be installed (optional) via setup.py:
  ```bash
   python3 setup.py install
  ```
